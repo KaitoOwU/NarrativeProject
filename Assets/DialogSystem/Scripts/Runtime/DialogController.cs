@@ -63,7 +63,7 @@ public class DialogController : MonoBehaviour
                 break;
         }
 
-        txtSentence.text = sentence.sentence;
+        txtSentence.text = sentence.key;
 
         _audioSource.Stop();
         

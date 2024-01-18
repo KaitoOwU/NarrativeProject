@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DialogConfig : MonoBehaviour
 {
+    public List<SpeakerDatabase> speakerDatabases = new();
+
     [System.Serializable]
     public struct SpeakerConfig
     {
@@ -28,12 +30,18 @@ public class DialogConfig : MonoBehaviour
     [System.Serializable]
     public struct SentenceConfig
     {
-        [TextArea]public string sentence;
+        public string key;
         public AudioClip audioClip;
+
+        public SentenceConfig(string key)
+        {
+            this.key = key;
+            audioClip = null;
+        }
     }
 
-    public List<SpeakerDatabase> speakerDatabases = new();
-
+    public TextAsset csvDialog;
+    public Sentences1Table table;
     [Header("SENTENCES")]
     public List<SentenceConfig> sentenceConfig = new();
 
