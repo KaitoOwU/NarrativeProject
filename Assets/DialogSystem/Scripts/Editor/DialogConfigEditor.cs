@@ -9,14 +9,8 @@ using static DialogConfig;
 [CanEditMultipleObjects]
 public class DialogConfigEditor : Editor
 {
-    private DialogConfig _source;
+    private DialogConfig Source => target as DialogConfig;
     private GUIStyle _titleStyle;
-
-    private void OnEnable()
-    {
-        _source = target as DialogConfig;
-        _source.table ??= new();
-    }
 
     #region INSPECTOR
     public override void OnInspectorGUI()
@@ -28,7 +22,7 @@ public class DialogConfigEditor : Editor
 
         EditorGUILayout.Space();
 
-        EditorGUI.BeginDisabledGroup(_source.speakerDatabases.Count == 0 || _source.speakerDatabases.Exists(x => x == null));
+        EditorGUI.BeginDisabledGroup(Source.speakerDatabases.Count == 0 || Source.speakerDatabases.Exists(x => x == null));
         DrawSpeakersPanel();
 
         DrawSentencePanel();
@@ -36,7 +30,7 @@ public class DialogConfigEditor : Editor
         EditorGUI.EndDisabledGroup();
 
         if (EditorGUI.EndChangeCheck())
-            EditorUtility.SetDirty(_source);
+            EditorUtility.SetDirty(Source);
     }
 
     private void DrawSpeakersDatabasePanel()
@@ -57,23 +51,23 @@ public class DialogConfigEditor : Editor
             if (GUILayout.Button(new GUIContent("X", "Clear all Database"), GUILayout.Width(30)))
             {
                 if (EditorUtility.DisplayDialog("Delete all database", "Do you want delete all speakers database?", "Yes", "No"))
-                    _source.speakerDatabases.Clear();
+                    Source.speakerDatabases.Clear();
             }
 
             EditorGUILayout.EndHorizontal();
         }
         void DrawBody()
         {
-            if (_source.speakerDatabases.Count != 0)
+            if (Source.speakerDatabases.Count != 0)
             {
-                for (int i = 0; i < _source.speakerDatabases.Count; i++)
+                for (int i = 0; i < Source.speakerDatabases.Count; i++)
                 {
                     EditorGUILayout.BeginHorizontal();
-                    _source.speakerDatabases[i] = EditorGUILayout.ObjectField(_source.speakerDatabases[i], typeof(SpeakerDatabase), false) as SpeakerDatabase;
+                    Source.speakerDatabases[i] = EditorGUILayout.ObjectField(Source.speakerDatabases[i], typeof(SpeakerDatabase), false) as SpeakerDatabase;
 
                     if (GUILayout.Button(new GUIContent("X", "Remove database"), GUILayout.Width(30)))
                     {
-                        _source.speakerDatabases.RemoveAt(i);
+                        Source.speakerDatabases.RemoveAt(i);
                         break;
                     }
 
@@ -85,7 +79,7 @@ public class DialogConfigEditor : Editor
         {
             if (GUILayout.Button(new GUIContent("Add new database", "")))
             {
-                _source.speakerDatabases.Add(null);
+                Source.speakerDatabases.Add(null);
             }
         }
     }
@@ -108,38 +102,39 @@ public class DialogConfigEditor : Editor
             if (GUILayout.Button(new GUIContent("X", "Clear all speakers"), GUILayout.Width(30)))
             {
                 if (EditorUtility.DisplayDialog("Delete all speakers", "Do you want delete all speakers ?", "Yes", "No"))
-                    _source.speakers.Clear();
+                    Source.speakers.Clear();
             }
 
             EditorGUILayout.EndHorizontal();
         }
+
         void DrawBody()
         {
-            if (_source.speakers.Count != 0)
+            if (Source.speakers.Count != 0)
             {
-                for (int i = 0; i < _source.speakers.Count; i++)
+                for (int i = 0; i < Source.speakers.Count; i++)
                 {
-                    SpeakerConfig config = _source.speakers[i];
+                    SpeakerConfig config = Source.speakers[i];
 
                     EditorGUILayout.BeginHorizontal();
 
-                    if (_source.speakerDatabases.Count != 0)
+                    if (Source.speakerDatabases.Count != 0)
                     {
-                        if (_source.speakerDatabases.Count > 1)
+                        if (Source.speakerDatabases.Count > 1)
                         {
                             List<string> alldatabaseLabel = new();
-                            foreach (SpeakerDatabase sd in _source.speakerDatabases)
+                            foreach (SpeakerDatabase sd in Source.speakerDatabases)
                                 alldatabaseLabel.Add(sd?.name);
 
-                            int idDatabate = _source.speakerDatabases.FindIndex(x => x == config.speakerDatabase);
+                            int idDatabate = Source.speakerDatabases.FindIndex(x => x == config.speakerDatabase);
 
                             idDatabate = EditorGUILayout.Popup(idDatabate < 0 ? 0 : idDatabate, alldatabaseLabel.ToArray());
 
-                            config.speakerDatabase = _source.speakerDatabases[idDatabate];
+                            config.speakerDatabase = Source.speakerDatabases[idDatabate];
                         }
                         else
                         {
-                            config.speakerDatabase = _source.speakerDatabases.First();
+                            config.speakerDatabase = Source.speakerDatabases.First();
                         }
                     }
 
@@ -149,7 +144,7 @@ public class DialogConfigEditor : Editor
                         foreach (SpeakerData sd in config.speakerDatabase.speakerDatas)
                             alldataLabel.Add(sd?.label);
 
-                        int idData = config.speakerDatabase.speakerDatas.FindIndex(x => x == config.speakerData);
+                        int idData = config.speakerDatabase.speakerDatas.FindIndex(x => x.id == config.speakerData.id);
 
                         idData = EditorGUILayout.Popup(idData < 0 ? 0 : idData, alldataLabel.ToArray());
 
@@ -160,13 +155,13 @@ public class DialogConfigEditor : Editor
 
                     if (GUILayout.Button(new GUIContent("X", "Remove speeker"), GUILayout.Width(30)))
                     {
-                        _source.speakers.RemoveAt(i);
+                        Source.speakers.RemoveAt(i);
                         break;
                     }
 
                     EditorGUILayout.EndHorizontal();
 
-                    _source.speakers[i] = config;
+                    Source.speakers[i] = config;
                 }
             }
         }
@@ -174,7 +169,7 @@ public class DialogConfigEditor : Editor
         {
             if (GUILayout.Button(new GUIContent("Add new speaker", "")))
             {
-                _source.speakers.Add(new DialogConfig.SpeakerConfig());
+                Source.speakers.Add(new DialogConfig.SpeakerConfig());
             }
         }
     }
@@ -207,41 +202,42 @@ public class DialogConfigEditor : Editor
         {
             EditorGUILayout.BeginHorizontal();
 
-            _source.csvDialog = (TextAsset)EditorGUILayout.ObjectField("File : ", _source.csvDialog, typeof(TextAsset), false);
-            if (GUILayout.Button("Load"))
-            {
-                _source.table.Load(_source.csvDialog);
-            }
+            Source.csvDialog = (TextAsset)EditorGUILayout.ObjectField("File : ", Source.csvDialog, typeof(TextAsset), false);
+
+            if(Source.csvDialog != null && !Source.table.IsLoaded())
+                Source.table.Load(Source.csvDialog);
 
             EditorGUILayout.EndHorizontal();
 
-            if (!_source.table.IsLoaded())
+            if (Source.table.GetRowList().Count == 0)
                 return;
 
-            List<string> allRowLabel = new();
+            List<string> allRowSentence = new();
 
-            if (_source.table.GetRowList().Count > 0)
+            foreach (var r in Source.table.GetRowList())
+                allRowSentence.Add(r.KEY);
+
+            var allSpeaker = Source.speakers.Select(x => x.speakerData).ToList();
+
+            for (int i = 0; i < Source.sentenceConfig.Count; i++)
             {
-                foreach (var r in _source.table.GetRowList())
-                    allRowLabel.Add(r.KEY);
-            }
+                var sentenceConfig = Source.sentenceConfig[i];
 
-
-            for (int i = 0; i < _source.sentenceConfig.Count; i++)
-            {
-                var sentenceConfig = _source.sentenceConfig[i];
-
-                int idRow = _source.table.GetRowList().FindIndex(x => x.KEY == sentenceConfig.key);
+                int idRowSentence = Source.table.GetRowList().FindIndex(x => x.KEY == sentenceConfig.key);
+                int idSpeaker = Source.speakers.FindIndex(x => x.speakerData.id == sentenceConfig.speakerData.id);
 
                 EditorGUILayout.BeginHorizontal();
 
-                idRow = EditorGUILayout.Popup(idRow < 0 ? 0 : idRow, allRowLabel.ToArray());
+                idSpeaker = EditorGUILayout.Popup(idSpeaker < 0 ? 0 : idSpeaker, allSpeaker.Select(x => x.label).ToArray());
+                sentenceConfig.speakerData = allSpeaker[idSpeaker];
 
-                sentenceConfig.key = allRowLabel[idRow];
-                _source.sentenceConfig[i] = sentenceConfig;
+                idRowSentence = EditorGUILayout.Popup(idRowSentence < 0 ? 0 : idRowSentence, allRowSentence.ToArray());
+                sentenceConfig.key = allRowSentence[idRowSentence];
+
+                Source.sentenceConfig[i] = sentenceConfig;
 
                 if (GUILayout.Button(new GUIContent("X", "Delete sentence"), GUILayout.Width(20)))
-                    _source.sentenceConfig.RemoveAt(i);
+                    Source.sentenceConfig.RemoveAt(i);
 
                 EditorGUILayout.EndHorizontal();
             }
@@ -250,7 +246,7 @@ public class DialogConfigEditor : Editor
         void DrawFooter()
         {
             if (GUILayout.Button(new GUIContent("Add new sentence", "")))
-                _source.sentenceConfig.Add(new(""));
+                Source.sentenceConfig.Add(new(string.Empty, null));
         }
     }
     #endregion
