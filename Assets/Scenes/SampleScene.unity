@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1815504291740876288, guid: 7cc1942cb6164f04198a279d10b86c59, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1815504291740876291, guid: 7cc1942cb6164f04198a279d10b86c59, type: 3}
       propertyPath: m_Pivot.x
       value: 0
