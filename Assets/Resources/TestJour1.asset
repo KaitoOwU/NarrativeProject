@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
+  m_Name: TestJour1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGUID: a7ae2503-6fea-4b4a-867c-87e0d62d8cf6
+    PortName: Next
+    TargetNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
+  - BaseNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
+    PortName: poubelleSalon
+    TargetNodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
+  - BaseNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
+    PortName: frigo
+    TargetNodeGUID: 7ffea98a-3537-46a8-839f-58f5d96d1a88
+  - BaseNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
+    PortName: woman
+    TargetNodeGUID: 4a3700b2-a628-4834-9948-93023639d5d1
+  - BaseNodeGUID: 7ffea98a-3537-46a8-839f-58f5d96d1a88
+    PortName: poubelleSalon
+    TargetNodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
+  - BaseNodeGUID: 7ffea98a-3537-46a8-839f-58f5d96d1a88
+    PortName: woman
+    TargetNodeGUID: 4a3700b2-a628-4834-9948-93023639d5d1
+  DialogueNodeData:
+  - NodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
+    DialogueText: "Ma journ\xE9e \xE9tait bien nulle ajd petit chat"
+    Position: {x: 260, y: 142}
+  - NodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
+    DialogueText: "chag de merde g tous les d\xE9tritus sur moig"
+    Position: {x: 684, y: -35}
+  - NodeGUID: 4a3700b2-a628-4834-9948-93023639d5d1
+    DialogueText: "p\xE9targ, il\xE9tromignong ce chag, je le carresse UwU"
+    Position: {x: 674, y: 366}
+  - NodeGUID: 7ffea98a-3537-46a8-839f-58f5d96d1a88
+    DialogueText: oui pourquoi pas casser la croute
+    Position: {x: 713, y: 120}
+  ExposedProperties: []
+  CommentBlockData: []

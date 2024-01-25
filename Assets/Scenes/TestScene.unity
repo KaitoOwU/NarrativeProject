@@ -387,12 +387,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37ccaca0d7c48634d8e70996696a3c4d, type: 3}
+  m_Script: {fileID: 11500000, guid: b669fe9012b039c4ea20b82b6044185f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 21525e473fec1d94ba92c8d3aaa45e9f, type: 2}
+  dialogue: {fileID: 11400000, guid: 9bc30a8db5d2de44eb527fab574c5b83, type: 2}
   dialogueText: {fileID: 1818617936}
-  choicePrefab: {fileID: 3102500559854669817, guid: f77c89383fd59cd47a1921c9684d4122, type: 3}
+  choicePrefab: {fileID: 3102500559854669817, guid: 2d953df6300196c40b9c8843839054a5, type: 3}
   buttonContainer: {fileID: 1172275448}
 --- !u!1 &998751766
 GameObject:

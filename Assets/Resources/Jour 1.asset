@@ -22,6 +22,9 @@ MonoBehaviour:
   - BaseNodeGUID: 552379f4-56f4-4172-9884-d40d221d62d7
     PortName: poubelle
     TargetNodeGUID: a3e8467d-6ae7-464f-b721-2012c3b20116
+  - BaseNodeGUID: eb09923a-410c-4bda-9cfa-9a34dce5d40d
+    PortName: Option 1
+    TargetNodeGUID: a3e8467d-6ae7-464f-b721-2012c3b20116
   DialogueNodeData:
   - NodeGUID: eb09923a-410c-4bda-9cfa-9a34dce5d40d
     DialogueText: c'est cool!
