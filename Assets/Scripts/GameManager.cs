@@ -11,8 +11,10 @@ public class GameManager : MonoBehaviour
     
     public static GameManager Instance { get; private set; }
     
-    public Language GameLanguage { get; private set; } = Language.FRANCAIS;
+    public Language GameLanguage { get; private set; } = Language.ENGLISH;
     public ReadOnlyDictionary<string, string[]> DialogDatabase { get => new(_dialogDatabase); }
+
+    public Day Day { get; private set; } = Day.SUNDAY;
 
     private void Awake()
     {
@@ -22,6 +24,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        DontDestroyOnLoad(this);
         Instance = this;
         _dialogDatabase = CSV.Unparse("Assets/Resources/Dialog.csv");
     }
