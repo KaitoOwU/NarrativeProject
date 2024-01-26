@@ -31,13 +31,13 @@ MonoBehaviour:
   - BaseNodeGUID: 7ffea98a-3537-46a8-839f-58f5d96d1a88
     PortName: woman
     TargetNodeGUID: 4a3700b2-a628-4834-9948-93023639d5d1
+  - BaseNodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
+    PortName: monologue
+    TargetNodeGUID: 549b745d-c3e3-40df-9eae-f23d36b9ca47
   DialogueNodeData:
   - NodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
     DialogueText: Jour1_1
     Position: {x: 260, y: 142}
-  - NodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
-    DialogueText: Jour1_2
-    Position: {x: 684, y: -35.333336}
   - NodeGUID: 4a3700b2-a628-4834-9948-93023639d5d1
     DialogueText: Jour1_4
     Position: {x: 674, y: 366}
@@ -46,6 +46,12 @@ MonoBehaviour:
     Position: {x: 713.3333, y: 119.99999}
   - NodeGUID: 320f6c8c-e7ad-4c8e-aab1-271455f4c2ba
     DialogueText: Dialogue Node
-    Position: {x: 277.33334, y: 424}
+    Position: {x: 0, y: 0}
+  - NodeGUID: 549b745d-c3e3-40df-9eae-f23d36b9ca47
+    DialogueText: Jour1_1
+    Position: {x: 1021.3333, y: -37.333336}
+  - NodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
+    DialogueText: Jour1_2
+    Position: {x: 684, y: -35.333336}
   ExposedProperties: []
   CommentBlockData: []
