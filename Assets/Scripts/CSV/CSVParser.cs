@@ -36,6 +36,7 @@ namespace Kaito.CSVParser
             }
             catch (IOException)
             {
+                Debug.LogWarning("File could not be read. Please check file isn't open");
                 return null;
             }
         }
