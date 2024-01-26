@@ -33,16 +33,19 @@ MonoBehaviour:
     TargetNodeGUID: 4a3700b2-a628-4834-9948-93023639d5d1
   DialogueNodeData:
   - NodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
-    DialogueText: "Ma journ\xE9e \xE9tait bien nulle ajd petit chat"
+    DialogueText: Jour1_1
     Position: {x: 260, y: 142}
   - NodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
-    DialogueText: "chag de merde g tous les d\xE9tritus sur moig"
-    Position: {x: 684, y: -35}
+    DialogueText: Jour1_2
+    Position: {x: 684, y: -35.333336}
   - NodeGUID: 4a3700b2-a628-4834-9948-93023639d5d1
-    DialogueText: "p\xE9targ, il\xE9tromignong ce chag, je le carresse UwU"
+    DialogueText: Jour1_4
     Position: {x: 674, y: 366}
   - NodeGUID: 7ffea98a-3537-46a8-839f-58f5d96d1a88
-    DialogueText: oui pourquoi pas casser la croute
-    Position: {x: 713, y: 120}
+    DialogueText: Jour1_3
+    Position: {x: 713.3333, y: 119.99999}
+  - NodeGUID: 320f6c8c-e7ad-4c8e-aab1-271455f4c2ba
+    DialogueText: Dialogue Node
+    Position: {x: 277.33334, y: 424}
   ExposedProperties: []
   CommentBlockData: []

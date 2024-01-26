@@ -26,7 +26,7 @@ namespace Subtegral.DialogueSystem.Runtime
         {
             var text = dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).DialogueText;
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
-            dialogueText.text = ProcessProperties(text);
+            dialogueText.text = GameManager.Instance.GetDialog(ProcessProperties(text));
             var buttons = buttonContainer.GetComponentsInChildren<Button>();
             for (int i = 0; i < buttons.Length; i++)
             {
