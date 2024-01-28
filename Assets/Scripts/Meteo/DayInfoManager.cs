@@ -21,6 +21,19 @@ public class DayInfoManager : MonoBehaviour
     {
         _description.DOText(GameManager.Instance.GetDialog($"DAY{(int)GameManager.Instance.Day}_DESC"), 1f);
         yield return _transitionImg.DOFade(0f, 1f).WaitForCompletion();
+        
+        switch(GameManager.Instance.GetCurrentDayData().meteo)
+        {
+            case Meteo.SUNNY:
+                _sunObj.SetActive(true);
+                break;
+            /*case Meteo.DEFAULT:
+                _cloudyObj.SetActive(true);
+                break;*/
+            case Meteo.RAINY:
+                _rainyObj.SetActive(true);
+                break;
+        }
 
         yield return new WaitForSecondsRealtime(5f);
         

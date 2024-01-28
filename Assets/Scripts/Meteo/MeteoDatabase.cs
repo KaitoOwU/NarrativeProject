@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Kaito.CSVParser;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -12,10 +15,13 @@ public class MeteoDatabase : ScriptableObject
 
     public void Reset()
     {
+        EditorUtility.SetDirty(this);
+        var dictionary = CSV.Unparse("Assets/Resources/Dialog.csv");
         for (int i = 0; i < 7; i++)
         {
-            Database[(Day)i] = new();
+            Database[(Day)i] = new(dictionary.ContainsKey($"DAY{i}_DESC") ? dictionary[$"DAY{i}_DESC"][1] : "not_found");
         }
+        AssetDatabase.SaveAssetIfDirty(this);
     }
 
     public struct MeteoData
@@ -24,6 +30,13 @@ public class MeteoDatabase : ScriptableObject
         public Meteo meteo;
         public Mood mood;
 
+        public MeteoData(string subtitle = "")
+        {
+            meteo = Meteo.DEFAULT;
+            mood = Mood.HAPPY;
+            this.subtitle = subtitle;
+        }
+        
         public void SetMeteo(Meteo meteo) => this.meteo = meteo;
         public void SetMood(Mood mood) => this.mood = mood;
     }

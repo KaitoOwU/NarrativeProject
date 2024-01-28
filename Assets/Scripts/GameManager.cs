@@ -30,4 +30,5 @@ public class GameManager : MonoBehaviour
     }
 
     public string GetDialog(string id) => DialogDatabase[id][(int)GameLanguage];
+    public MeteoDatabase.MeteoData GetCurrentDayData() => Resources.Load<MeteoDatabase>("Meteo/MeteoDatabase").Database[Day];
 }
