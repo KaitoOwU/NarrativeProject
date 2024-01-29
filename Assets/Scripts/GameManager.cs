@@ -7,12 +7,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private Dictionary<string, string[]> _dialogDatabase = new();
+    private List<(string, string[])> _dialogDatabase = new();
     
     public static GameManager Instance { get; private set; }
     
     public Language GameLanguage { get; private set; } = Language.ENGLISH;
-    public ReadOnlyDictionary<string, string[]> DialogDatabase { get => new(_dialogDatabase); }
+    public List<(string, string[])> DialogDatabase
+    {
+        get => _dialogDatabase;
+    }
 
     public Day Day { get; private set; } = Day.SUNDAY;
 
@@ -29,6 +32,6 @@ public class GameManager : MonoBehaviour
         _dialogDatabase = CSV.Unparse("Assets/Resources/Dialog.csv");
     }
 
-    public string GetDialog(string id) => DialogDatabase[id][(int)GameLanguage];
-    public MeteoDatabase.MeteoData GetCurrentDayData() => Resources.Load<MeteoDatabase>("Meteo/MeteoDatabase").Database[Day];
+    public string GetDialog(string id) => DialogDatabase.Find(x => x.Item1 == id).Item2[(int)GameLanguage];
+    public MeteoData GetCurrentDayData() => Resources.Load<MeteoDatabase>("Meteo/MeteoDatabase").DayDatabase[(int)Day].meteoData;
 }
