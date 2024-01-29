@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
+  m_Name: Dimanche_jour_1
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGUID: 156457b5-a56b-4da8-8fd1-9cca92f4892b
+    PortName: Next
+    TargetNodeGUID: 1ca7c3e8-e99c-44c3-abc1-78122fb0a1e2
+  - BaseNodeGUID: 1ca7c3e8-e99c-44c3-abc1-78122fb0a1e2
+    PortName: monologuePrefab
+    TargetNodeGUID: 6bceb8c9-ada8-4597-ac94-ab28d4f83cb6
+  - BaseNodeGUID: 6bceb8c9-ada8-4597-ac94-ab28d4f83cb6
+    PortName: monologuePrefab
+    TargetNodeGUID: eaea2af4-6d5f-44bb-a70d-9e74dd626152
+  - BaseNodeGUID: eaea2af4-6d5f-44bb-a70d-9e74dd626152
+    PortName: monologuePrefab
+    TargetNodeGUID: 55253554-4760-4d2e-9522-64c5b6814840
+  - BaseNodeGUID: 55253554-4760-4d2e-9522-64c5b6814840
+    PortName: monologuePrefab
+    TargetNodeGUID: 2d479c7a-e571-43dc-b120-ca4922cb6e57
+  - BaseNodeGUID: 2d479c7a-e571-43dc-b120-ca4922cb6e57
+    PortName: monologuePrefab
+    TargetNodeGUID: 72fe134f-7979-4e40-b6f9-4593dbf24c40
+  - BaseNodeGUID: 72fe134f-7979-4e40-b6f9-4593dbf24c40
+    PortName: Purr
+    TargetNodeGUID: 126b2be8-827c-402d-8b71-76b485f65276
+  - BaseNodeGUID: 72fe134f-7979-4e40-b6f9-4593dbf24c40
+    PortName: Meow
+    TargetNodeGUID: 8e222b79-603e-461a-9944-b2510eaffd7a
+  - BaseNodeGUID: 72fe134f-7979-4e40-b6f9-4593dbf24c40
+    PortName: Lick
+    TargetNodeGUID: e2208639-206b-41b9-98f4-9cce49688313
+  - BaseNodeGUID: 72fe134f-7979-4e40-b6f9-4593dbf24c40
+    PortName: Plant
+    TargetNodeGUID: 6bdd6d63-2f6c-45c7-ad25-e51aa333c366
+  - BaseNodeGUID: 72fe134f-7979-4e40-b6f9-4593dbf24c40
+    PortName: MEOW
+    TargetNodeGUID: da8768bc-eb61-4517-a466-0ceaca76889b
+  - BaseNodeGUID: 8e222b79-603e-461a-9944-b2510eaffd7a
+    PortName: monologuePrefab
+    TargetNodeGUID: 77d8c004-2d10-4934-8114-4595487141e2
+  - BaseNodeGUID: da8768bc-eb61-4517-a466-0ceaca76889b
+    PortName: monologuePrefab
+    TargetNodeGUID: c4884de1-f4ed-449d-92fe-d1f182e3b499
+  - BaseNodeGUID: c4884de1-f4ed-449d-92fe-d1f182e3b499
+    PortName: monologuePrefab
+    TargetNodeGUID: b53c99e3-1b5b-40a0-a36c-9b6621a2c695
+  DialogueNodeData:
+  - NodeGUID: 1ca7c3e8-e99c-44c3-abc1-78122fb0a1e2
+    DialogueText: 'Jour_1_1 '
+    Position: {x: 365, y: 195}
+  - NodeGUID: 6bceb8c9-ada8-4597-ac94-ab28d4f83cb6
+    DialogueText: 'Jour_1_2 '
+    Position: {x: 733, y: 193}
+  - NodeGUID: eaea2af4-6d5f-44bb-a70d-9e74dd626152
+    DialogueText: 'Jour_1_3 '
+    Position: {x: 1097, y: 193}
+  - NodeGUID: 55253554-4760-4d2e-9522-64c5b6814840
+    DialogueText: Jour_1_4
+    Position: {x: 1478, y: 193}
+  - NodeGUID: 2d479c7a-e571-43dc-b120-ca4922cb6e57
+    DialogueText: 'Jour_1_5 '
+    Position: {x: 1854, y: 190}
+  - NodeGUID: 72fe134f-7979-4e40-b6f9-4593dbf24c40
+    DialogueText: 'Jour_1_6 '
+    Position: {x: 2276, y: 188}
+  - NodeGUID: 8e222b79-603e-461a-9944-b2510eaffd7a
+    DialogueText: 'Jour_1_8 '
+    Position: {x: 2661, y: 101}
+  - NodeGUID: e2208639-206b-41b9-98f4-9cce49688313
+    DialogueText: 'Jour_1_10 '
+    Position: {x: 2664, y: 232}
+  - NodeGUID: 6bdd6d63-2f6c-45c7-ad25-e51aa333c366
+    DialogueText: 'Jour_1_11 '
+    Position: {x: 2668, y: 351}
+  - NodeGUID: da8768bc-eb61-4517-a466-0ceaca76889b
+    DialogueText: 'Jour_1_12 '
+    Position: {x: 2667, y: 496}
+  - NodeGUID: 77d8c004-2d10-4934-8114-4595487141e2
+    DialogueText: 'Jour_1_9 '
+    Position: {x: 2954, y: 102}
+  - NodeGUID: c4884de1-f4ed-449d-92fe-d1f182e3b499
+    DialogueText: 'Jour_1_13 '
+    Position: {x: 2954, y: 494}
+  - NodeGUID: b53c99e3-1b5b-40a0-a36c-9b6621a2c695
+    DialogueText: 'Jour_1_14 '
+    Position: {x: 3258, y: 494}
+  - NodeGUID: 126b2be8-827c-402d-8b71-76b485f65276
+    DialogueText: 'Jour_1_7 '
+    Position: {x: 2661, y: -34}
+  ExposedProperties: []
+  CommentBlockData: []
