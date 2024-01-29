@@ -156,9 +156,79 @@ namespace Subtegral.DialogueSystem.Editor
             tempDialogueNode.titleButtonContainer.Add(button);
             return tempDialogueNode;
         }
+        
+        /***
+        public void CreateNewMonologueNode(string nodeName, Vector2 position)
+        {
+            AddElement(CreateMonologueNode(nodeName, position));
+        }
 
+        public MonologueNode CreateMonologueNode(string nodeName, Vector2 position)
+        {
+            var tempMonologueNode = new MonologueNode()
+            {
+                title = nodeName,
+                DialogueText = nodeName,
+                GUID = Guid.NewGuid().ToString()
+            };
+            tempMonologueNode.styleSheets.Add(Resources.Load<StyleSheet>("Node"));
+            var inputPort = GetPortInstance(tempMonologueNode, Direction.Input, Port.Capacity.Multi);
+            inputPort.portName = "Input";
+            tempMonologueNode.inputContainer.Add(inputPort);
+            tempMonologueNode.RefreshExpandedState();
+            tempMonologueNode.RefreshPorts();
+            tempMonologueNode.SetPosition(new Rect(position,
+                DefaultNodeSize)); //To-Do: implement screen center instantiation positioning
+
+            var textField = new TextField("");
+            textField.RegisterValueChangedCallback(evt =>
+            {
+                tempMonologueNode.DialogueText = evt.newValue;
+                tempMonologueNode.title = evt.newValue;
+            });
+            textField.SetValueWithoutNotify(tempMonologueNode.title);
+            tempMonologueNode.mainContainer.Add(textField);
+            //ICI ON DIT QUE YA QUUN SEUL CHOIX
+            AddMonologueChoicePort(tempMonologueNode, "suite");
+            return tempMonologueNode;
+        }
+        ***/
 
         public void AddChoicePort(DialogueNode nodeCache, string overriddenPortName = "")
+        {
+            var generatedPort = GetPortInstance(nodeCache, Direction.Output);
+            var portLabel = generatedPort.contentContainer.Q<Label>("type");
+            generatedPort.contentContainer.Remove(portLabel);
+
+            var outputPortCount = nodeCache.outputContainer.Query("connector").ToList().Count();
+            var outputPortName = string.IsNullOrEmpty(overriddenPortName)
+                ? $"Option {outputPortCount + 1}"
+                : overriddenPortName;
+
+
+            var textField = new TextField()
+            {
+                name = string.Empty,
+                value = outputPortName,
+            };
+            textField.style.flexDirection = FlexDirection.Column;
+            textField.RegisterValueChangedCallback(evt => generatedPort.portName = evt.newValue);
+            generatedPort.contentContainer.Add(new Label("  "));
+            generatedPort.contentContainer.Add(textField);
+            var deleteButton = new Button(() => RemovePort(nodeCache, generatedPort))
+            {
+                text = "X"
+            };
+            generatedPort.contentContainer.Add(deleteButton);
+            generatedPort.portName = outputPortName;
+            nodeCache.outputContainer.Add(generatedPort);
+            nodeCache.RefreshPorts();
+            nodeCache.RefreshExpandedState();
+        }
+
+
+        /***
+        public void AddMonologueChoicePort(DialogueNode nodeCache, string overriddenPortName = "")
         {
             var generatedPort = GetPortInstance(nodeCache, Direction.Output);
             var portLabel = generatedPort.contentContainer.Q<Label>("type");
@@ -179,16 +249,12 @@ namespace Subtegral.DialogueSystem.Editor
             textField.RegisterValueChangedCallback(evt => generatedPort.portName = evt.newValue);
             generatedPort.contentContainer.Add(new Label("  "));
             generatedPort.contentContainer.Add(textField);
-            var deleteButton = new Button(() => RemovePort(nodeCache, generatedPort))
-            {
-                text = "X"
-            };
-            generatedPort.contentContainer.Add(deleteButton);
             generatedPort.portName = outputPortName;
             nodeCache.outputContainer.Add(generatedPort);
             nodeCache.RefreshPorts();
             nodeCache.RefreshExpandedState();
         }
+        ***/
 
         private void RemovePort(Node node, Port socket)
         {

@@ -13,7 +13,7 @@ namespace Subtegral.DialogueSystem.Runtime
     {
         [SerializeField] private DialogueContainer dialogue;
         [SerializeField] private TextMeshProUGUI dialogueText;
-        [SerializeField] private Button choicePrefab;
+        //[SerializeField] private Button choicePrefab;
         [SerializeField] private Transform buttonContainer;
 
         private void Start()
@@ -28,14 +28,16 @@ namespace Subtegral.DialogueSystem.Runtime
             var text = dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).DialogueText;
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
             dialogueText.text = GameManager.Instance.GetDialog(ProcessProperties(text));
-            var buttons = buttonContainer.GetComponentsInChildren<Button>();
+            var buttons = buttonContainer.GetComponentsInChildren<Button>(true);
             for (int i = 0; i < buttons.Length; i++)
             {
-                Destroy(buttons[i].gameObject);
+                //Destroy(buttons[i].gameObject);
+                buttons[i].gameObject.SetActive(false);
             }
 
             foreach (var choice in choices)
             {
+                /***
                 var button = Instantiate(choicePrefab, buttonContainer);
                 ButtonData buttonData = Resources.Load<ButtonData>("Buttons/" + ProcessProperties(choice.PortName));
                 Image image = button.GetComponentInParent<Image>();
@@ -44,8 +46,17 @@ namespace Subtegral.DialogueSystem.Runtime
                 transform.sizeDelta = new Vector2(buttonData.height, buttonData.width);
                 transform.localPosition += new Vector3(buttonData.posX, buttonData.posY, 0);
                 image.sprite = sprite;
-                button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
-                button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));
+                ***/
+                for (int i = 0; i < buttons.Length; i++)
+                {
+                    //Destroy(buttons[i].gameObject);
+                    if (buttons[i].gameObject.name == choice.PortName)
+                    {
+                        buttons[i].gameObject.SetActive(true);
+                        buttons[i].onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));
+                    }
+                }
+                //button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
             }
         }
 

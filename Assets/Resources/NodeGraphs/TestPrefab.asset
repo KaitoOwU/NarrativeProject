@@ -10,29 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
-  m_Name: TestJour1
+  m_Name: TestPrefab
   m_EditorClassIdentifier: 
   NodeLinks:
   - BaseNodeGUID: a7ae2503-6fea-4b4a-867c-87e0d62d8cf6
     PortName: Next
     TargetNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
   - BaseNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
-    PortName: poubelleSalon
+    PortName: poubellePrefab
     TargetNodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
   - BaseNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
-    PortName: frigo
+    PortName: frigoPrefab
     TargetNodeGUID: 7ffea98a-3537-46a8-839f-58f5d96d1a88
   - BaseNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
-    PortName: woman
+    PortName: womanPrefab
     TargetNodeGUID: 4a3700b2-a628-4834-9948-93023639d5d1
   - BaseNodeGUID: 7ffea98a-3537-46a8-839f-58f5d96d1a88
-    PortName: poubelleSalon
+    PortName: poubellePrefab
     TargetNodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
   - BaseNodeGUID: 7ffea98a-3537-46a8-839f-58f5d96d1a88
-    PortName: woman
+    PortName: womanPrefab
     TargetNodeGUID: 4a3700b2-a628-4834-9948-93023639d5d1
   - BaseNodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
-    PortName: monologue
+    PortName: monologuePrefab
     TargetNodeGUID: 549b745d-c3e3-40df-9eae-f23d36b9ca47
   DialogueNodeData:
   - NodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23

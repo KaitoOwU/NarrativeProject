@@ -36,6 +36,12 @@ namespace Subtegral.DialogueSystem.Editor
                 {
                     level = 2, userData = new DialogueNode()
                 },
+                /***
+                new SearchTreeEntry(new GUIContent("Monologue Node", _indentationIcon))
+                {
+                    level = 2, userData = new MonologueNode()
+                },
+                ***/
                 new SearchTreeEntry(new GUIContent("Comment Block",_indentationIcon))
                 {
                     level = 1,
@@ -54,6 +60,11 @@ namespace Subtegral.DialogueSystem.Editor
             var graphMousePosition = _graphView.contentViewContainer.WorldToLocal(mousePosition);
             switch (SearchTreeEntry.userData)
             {
+                /***
+                case MonologueNode monologueNode:
+                    _graphView.CreateNewMonologueNode("Monologue Node", graphMousePosition);
+                    return true;
+                ***/
                 case DialogueNode dialogueNode:
                     _graphView.CreateNewDialogueNode("Dialogue Node",graphMousePosition);
                     return true;

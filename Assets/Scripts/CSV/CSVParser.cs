@@ -29,7 +29,7 @@ namespace Kaito.CSVParser
                     string line = reader.ReadLine();
                     string[] values = line.Split(spliter);
                     data[values[0]] = values[1..];
-                    Debug.Log(values[0] + " : " + data[values[0]].ToStringArray());
+                    //Debug.Log(values[0] + " : " + data[values[0]].ToStringArray());
                 }
                 
                 return data;
