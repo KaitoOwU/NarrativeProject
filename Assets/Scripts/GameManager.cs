@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     
     public static GameManager Instance { get; private set; }
     
-    public Language GameLanguage { get; private set; } = Language.FRANCAIS;
+    public Language GameLanguage { get; private set; } = Language.ENGLISH;
     public ReadOnlyDictionary<string, string[]> DialogDatabase { get => new(_dialogDatabase); }
 
     private void Awake()
