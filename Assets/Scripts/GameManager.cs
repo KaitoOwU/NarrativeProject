@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public ReadOnlyDictionary<string, string[]> DialogDatabase { get => new(_dialogDatabase); }
 
     public List<int> _emotions;
+    private int[] _lastTwoEmotions = new int[2];
 
 
     private void Awake()
