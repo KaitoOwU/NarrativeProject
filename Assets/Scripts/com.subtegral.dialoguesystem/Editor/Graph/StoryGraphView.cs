@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using Subtegral.DialogueSystem.DataContainers;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
@@ -156,7 +157,7 @@ namespace Subtegral.DialogueSystem.Editor
             tempDialogueNode.titleButtonContainer.Add(button);
             return tempDialogueNode;
         }
-        
+
         /***
         public void CreateNewMonologueNode(string nodeName, Vector2 position)
         {
@@ -194,7 +195,7 @@ namespace Subtegral.DialogueSystem.Editor
         }
         ***/
 
-        public void AddChoicePort(DialogueNode nodeCache, string overriddenPortName = "")
+        public void AddChoicePort(DialogueNode nodeCache, string overriddenPortName = "", string emotion = "Positive")
         {
             var generatedPort = GetPortInstance(nodeCache, Direction.Output);
             var portLabel = generatedPort.contentContainer.Q<Label>("type");
@@ -215,12 +216,28 @@ namespace Subtegral.DialogueSystem.Editor
             textField.RegisterValueChangedCallback(evt => generatedPort.portName = evt.newValue);
             generatedPort.contentContainer.Add(new Label("  "));
             generatedPort.contentContainer.Add(textField);
+
+            /***
+            PopupField<string> popUpField;
+            List<string> emotionChoices = new List<string> {"Positive", "Neutral", "Negative"};
+            popUpField = new PopupField<string>(emotionChoices, emotion);
+            popUpField.style.flexDirection = FlexDirection.Column;
+
+            nodeCache.NodeEmotions.Add(emotion);
+            popupField.RegisterValueChangedCallback(evt => generatedPort.portName = evt.newValue);
+
+
+            generatedPort.contentContainer.Add(popUpField);
+            ***/
+
             var deleteButton = new Button(() => RemovePort(nodeCache, generatedPort))
             {
                 text = "X"
             };
             generatedPort.contentContainer.Add(deleteButton);
             generatedPort.portName = outputPortName;
+
+
             nodeCache.outputContainer.Add(generatedPort);
             nodeCache.RefreshPorts();
             nodeCache.RefreshExpandedState();

@@ -31,32 +31,43 @@ namespace Subtegral.DialogueSystem.Runtime
             var buttons = buttonContainer.GetComponentsInChildren<Button>(true);
             for (int i = 0; i < buttons.Length; i++)
             {
-                //Destroy(buttons[i].gameObject);
                 buttons[i].gameObject.SetActive(false);
             }
 
             foreach (var choice in choices)
             {
-                /***
-                var button = Instantiate(choicePrefab, buttonContainer);
-                ButtonData buttonData = Resources.Load<ButtonData>("Buttons/" + ProcessProperties(choice.PortName));
-                Image image = button.GetComponentInParent<Image>();
-                RectTransform transform = button.GetComponentInParent<RectTransform>();
-                Sprite sprite = buttonData.sprite;
-                transform.sizeDelta = new Vector2(buttonData.height, buttonData.width);
-                transform.localPosition += new Vector3(buttonData.posX, buttonData.posY, 0);
-                image.sprite = sprite;
-                ***/
                 for (int i = 0; i < buttons.Length; i++)
                 {
-                    //Destroy(buttons[i].gameObject);
+                    Emotions chosenEmotion = buttons[i].gameObject.GetComponent<ButtonEmotion>()._emotion;
                     if (buttons[i].gameObject.name == choice.PortName)
                     {
                         buttons[i].gameObject.SetActive(true);
-                        buttons[i].onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));
+                        buttons[i].onClick.AddListener(() =>
+                        {
+                            AddEmotion(chosenEmotion);
+                            ProceedToNarrative(choice.TargetNodeGUID);
+                        });
                     }
                 }
-                //button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
+            }
+        }
+
+        private void AddEmotion(Emotions emotion)
+        {
+            switch (emotion)
+            {
+                case Emotions.Positive:
+                    GameManager.Instance._emotions[0]++;
+                    break;
+                case Emotions.Neutral:
+                    GameManager.Instance._emotions[1]++;
+                    break;
+                case Emotions.Negative:
+                    GameManager.Instance._emotions[2]++;
+                    break;
+                case Emotions.NoEmotion:
+                    GameManager.Instance._emotions[3]++;
+                    break;
             }
         }
 

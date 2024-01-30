@@ -11,5 +11,8 @@ namespace Subtegral.DialogueSystem.Editor
         public string DialogueText;
         public string GUID;
         public bool EntyPoint = false;
+
+
+        //public List<string> NodeEmotions = new List<string>();
     }
 }
