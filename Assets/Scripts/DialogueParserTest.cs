@@ -64,14 +64,19 @@ namespace Subtegral.DialogueSystem.Runtime
                         buttons[i].gameObject.SetActive(true);
                         buttons[i].onClick.AddListener(() =>
                         {
-                            StopChoiceTimeout();
-                            AudioManager.Instance.Play(buttonData._soundName);
-                            AddEmotion(chosenEmotion);
-                            ProceedToNarrative(choice.TargetNodeGUID);
+                            StartCoroutine(GameManager.Instance.CR_EndScenario(() =>ChangeSituation(buttonData, chosenEmotion, choice)));
                         });;
                     }
                 }
             }
+        }
+
+        private void ChangeSituation(ButtonDatas buttonData, Emotions chosenEmotion, NodeLinkData choice)
+        {
+            StopChoiceTimeout();
+            AudioManager.Instance.Play(buttonData._soundName);
+            AddEmotion(chosenEmotion);
+            ProceedToNarrative(choice.TargetNodeGUID);
         }
 
         private void AddEmotion(Emotions emotion)

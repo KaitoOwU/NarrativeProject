@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/FinalScene/WeekScene.unity
     guid: a34ffa77f2718344d8888af9353668a1
   - enabled: 1
-    path: Assets/Scenes/SundayScene.unity
+    path: Assets/Scenes/KevinScene.unity
     guid: 2cd3f64416a76f64cb6e9c71126b830a
+  - enabled: 1
+    path: Assets/Scenes/SundayScene.unity
+    guid: 1514fdbdd99835f47ae444db0cfe6592
+  - enabled: 1
+    path: Assets/Scenes/MondayScene.unity
+    guid: d037a804b2d25794996c371e3b64e1f0
   m_configObjects: {}
