@@ -45,7 +45,11 @@ public enum Meteo
 public enum Mood
 {
     HAPPY,
-    SAD
+    NEUTRAL,
+    SAD,
+    REALLY_SAD,
+    LOW_ANGRY,
+    
 }
 
 [Serializable]

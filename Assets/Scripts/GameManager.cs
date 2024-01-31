@@ -20,6 +20,11 @@ public class GameManager : MonoBehaviour
         { Day.FRIDAY, "Friday" },
         { Day.SUNDAY, "Sunday" }
     };
+
+    public static readonly Dictionary<Mood, (Color gradiantStart, Color gradiantEnd)> MoodColor = new()
+    {
+        {Mood.TIRED, (Color.RGBToHSV(), new Color())}
+    };
     
     [SerializeField] private Image _fade;
     private List<(string, string[])> _dialogDatabase = new();
