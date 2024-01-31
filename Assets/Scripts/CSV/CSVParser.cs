@@ -18,17 +18,18 @@ namespace Kaito.CSVParser
         /// <returns>
         ///   <para>The CSV file unparsed.</para>
         /// </returns>
-        public static Dictionary<string, string[]> Unparse(string path, char spliter = ';')
+        public static List<(string, string[])> Unparse(string path, char spliter = ';')
         {
-            Dictionary<string, string[]> data = new();
+            List<(string ID, string[] Values)> data = new();
             try
             {
+                
                 StreamReader reader = new(path);
                 while (!reader.EndOfStream)
                 {
                     string line = reader.ReadLine();
                     string[] values = line.Split(spliter);
-                    data[values[0]] = values[1..];
+                    data.Add((values[0], values[1..]));
                     //Debug.Log(values[0] + " : " + data[values[0]].ToStringArray());
                 }
                 

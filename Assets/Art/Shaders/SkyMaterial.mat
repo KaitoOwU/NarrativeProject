@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
+  m_Name: SkyMaterial
   m_Shader: {fileID: -6465566751694194690, guid: b6eaf5e555b9a6940b8f5004d1db6004, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -74,7 +74,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.169
+    - _Alpha: 0.392
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     - _BumpScale: 1
@@ -90,8 +90,9 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Scale: 1.61
     - _Sharpness: 0.316
-    - _Size: 0.21
+    - _Size: 0.6
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -99,7 +100,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 1, g: 0.7783019, b: 0.9706094, a: 0}
-    - _Color2: {r: 0.8207547, g: 0.41424885, b: 0.61966246, a: 0}
+    - _Color1: {r: 0, g: 0.04231809, b: 0.33962262, a: 1}
+    - _Color2: {r: 0.53875726, g: 0.5235849, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
