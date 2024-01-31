@@ -154,7 +154,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     break;
                 case 1:
                     GameManager.Instance._emotions[1]++;
-                    ProceedToNarrative(choices.FirstOrDefault(x => x.PortName == "littleMeow").TargetNodeGUID);
+                    ProceedToNarrative(choices.FirstOrDefault(x => x.PortName == "LittleMeow").TargetNodeGUID);
                     break;
                 case 2:
                     GameManager.Instance._emotions[1]++;
