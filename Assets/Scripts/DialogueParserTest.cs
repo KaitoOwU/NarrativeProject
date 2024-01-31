@@ -20,15 +20,18 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private Coroutine choiceTimeoutCoroutine;
 
+        private Button _playerButton;
+        private Coroutine randomPlayerAnimationCoroutine;
+
         private void Start()
         {
+            _playerButton = GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<Button>(); ;
             var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
             ProceedToNarrative(narrativeData.TargetNodeGUID);
         }
 
         private void ProceedToNarrative(string narrativeDataGUID)
         {
-            
             var text = dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).DialogueText;
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
             dialogueText.text = GameManager.Instance.GetDialog(ProcessProperties(text));
@@ -39,12 +42,17 @@ namespace Subtegral.DialogueSystem.Runtime
             {
                 StartChoiceTimeout(defaultChoice);
             }
+            _playerButton.onClick.RemoveAllListeners();
+            var catChoice = choices.FirstOrDefault(x => x.PortName == "Purr");
+            if (catChoice != null)
+            {
+                _playerButton.onClick.AddListener(() => RandomPlayerAnimation(narrativeDataGUID));
+            }
             for (int i = 0; i < buttons.Length; i++)
             {
                 buttons[i].gameObject.SetActive(false);
                 buttons[i].onClick.RemoveAllListeners();
             }
-            
             foreach (var choice in choices)
             {
                 for (int i = 0; i < buttons.Length; i++)
@@ -60,7 +68,7 @@ namespace Subtegral.DialogueSystem.Runtime
                             AudioManager.Instance.Play(buttonData._soundName);
                             AddEmotion(chosenEmotion);
                             ProceedToNarrative(choice.TargetNodeGUID);
-                        });
+                        });;
                     }
                 }
             }
@@ -119,6 +127,41 @@ namespace Subtegral.DialogueSystem.Runtime
                     ProceedToNarrative(defaultChoice.TargetNodeGUID);
                 }
             }
+        }
+
+        private void RandomPlayerAnimation(string narrativeDataGUID)
+        {
+            if (randomPlayerAnimationCoroutine == null)
+            {
+                int randomNumber = UnityEngine.Random.Range(0, 4);
+                randomPlayerAnimationCoroutine = StartCoroutine(RandomPlayerAnimationCoroutine(randomNumber, narrativeDataGUID));
+            }
+        }
+
+        private IEnumerator RandomPlayerAnimationCoroutine(int randomNumber, string narrativeDataGUID)
+        {
+            var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
+            switch (randomNumber)
+            {
+                case 0:
+                    GameManager.Instance._emotions[0]++;
+                    ProceedToNarrative(choices.FirstOrDefault(x => x.PortName == "Purr").TargetNodeGUID);
+                    break;
+                case 1:
+                    GameManager.Instance._emotions[1]++;
+                    ProceedToNarrative(choices.FirstOrDefault(x => x.PortName == "littleMeow").TargetNodeGUID);
+                    break;
+                case 2:
+                    GameManager.Instance._emotions[1]++;
+                    ProceedToNarrative(choices.FirstOrDefault(x => x.PortName == "Lick").TargetNodeGUID);
+                    break;
+                case 3:
+                    GameManager.Instance._emotions[2]++;
+                    ProceedToNarrative(choices.FirstOrDefault(x => x.PortName == "BigMeow").TargetNodeGUID);
+                    break;
+            }
+            yield return new WaitForSeconds(3f);
+            randomPlayerAnimationCoroutine = null;
         }
     }
 }

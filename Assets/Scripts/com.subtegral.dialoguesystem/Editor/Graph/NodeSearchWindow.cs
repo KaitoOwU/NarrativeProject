@@ -19,7 +19,6 @@ namespace Subtegral.DialogueSystem.Editor
         {
             _window = window;
             _graphView = graphView;
-            
             //Transparent 1px indentation icon as a hack
             _indentationIcon = new Texture2D(1,1);
             _indentationIcon.SetPixel(0,0,new Color(0,0,0,0));
