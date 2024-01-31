@@ -1,0 +1,387 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
+  m_Name: Vendredi_Jour_6
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGUID: 75352e06-306e-4f4c-ad9e-2850625dc0ab
+    PortName: Next
+    TargetNodeGUID: 93485425-777b-4c56-9e71-902e9b913ede
+  - BaseNodeGUID: 93485425-777b-4c56-9e71-902e9b913ede
+    PortName: monologuePrefab
+    TargetNodeGUID: f11f84e7-81d9-4e2c-8e07-3545018e4fce
+  - BaseNodeGUID: f11f84e7-81d9-4e2c-8e07-3545018e4fce
+    PortName: monologuePrefab
+    TargetNodeGUID: 2bd0bb93-d136-45aa-97f6-ba61be7c67ec
+  - BaseNodeGUID: 2bd0bb93-d136-45aa-97f6-ba61be7c67ec
+    PortName: Purr
+    TargetNodeGUID: 2d6b2f3e-c6d9-4790-98d7-92be38e98aee
+  - BaseNodeGUID: 2bd0bb93-d136-45aa-97f6-ba61be7c67ec
+    PortName: Lick
+    TargetNodeGUID: f3696e63-5005-4699-a630-f55f0b424b88
+  - BaseNodeGUID: 2bd0bb93-d136-45aa-97f6-ba61be7c67ec
+    PortName: LittleMeow
+    TargetNodeGUID: 1f8effcc-3843-4c33-a4c2-ebcbd414d30f
+  - BaseNodeGUID: 2bd0bb93-d136-45aa-97f6-ba61be7c67ec
+    PortName: BigMeow
+    TargetNodeGUID: 7cecb7b8-d6f1-4f1b-8e1d-b302cad6da16
+  - BaseNodeGUID: 2bd0bb93-d136-45aa-97f6-ba61be7c67ec
+    PortName: MeowToEat
+    TargetNodeGUID: 678cc4c8-4953-485e-bcbc-b320057f94fb
+  - BaseNodeGUID: 2bd0bb93-d136-45aa-97f6-ba61be7c67ec
+    PortName: attendre
+    TargetNodeGUID: e6c7d1b3-9e2c-446a-b580-d3aca42acae7
+  - BaseNodeGUID: 2bd0bb93-d136-45aa-97f6-ba61be7c67ec
+    PortName: Trash
+    TargetNodeGUID: 88d986d4-d087-4b40-bec0-cc1fb672dcc5
+  - BaseNodeGUID: 2d6b2f3e-c6d9-4790-98d7-92be38e98aee
+    PortName: monologuePrefab
+    TargetNodeGUID: aabec90e-f92d-4680-a4fa-1d210890ff73
+  - BaseNodeGUID: 7cecb7b8-d6f1-4f1b-8e1d-b302cad6da16
+    PortName: monologuePrefab
+    TargetNodeGUID: 5f7d0264-19cb-470c-91e7-4719141ac7d6
+  - BaseNodeGUID: 678cc4c8-4953-485e-bcbc-b320057f94fb
+    PortName: monologuePrefab
+    TargetNodeGUID: 2205eeed-b3f7-47a2-af6a-fe585f7b2a2d
+  - BaseNodeGUID: 88d986d4-d087-4b40-bec0-cc1fb672dcc5
+    PortName: monologuePrefab
+    TargetNodeGUID: 47d8551d-8333-4412-b769-6dcde8ae3717
+  - BaseNodeGUID: e6c7d1b3-9e2c-446a-b580-d3aca42acae7
+    PortName: monologuePrefab
+    TargetNodeGUID: ab0c749c-f3b2-45d4-a655-f19cf7fca015
+  - BaseNodeGUID: 2205eeed-b3f7-47a2-af6a-fe585f7b2a2d
+    PortName: monologuePrefab
+    TargetNodeGUID: ab0c749c-f3b2-45d4-a655-f19cf7fca015
+  - BaseNodeGUID: 5f7d0264-19cb-470c-91e7-4719141ac7d6
+    PortName: monologuePrefab
+    TargetNodeGUID: ab0c749c-f3b2-45d4-a655-f19cf7fca015
+  - BaseNodeGUID: 1f8effcc-3843-4c33-a4c2-ebcbd414d30f
+    PortName: monologuePrefab
+    TargetNodeGUID: ab0c749c-f3b2-45d4-a655-f19cf7fca015
+  - BaseNodeGUID: f3696e63-5005-4699-a630-f55f0b424b88
+    PortName: monologuePrefab
+    TargetNodeGUID: ab0c749c-f3b2-45d4-a655-f19cf7fca015
+  - BaseNodeGUID: aabec90e-f92d-4680-a4fa-1d210890ff73
+    PortName: monologuePrefab
+    TargetNodeGUID: ab0c749c-f3b2-45d4-a655-f19cf7fca015
+  - BaseNodeGUID: ab0c749c-f3b2-45d4-a655-f19cf7fca015
+    PortName: monologuePrefab
+    TargetNodeGUID: 40e0a0cd-7293-4636-81ef-b1050944adb5
+  - BaseNodeGUID: 47d8551d-8333-4412-b769-6dcde8ae3717
+    PortName: monologuePrefab
+    TargetNodeGUID: d8a7a1fb-a612-4b98-93f3-90817b393cc5
+  - BaseNodeGUID: d8a7a1fb-a612-4b98-93f3-90817b393cc5
+    PortName: monologuePrefab
+    TargetNodeGUID: 4821e450-0150-43de-b141-837bd10446c6
+  - BaseNodeGUID: 4821e450-0150-43de-b141-837bd10446c6
+    PortName: monologuePrefab
+    TargetNodeGUID: ab0c749c-f3b2-45d4-a655-f19cf7fca015
+  - BaseNodeGUID: 40e0a0cd-7293-4636-81ef-b1050944adb5
+    PortName: monologuePrefab
+    TargetNodeGUID: 740d4098-27a5-49ea-b9a1-9922919cff03
+  - BaseNodeGUID: 740d4098-27a5-49ea-b9a1-9922919cff03
+    PortName: Purr
+    TargetNodeGUID: a63fd815-eeac-440e-bc38-fad60d03bcd9
+  - BaseNodeGUID: 740d4098-27a5-49ea-b9a1-9922919cff03
+    PortName: LittleMeow
+    TargetNodeGUID: 204276ba-31f3-4742-96c0-8a1d2a8408a5
+  - BaseNodeGUID: 740d4098-27a5-49ea-b9a1-9922919cff03
+    PortName: attendre
+    TargetNodeGUID: 1fb18b95-d9e2-403d-a373-513e6cac40e0
+  - BaseNodeGUID: 740d4098-27a5-49ea-b9a1-9922919cff03
+    PortName: DoCookies
+    TargetNodeGUID: da9a9e2e-d902-49b9-852d-ef15be2b2e86
+  - BaseNodeGUID: 740d4098-27a5-49ea-b9a1-9922919cff03
+    PortName: MeowToGoOnShelf
+    TargetNodeGUID: 1e30c042-ccde-47f4-a163-a56c2ebcf175
+  - BaseNodeGUID: 740d4098-27a5-49ea-b9a1-9922919cff03
+    PortName: EatPlant
+    TargetNodeGUID: 8fb9085a-9019-4858-9105-112b24b9e463
+  - BaseNodeGUID: a63fd815-eeac-440e-bc38-fad60d03bcd9
+    PortName: monologuePrefab
+    TargetNodeGUID: 03c7fe8a-66f5-4700-8542-423e6b61037f
+  - BaseNodeGUID: 03c7fe8a-66f5-4700-8542-423e6b61037f
+    PortName: monologuePrefab
+    TargetNodeGUID: 4ecfebea-afe9-48f3-b6d6-75f1afa0558f
+  - BaseNodeGUID: 4ecfebea-afe9-48f3-b6d6-75f1afa0558f
+    PortName: monologuePrefab
+    TargetNodeGUID: 3e012745-2a90-45c4-a667-f3bf05f8f6ba
+  - BaseNodeGUID: 3e012745-2a90-45c4-a667-f3bf05f8f6ba
+    PortName: monologuePrefab
+    TargetNodeGUID: b2e66a10-d34d-4cde-84fd-f789b5495c35
+  - BaseNodeGUID: e9423a06-bf3a-42c7-8b69-f15f6c244242
+    PortName: monologuePrefab
+    TargetNodeGUID: 87ec183e-ea7b-4df4-bf85-d76b26b3af7f
+  - BaseNodeGUID: 87ec183e-ea7b-4df4-bf85-d76b26b3af7f
+    PortName: monologuePrefab
+    TargetNodeGUID: 5cf14401-86b8-4399-aa19-6a24c9fceb16
+  - BaseNodeGUID: ae384693-77ab-4c99-8bcd-a02a5fa27b9a
+    PortName: monologuePrefab
+    TargetNodeGUID: e9423a06-bf3a-42c7-8b69-f15f6c244242
+  - BaseNodeGUID: 204276ba-31f3-4742-96c0-8a1d2a8408a5
+    PortName: monologuePrefab
+    TargetNodeGUID: ae384693-77ab-4c99-8bcd-a02a5fa27b9a
+  - BaseNodeGUID: 5cf14401-86b8-4399-aa19-6a24c9fceb16
+    PortName: monologuePrefab
+    TargetNodeGUID: ac0b2ad1-3093-40f0-a963-fff521f53b35
+  - BaseNodeGUID: 1fb18b95-d9e2-403d-a373-513e6cac40e0
+    PortName: monologuePrefab
+    TargetNodeGUID: e641e89d-346a-4eae-a3cd-d3586eedef1e
+  - BaseNodeGUID: e641e89d-346a-4eae-a3cd-d3586eedef1e
+    PortName: monologuePrefab
+    TargetNodeGUID: 005f2a1a-497e-4589-95d5-640d5fcf73cf
+  - BaseNodeGUID: 005f2a1a-497e-4589-95d5-640d5fcf73cf
+    PortName: monologuePrefab
+    TargetNodeGUID: 537b97bd-2341-42f0-a96c-09139acc3dca
+  - BaseNodeGUID: 537b97bd-2341-42f0-a96c-09139acc3dca
+    PortName: monologuePrefab
+    TargetNodeGUID: 8fcd157d-388e-4a84-875a-48b55ab13d20
+  - BaseNodeGUID: 8fcd157d-388e-4a84-875a-48b55ab13d20
+    PortName: monologuePrefab
+    TargetNodeGUID: fc808bc2-9698-4158-ab67-1a358fda9c0b
+  - BaseNodeGUID: 8841131b-63fd-4041-8adf-78c423e20aa7
+    PortName: monologuePrefab
+    TargetNodeGUID: 8c601d8d-3c5a-4d17-b2b8-2a137a118b3c
+  - BaseNodeGUID: 8c601d8d-3c5a-4d17-b2b8-2a137a118b3c
+    PortName: monologuePrefab
+    TargetNodeGUID: cac988a6-a51c-4e73-bd48-f59aa94af7b5
+  - BaseNodeGUID: cac988a6-a51c-4e73-bd48-f59aa94af7b5
+    PortName: monologuePrefab
+    TargetNodeGUID: 840064d5-e581-4cf9-a298-ee80a46996fb
+  - BaseNodeGUID: 840064d5-e581-4cf9-a298-ee80a46996fb
+    PortName: monologuePrefab
+    TargetNodeGUID: 541ec499-ccfb-46d4-b0a4-5a9bb46b67d3
+  - BaseNodeGUID: 740d4098-27a5-49ea-b9a1-9922919cff03
+    PortName: Lick
+    TargetNodeGUID: 1fb18b95-d9e2-403d-a373-513e6cac40e0
+  - BaseNodeGUID: 740d4098-27a5-49ea-b9a1-9922919cff03
+    PortName: BigMeow
+    TargetNodeGUID: 8841131b-63fd-4041-8adf-78c423e20aa7
+  - BaseNodeGUID: da9a9e2e-d902-49b9-852d-ef15be2b2e86
+    PortName: monologuePrefab
+    TargetNodeGUID: 258521a3-6c7e-4671-bcad-f76936d8af27
+  - BaseNodeGUID: 258521a3-6c7e-4671-bcad-f76936d8af27
+    PortName: monologuePrefab
+    TargetNodeGUID: b5137cf9-2059-48f2-9085-f0cbc600f412
+  - BaseNodeGUID: b5137cf9-2059-48f2-9085-f0cbc600f412
+    PortName: monologuePrefab
+    TargetNodeGUID: 7e9ca79a-83d7-4277-9f26-a53af4dd0069
+  - BaseNodeGUID: 7e9ca79a-83d7-4277-9f26-a53af4dd0069
+    PortName: monologuePrefab
+    TargetNodeGUID: 922032f0-4fbf-479b-85d9-fc7d37ae38c8
+  - BaseNodeGUID: c648ea65-a094-4b8a-83dd-dd7a6829bf87
+    PortName: monologuePrefab
+    TargetNodeGUID: ed924445-8c75-4273-bc94-0c0cd3f91c90
+  - BaseNodeGUID: ed924445-8c75-4273-bc94-0c0cd3f91c90
+    PortName: monologuePrefab
+    TargetNodeGUID: cd8de533-35c9-481a-aa5e-ac821a9a6e79
+  - BaseNodeGUID: cd8de533-35c9-481a-aa5e-ac821a9a6e79
+    PortName: monologuePrefab
+    TargetNodeGUID: 07effa9f-3af6-4ba7-82a5-b1364c305272
+  - BaseNodeGUID: 07effa9f-3af6-4ba7-82a5-b1364c305272
+    PortName: monologuePrefab
+    TargetNodeGUID: 8d9833ca-13b0-4747-82e1-04f41a249386
+  - BaseNodeGUID: 1e30c042-ccde-47f4-a163-a56c2ebcf175
+    PortName: monologuePrefab
+    TargetNodeGUID: c648ea65-a094-4b8a-83dd-dd7a6829bf87
+  - BaseNodeGUID: b5388bc3-b86c-4e8d-a010-3ee60fc5d8e9
+    PortName: monologuePrefab
+    TargetNodeGUID: 15e31ca2-ea8d-4b01-92bf-48e708fcccc4
+  - BaseNodeGUID: 267734c4-381c-46f0-bcdc-466c1613fe13
+    PortName: monologuePrefab
+    TargetNodeGUID: b5388bc3-b86c-4e8d-a010-3ee60fc5d8e9
+  - BaseNodeGUID: 3feec8a7-1790-44e6-8a33-f0ed9a6bd275
+    PortName: monologuePrefab
+    TargetNodeGUID: 267734c4-381c-46f0-bcdc-466c1613fe13
+  - BaseNodeGUID: 34d0c4e0-af5d-4814-8957-d08b8053debd
+    PortName: monologuePrefab
+    TargetNodeGUID: 3feec8a7-1790-44e6-8a33-f0ed9a6bd275
+  - BaseNodeGUID: 8fb9085a-9019-4858-9105-112b24b9e463
+    PortName: monologuePrefab
+    TargetNodeGUID: 34d0c4e0-af5d-4814-8957-d08b8053debd
+  DialogueNodeData:
+  - NodeGUID: 93485425-777b-4c56-9e71-902e9b913ede
+    DialogueText: Jour_6_1
+    Position: {x: 259.2, y: 184.8}
+  - NodeGUID: f11f84e7-81d9-4e2c-8e07-3545018e4fce
+    DialogueText: Jour_6_2
+    Position: {x: 540, y: 183.2}
+  - NodeGUID: 2bd0bb93-d136-45aa-97f6-ba61be7c67ec
+    DialogueText: Jour_6_3
+    Position: {x: 818.4, y: 186.40001}
+  - NodeGUID: f3696e63-5005-4699-a630-f55f0b424b88
+    DialogueText: Jour_6_6
+    Position: {x: 1124.7999, y: -22.400002}
+  - NodeGUID: 7cecb7b8-d6f1-4f1b-8e1d-b302cad6da16
+    DialogueText: Jour_6_8
+    Position: {x: 1127.2, y: 188.8}
+  - NodeGUID: 678cc4c8-4953-485e-bcbc-b320057f94fb
+    DialogueText: Jour_6_10
+    Position: {x: 1131.2, y: 296.8}
+  - NodeGUID: e6c7d1b3-9e2c-446a-b580-d3aca42acae7
+    DialogueText: Jour_6_12
+    Position: {x: 1128.7999, y: 400.8}
+  - NodeGUID: 88d986d4-d087-4b40-bec0-cc1fb672dcc5
+    DialogueText: Jour_6_13
+    Position: {x: 1130.3999, y: 512}
+  - NodeGUID: 2d6b2f3e-c6d9-4790-98d7-92be38e98aee
+    DialogueText: Jour_6_4
+    Position: {x: 1128, y: -143.2}
+  - NodeGUID: 1f8effcc-3843-4c33-a4c2-ebcbd414d30f
+    DialogueText: Jour_6_7
+    Position: {x: 1125.6, y: 85.600006}
+  - NodeGUID: 5f7d0264-19cb-470c-91e7-4719141ac7d6
+    DialogueText: Jour_6_9
+    Position: {x: 1386.3999, y: 184}
+  - NodeGUID: 2205eeed-b3f7-47a2-af6a-fe585f7b2a2d
+    DialogueText: Jour_6_11
+    Position: {x: 1417.6, y: 286.4}
+  - NodeGUID: 47d8551d-8333-4412-b769-6dcde8ae3717
+    DialogueText: Jour_6_14
+    Position: {x: 1378.3999, y: 508}
+  - NodeGUID: aabec90e-f92d-4680-a4fa-1d210890ff73
+    DialogueText: Jour_6_5
+    Position: {x: 1379.2, y: -148.8}
+  - NodeGUID: d8a7a1fb-a612-4b98-93f3-90817b393cc5
+    DialogueText: Jour_6_15
+    Position: {x: 1628.7999, y: 512}
+  - NodeGUID: 4821e450-0150-43de-b141-837bd10446c6
+    DialogueText: Jour_6_16
+    Position: {x: 1890.3999, y: 510.39996}
+  - NodeGUID: ab0c749c-f3b2-45d4-a655-f19cf7fca015
+    DialogueText: Jour_6_17
+    Position: {x: 2251.2, y: 140}
+  - NodeGUID: 740d4098-27a5-49ea-b9a1-9922919cff03
+    DialogueText: Jour_6_19
+    Position: {x: 2743.2, y: 138.40001}
+  - NodeGUID: 40e0a0cd-7293-4636-81ef-b1050944adb5
+    DialogueText: Jour_6_18
+    Position: {x: 2512, y: 138.40001}
+  - NodeGUID: 1e30c042-ccde-47f4-a163-a56c2ebcf175
+    DialogueText: Jour_6_47
+    Position: {x: 3064, y: 446.4}
+  - NodeGUID: 8fb9085a-9019-4858-9105-112b24b9e463
+    DialogueText: Jour_6_53
+    Position: {x: 3059.2, y: 556.8}
+  - NodeGUID: 3feec8a7-1790-44e6-8a33-f0ed9a6bd275
+    DialogueText: Jour_6_55
+    Position: {x: 3536, y: 556.8}
+  - NodeGUID: 15e31ca2-ea8d-4b01-92bf-48e708fcccc4
+    DialogueText: Jour_6_58
+    Position: {x: 4248, y: 558.39996}
+  - NodeGUID: c648ea65-a094-4b8a-83dd-dd7a6829bf87
+    DialogueText: Jour_6_48
+    Position: {x: 3300, y: 446.4}
+  - NodeGUID: ed924445-8c75-4273-bc94-0c0cd3f91c90
+    DialogueText: Jour_6_49
+    Position: {x: 3533.5999, y: 449.59998}
+  - NodeGUID: cd8de533-35c9-481a-aa5e-ac821a9a6e79
+    DialogueText: Jour_6_50
+    Position: {x: 3772, y: 450.4}
+  - NodeGUID: 267734c4-381c-46f0-bcdc-466c1613fe13
+    DialogueText: Jour_6_56
+    Position: {x: 3772, y: 557.6}
+  - NodeGUID: b5388bc3-b86c-4e8d-a010-3ee60fc5d8e9
+    DialogueText: Jour_6_57
+    Position: {x: 4008, y: 558.39996}
+  - NodeGUID: 07effa9f-3af6-4ba7-82a5-b1364c305272
+    DialogueText: Jour_6_51
+    Position: {x: 4010.4, y: 453.59998}
+  - NodeGUID: 8d9833ca-13b0-4747-82e1-04f41a249386
+    DialogueText: Jour_6_52
+    Position: {x: 4248.8003, y: 455.19998}
+  - NodeGUID: 922032f0-4fbf-479b-85d9-fc7d37ae38c8
+    DialogueText: Jour_6_46
+    Position: {x: 4248.8003, y: 357.59998}
+  - NodeGUID: 7e9ca79a-83d7-4277-9f26-a53af4dd0069
+    DialogueText: Jour_6_45
+    Position: {x: 4009.5999, y: 356}
+  - NodeGUID: b5137cf9-2059-48f2-9085-f0cbc600f412
+    DialogueText: Jour_6_44
+    Position: {x: 3772.8, y: 351.19998}
+  - NodeGUID: 258521a3-6c7e-4671-bcad-f76936d8af27
+    DialogueText: Jour_6_43
+    Position: {x: 3534.4, y: 351.19998}
+  - NodeGUID: da9a9e2e-d902-49b9-852d-ef15be2b2e86
+    DialogueText: Jour_6_42
+    Position: {x: 3064.8, y: 350.4}
+  - NodeGUID: 8841131b-63fd-4041-8adf-78c423e20aa7
+    DialogueText: Jour_6_37
+    Position: {x: 3067.2, y: 252.00002}
+  - NodeGUID: 8c601d8d-3c5a-4d17-b2b8-2a137a118b3c
+    DialogueText: Jour_6_38
+    Position: {x: 3304.8, y: 252.8}
+  - NodeGUID: cac988a6-a51c-4e73-bd48-f59aa94af7b5
+    DialogueText: Jour_6_39
+    Position: {x: 3540.8, y: 254.40001}
+  - NodeGUID: 840064d5-e581-4cf9-a298-ee80a46996fb
+    DialogueText: Jour_6_40
+    Position: {x: 3778.4, y: 253.59999}
+  - NodeGUID: ac0b2ad1-3093-40f0-a963-fff521f53b35
+    DialogueText: Jour_6_30
+    Position: {x: 4249.6, y: 63.2}
+  - NodeGUID: 1fb18b95-d9e2-403d-a373-513e6cac40e0
+    DialogueText: Jour_6_31
+    Position: {x: 3068.8, y: 155.2}
+  - NodeGUID: e641e89d-346a-4eae-a3cd-d3586eedef1e
+    DialogueText: Jour_6_32
+    Position: {x: 3308, y: 157.6}
+  - NodeGUID: 005f2a1a-497e-4589-95d5-640d5fcf73cf
+    DialogueText: Jour_6_33
+    Position: {x: 3548, y: 158.40001}
+  - NodeGUID: 537b97bd-2341-42f0-a96c-09139acc3dca
+    DialogueText: Jour_6_34
+    Position: {x: 3787.2, y: 161.6}
+  - NodeGUID: 8fcd157d-388e-4a84-875a-48b55ab13d20
+    DialogueText: Jour_6_35
+    Position: {x: 4025.5999, y: 164.8}
+  - NodeGUID: fc808bc2-9698-4158-ab67-1a358fda9c0b
+    DialogueText: Jour_6_36
+    Position: {x: 4271.2, y: 163.2}
+  - NodeGUID: 541ec499-ccfb-46d4-b0a4-5a9bb46b67d3
+    DialogueText: Jour_6_41
+    Position: {x: 4264.8003, y: 254.40001}
+  - NodeGUID: 204276ba-31f3-4742-96c0-8a1d2a8408a5
+    DialogueText: Jour_6_25
+    Position: {x: 3069.5999, y: 54.399998}
+  - NodeGUID: ae384693-77ab-4c99-8bcd-a02a5fa27b9a
+    DialogueText: Jour_6_26
+    Position: {x: 3308.8, y: 55.999996}
+  - NodeGUID: e9423a06-bf3a-42c7-8b69-f15f6c244242
+    DialogueText: Jour_6_27
+    Position: {x: 3549.5999, y: 58.399998}
+  - NodeGUID: 87ec183e-ea7b-4df4-bf85-d76b26b3af7f
+    DialogueText: Jour_6_28
+    Position: {x: 3787.2, y: 62.399998}
+  - NodeGUID: 5cf14401-86b8-4399-aa19-6a24c9fceb16
+    DialogueText: Jour_6_29
+    Position: {x: 4024, y: 63.999996}
+  - NodeGUID: a63fd815-eeac-440e-bc38-fad60d03bcd9
+    DialogueText: Jour_6_20
+    Position: {x: 3068, y: -39.2}
+  - NodeGUID: 03c7fe8a-66f5-4700-8542-423e6b61037f
+    DialogueText: Jour_6_21
+    Position: {x: 3308.8, y: -41.6}
+  - NodeGUID: 4ecfebea-afe9-48f3-b6d6-75f1afa0558f
+    DialogueText: Jour_6_22
+    Position: {x: 3554.4, y: -41.6}
+  - NodeGUID: 3e012745-2a90-45c4-a667-f3bf05f8f6ba
+    DialogueText: Jour_6_23
+    Position: {x: 3796.8, y: -44}
+  - NodeGUID: b2e66a10-d34d-4cde-84fd-f789b5495c35
+    DialogueText: Jour_6_24
+    Position: {x: 4254.4004, y: -44}
+  - NodeGUID: 34d0c4e0-af5d-4814-8957-d08b8053debd
+    DialogueText: Jour_6_54
+    Position: {x: 3296, y: 557.6}
+  ExposedProperties: []
+  CommentBlockData: []
