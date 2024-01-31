@@ -16,15 +16,6 @@ MonoBehaviour:
   - BaseNodeGUID: a7ae2503-6fea-4b4a-867c-87e0d62d8cf6
     PortName: Next
     TargetNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
-  - BaseNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
-    PortName: poubellePrefab
-    TargetNodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
-  - BaseNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
-    PortName: frigoPrefab
-    TargetNodeGUID: 7ffea98a-3537-46a8-839f-58f5d96d1a88
-  - BaseNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
-    PortName: womanPrefab
-    TargetNodeGUID: 4a3700b2-a628-4834-9948-93023639d5d1
   - BaseNodeGUID: 7ffea98a-3537-46a8-839f-58f5d96d1a88
     PortName: poubellePrefab
     TargetNodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
@@ -34,10 +25,22 @@ MonoBehaviour:
   - BaseNodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
     PortName: monologuePrefab
     TargetNodeGUID: 549b745d-c3e3-40df-9eae-f23d36b9ca47
+  - BaseNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
+    PortName: poubellePrefab
+    TargetNodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
+  - BaseNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
+    PortName: frigoPrefab
+    TargetNodeGUID: 7ffea98a-3537-46a8-839f-58f5d96d1a88
+  - BaseNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
+    PortName: womanPrefab
+    TargetNodeGUID: 4a3700b2-a628-4834-9948-93023639d5d1
+  - BaseNodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
+    PortName: attendre
+    TargetNodeGUID: 7b47b797-eb7c-4468-a0c2-f218147794f5
+  - BaseNodeGUID: 7b47b797-eb7c-4468-a0c2-f218147794f5
+    PortName: attendre
+    TargetNodeGUID: f7b35052-f22d-40c7-8719-295ad899f6fa
   DialogueNodeData:
-  - NodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
-    DialogueText: Jour1_1
-    Position: {x: 260, y: 142}
   - NodeGUID: 4a3700b2-a628-4834-9948-93023639d5d1
     DialogueText: Jour1_4
     Position: {x: 674, y: 366}
@@ -50,5 +53,14 @@ MonoBehaviour:
   - NodeGUID: 5a6ccb69-9afd-45d7-bc55-2bf516404734
     DialogueText: Jour1_2
     Position: {x: 684, y: -35.333336}
+  - NodeGUID: 7b47b797-eb7c-4468-a0c2-f218147794f5
+    DialogueText: Jour1_4
+    Position: {x: 524.6667, y: 560.6667}
+  - NodeGUID: 22d4b4c2-14e3-463b-a3bd-2e01804c0d23
+    DialogueText: Jour1_1
+    Position: {x: 260, y: 142}
+  - NodeGUID: f7b35052-f22d-40c7-8719-295ad899f6fa
+    DialogueText: Jour1_3
+    Position: {x: 847.3333, y: 618}
   ExposedProperties: []
   CommentBlockData: []

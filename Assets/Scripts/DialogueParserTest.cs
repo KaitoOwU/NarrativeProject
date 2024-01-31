@@ -13,8 +13,12 @@ namespace Subtegral.DialogueSystem.Runtime
     {
         [SerializeField] private DialogueContainer dialogue;
         [SerializeField] private TextMeshProUGUI dialogueText;
-        //[SerializeField] private Button choicePrefab;
         [SerializeField] private Transform buttonContainer;
+
+        [SerializeField] private float choiceTimeout = 10f; // Temps en secondes avant le choix automatique
+        private bool isWaitingForChoice = false;
+
+        private Coroutine choiceTimeoutCoroutine;
 
         private void Start()
         {
@@ -24,39 +28,60 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private void ProceedToNarrative(string narrativeDataGUID)
         {
-            //FADE OUT PUIS FADE IN
+            
             var text = dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).DialogueText;
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
             dialogueText.text = GameManager.Instance.GetDialog(ProcessProperties(text));
             var buttons = buttonContainer.GetComponentsInChildren<Button>(true);
+            //FADE OUT PUIS FADE IN
+            var defaultChoice = choices.FirstOrDefault(x => x.PortName == "attendre");
+            if(defaultChoice != null)
+            {
+                StartChoiceTimeout(defaultChoice);
+            }
             for (int i = 0; i < buttons.Length; i++)
             {
-                //Destroy(buttons[i].gameObject);
                 buttons[i].gameObject.SetActive(false);
+                buttons[i].onClick.RemoveAllListeners();
             }
-
+            
             foreach (var choice in choices)
             {
-                /***
-                var button = Instantiate(choicePrefab, buttonContainer);
-                ButtonData buttonData = Resources.Load<ButtonData>("Buttons/" + ProcessProperties(choice.PortName));
-                Image image = button.GetComponentInParent<Image>();
-                RectTransform transform = button.GetComponentInParent<RectTransform>();
-                Sprite sprite = buttonData.sprite;
-                transform.sizeDelta = new Vector2(buttonData.height, buttonData.width);
-                transform.localPosition += new Vector3(buttonData.posX, buttonData.posY, 0);
-                image.sprite = sprite;
-                ***/
                 for (int i = 0; i < buttons.Length; i++)
                 {
-                    //Destroy(buttons[i].gameObject);
+                    ButtonDatas buttonData = buttons[i].gameObject.GetComponent<ButtonDatas>();
+                    Emotions chosenEmotion = buttonData._emotion;
                     if (buttons[i].gameObject.name == choice.PortName)
                     {
                         buttons[i].gameObject.SetActive(true);
-                        buttons[i].onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));
+                        buttons[i].onClick.AddListener(() =>
+                        {
+                            StopChoiceTimeout();
+                            AudioManager.Instance.Play(buttonData._soundName);
+                            AddEmotion(chosenEmotion);
+                            ProceedToNarrative(choice.TargetNodeGUID);
+                        });
                     }
                 }
-                //button.GetComponentInChildren<Text>().text = ProcessProperties(choice.PortName);
+            }
+        }
+
+        private void AddEmotion(Emotions emotion)
+        {
+            switch (emotion)
+            {
+                case Emotions.Positive:
+                    GameManager.Instance._emotions[0] ++;
+                    break;
+                case Emotions.Neutral:
+                    GameManager.Instance._emotions[1] ++;
+                    break;
+                case Emotions.Negative:
+                    GameManager.Instance._emotions[2] ++;
+                    break;
+                case Emotions.NoEmotion:
+                    GameManager.Instance._emotions[3] ++;
+                    break;
             }
         }
 
@@ -67,6 +92,33 @@ namespace Subtegral.DialogueSystem.Runtime
                 text = text.Replace($"[{exposedProperty.PropertyName}]", exposedProperty.PropertyValue);
             }
             return text;
+        }
+
+        private void StartChoiceTimeout(NodeLinkData defaultChoice)
+        {
+            isWaitingForChoice = true;
+            choiceTimeoutCoroutine = StartCoroutine(ChoiceTimeout(defaultChoice));
+        }
+
+        private void StopChoiceTimeout()
+        {
+            isWaitingForChoice = false;
+            if (choiceTimeoutCoroutine != null)
+            {
+                StopCoroutine(choiceTimeoutCoroutine);
+            }
+        }
+
+        private IEnumerator ChoiceTimeout(NodeLinkData defaultChoice)
+        {
+            yield return new WaitForSeconds(choiceTimeout);
+            if (isWaitingForChoice)
+            {
+                if (defaultChoice != null)
+                {
+                    ProceedToNarrative(defaultChoice.TargetNodeGUID);
+                }
+            }
         }
     }
 }
