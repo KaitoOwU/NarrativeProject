@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Security.Cryptography;
 using DG.Tweening;
 using Kaito.CSVParser;
 using UnityEngine;
@@ -23,7 +24,13 @@ public class GameManager : MonoBehaviour
 
     public static readonly Dictionary<Mood, (Color gradiantStart, Color gradiantEnd)> MoodColor = new()
     {
-        {Mood.TIRED, (Color.RGBToHSV(), new Color())}
+        { Mood.HAPPY, (new Color(1f, .8f, 0f), new Color(.75f, .6f, 0f))},
+        { Mood.SAD, (new Color(.1f, 0.15f, .9f), new Color(0f, .05f, 0.65f))},
+        { Mood.REALLY_SAD, (new Color(0f, 0f, 0.40f), new Color(0f, 0f, .25f))},
+        { Mood.LOW_ANGRY, (new Color(1f, .15f, 0.25f), new Color(.63f, 0f, .1f))},
+        { Mood.ANGRY, (new Color(.63f, 0f, .1f), new Color(.3f, 0f, .05f))},
+        { Mood.BLUSHING, (new Color(.95f, .4f, 1f), new Color(.6f, .25f, .6f))},
+        { Mood.IN_LOVE, (new Color(1f, 0f, 0.7f), new Color(.7f, 0f, .5f))}
     };
     
     [SerializeField] private Image _fade;
