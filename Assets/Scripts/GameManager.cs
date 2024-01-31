@@ -94,6 +94,14 @@ public class GameManager : MonoBehaviour
         GameLanguage = value;
         OnGameLanguageChange.Invoke(GameLanguage);
     }
+    
+    public IEnumerator CR_MoveObject(GameObject obj, Vector2 newPos)
+    {
+        SpriteRenderer sprite = obj.GetComponent<SpriteRenderer>();
+        yield return sprite.DOFade(0f, 1f).WaitForCompletion();
+        obj.transform.position = newPos;
+        yield return sprite.DOFade(1f, 1f).WaitForCompletion();
+    }
 
     public IEnumerator CR_EndScenario(Action callback)
     {
