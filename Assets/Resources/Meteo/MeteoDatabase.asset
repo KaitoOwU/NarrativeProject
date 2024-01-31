@@ -12,3 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8cfe275d29234f44bbaa85a4b33e364, type: 3}
   m_Name: MeteoDatabase
   m_EditorClassIdentifier: 
+  dayDatabase:
+  - day: 0
+    meteoData:
+      meteo: 1
+      mood: 0
+  - day: 1
+    meteoData:
+      meteo: 1
+      mood: 0
+  - day: 2
+    meteoData:
+      meteo: 1
+      mood: 0
+  - day: 3
+    meteoData:
+      meteo: 1
+      mood: 0
+  - day: 4
+    meteoData:
+      meteo: 2
+      mood: 0
+  - day: 5
+    meteoData:
+      meteo: 1
+      mood: 0
+  - day: 6
+    meteoData:
+      meteo: 1
+      mood: 0

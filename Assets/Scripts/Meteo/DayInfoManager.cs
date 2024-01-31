@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DayInfoManager : MonoBehaviour
@@ -20,8 +21,6 @@ public class DayInfoManager : MonoBehaviour
     private IEnumerator CR_Transition()
     {
         _description.DOText(GameManager.Instance.GetDialog($"DAY{(int)GameManager.Instance.Day}_DESC"), 1f);
-        yield return _transitionImg.DOFade(0f, 1f).WaitForCompletion();
-        
         switch(GameManager.Instance.GetCurrentDayData().meteo)
         {
             case Meteo.SUNNY:
@@ -34,9 +33,12 @@ public class DayInfoManager : MonoBehaviour
                 _rainyObj.SetActive(true);
                 break;
         }
+        
+        yield return _transitionImg.DOFade(0f, 1f).WaitForCompletion();
 
         yield return new WaitForSecondsRealtime(5f);
         
         yield return _transitionImg.DOFade(1f, 1f).WaitForCompletion();
+        GameManager.Instance.StartUwu();
     }
 }
