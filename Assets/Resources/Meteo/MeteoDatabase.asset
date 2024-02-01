@@ -16,28 +16,28 @@ MonoBehaviour:
   - day: 0
     meteoData:
       meteo: 1
-      mood: 0
+      mood: 1
   - day: 1
     meteoData:
-      meteo: 1
-      mood: 0
+      meteo: 0
+      mood: 1
   - day: 2
     meteoData:
-      meteo: 1
-      mood: 0
+      meteo: 2
+      mood: 2
   - day: 3
     meteoData:
       meteo: 1
-      mood: 0
+      mood: 8
   - day: 4
     meteoData:
       meteo: 2
       mood: 0
   - day: 5
     meteoData:
-      meteo: 1
-      mood: 0
+      meteo: 0
+      mood: 2
   - day: 6
     meteoData:
-      meteo: 1
-      mood: 0
+      meteo: 0
+      mood: 1

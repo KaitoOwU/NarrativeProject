@@ -67,6 +67,11 @@ public class GameManager : MonoBehaviour
         _dialogDatabase = CSV.Unparse("Assets/Resources/Dialog.csv");
     }
 
+    private void Start()
+    {
+        _fade.DOFade(0f, 1f);
+    }
+
     public void StartUwu() => StartCoroutine(CR_Start());
 
     public IEnumerator CR_Start()
@@ -130,5 +135,14 @@ public class GameManager : MonoBehaviour
     public void ChangeMood(Mood newMood, Vector2 playerPos)
     {
         InkStain.CreateStain(450f, playerPos).StartAnimation(() => ChangeMood(newMood), newMood);
+    }
+
+
+
+
+
+    public void StartGame()
+    {
+        _fade.DOFade(1f, 1f).OnComplete(() => SceneManager.LoadScene("WeekScene"));
     }
 }
