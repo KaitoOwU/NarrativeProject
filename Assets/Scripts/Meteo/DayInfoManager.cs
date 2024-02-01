@@ -31,7 +31,7 @@ public class DayInfoManager : MonoBehaviour
         
         yield return _transitionImg.DOFade(0f, 1f).WaitForCompletion();
 
-        yield return new WaitForSecondsRealtime(5f);
+        yield return new WaitForSecondsRealtime(2.5f);
         
         yield return _transitionImg.DOFade(1f, 1f).WaitForCompletion();
         GameManager.Instance.StartUwu();
