@@ -95,7 +95,7 @@ MonoBehaviour:
     PortName: monologuePrefab
     TargetNodeGUID: 5e61e24e-3cdc-4a65-8ae5-b08db976df6b
   - BaseNodeGUID: 21d9aab0-1e37-4ff7-846c-6a8acc0b8395
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
   - BaseNodeGUID: 5f5208ad-0e76-4011-86b9-2090ec0962f6
     PortName: monologuePrefab
@@ -158,7 +158,7 @@ MonoBehaviour:
     PortName: monologuePrefab
     TargetNodeGUID: 92647663-e046-4953-8b5d-4bd86d9e39b0
   - BaseNodeGUID: 1fbe96ba-b682-434c-83a7-606cdea5692d
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
   - BaseNodeGUID: b686cfa9-d11b-4914-9532-c0789741e0c4
     PortName: monologuePrefab
@@ -173,7 +173,7 @@ MonoBehaviour:
     PortName: monologuePrefab
     TargetNodeGUID: 29982670-e8a8-46b1-85cb-b5989d3b16ed
   - BaseNodeGUID: 29982670-e8a8-46b1-85cb-b5989d3b16ed
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
   - BaseNodeGUID: a316d9f1-4a93-422f-b5c7-ebbc0709e3b4
     PortName: monologuePrefab
@@ -245,7 +245,7 @@ MonoBehaviour:
     PortName: monologuePrefab
     TargetNodeGUID: 8612cacc-6278-489f-935b-4c54347bca0f
   - BaseNodeGUID: 8612cacc-6278-489f-935b-4c54347bca0f
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
   - BaseNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
     PortName: Purr
@@ -269,19 +269,19 @@ MonoBehaviour:
     PortName: Lick
     TargetNodeGUID: cb1e1ea5-5898-4276-b3f2-4c958b59d889
   - BaseNodeGUID: af3b1507-7b3b-42d7-9226-6364c06da466
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
   - BaseNodeGUID: 238e70b6-4c1a-474f-99ed-9788baa49b37
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
   - BaseNodeGUID: 8f15e9fe-6368-499b-81a8-115f14c32c8b
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
   - BaseNodeGUID: 22ec9013-7760-41df-ac73-4dd1979a9096
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 8a4dcd53-628d-4229-9ec8-f715f320730f
   - BaseNodeGUID: 5cea172d-e13b-4afc-88fe-12b617558041
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 43207415-85b9-4793-8e6a-4fa8eeb2c2ae
   - BaseNodeGUID: 675af5e3-1282-4fd8-adc4-bfad35ed8f34
     PortName: monologuePrefab
@@ -293,7 +293,7 @@ MonoBehaviour:
     PortName: monologuePrefab
     TargetNodeGUID: 6691c255-cfc3-4b04-b0e6-f7818434ec42
   - BaseNodeGUID: ae61afbe-6534-48ed-bc6b-a08e3c142db6
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
   - BaseNodeGUID: de452e12-8662-4c67-841b-eece6b73dd4e
     PortName: monologuePrefab
