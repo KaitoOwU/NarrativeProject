@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
-  m_Name: Mardi_Jour_3_Jules
+  m_Name: Mardi_Jour_3
   m_EditorClassIdentifier: 
   NodeLinks:
   - BaseNodeGUID: 650baa28-f6eb-4527-8632-10480c13e3e0
