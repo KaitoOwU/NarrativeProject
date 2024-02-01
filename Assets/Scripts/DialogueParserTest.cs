@@ -35,7 +35,6 @@ namespace Subtegral.DialogueSystem.Runtime
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
             dialogueText.text = GameManager.Instance.GetDialog(ProcessProperties(text));
             var buttons = buttonContainer.GetComponentsInChildren<Button>(true);
-            //FADE OUT PUIS FADE IN
             var defaultChoice = choices.FirstOrDefault(x => x.PortName == "attendre");
             if (defaultChoice != null)
             {
@@ -75,7 +74,7 @@ namespace Subtegral.DialogueSystem.Runtime
                 {
                     if (buttons[i].gameObject.name == "monologuePrefab")
                     {
-                        StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("sonBanger", Emotions.NoEmotion, choices.ToList()[0])));
+                        StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituationMonologue("sonBanger", Emotions.NoEmotion, choices.ToList()[0])));
                         return;
                     }
                 }
@@ -103,7 +102,7 @@ namespace Subtegral.DialogueSystem.Runtime
                         {
                             buttons[i].onClick.AddListener(() =>
                             {
-                                ChangeSituation(buttonData._soundName, chosenEmotion, choice);
+                                ChangeSituationMonologue(buttonData._soundName, chosenEmotion, choice);
                             }); ;
                         }
                     }
@@ -111,7 +110,31 @@ namespace Subtegral.DialogueSystem.Runtime
             }
         }
 
+        private Mood TranslateMood(Emotions emotion)
+        {
+            switch(emotion)
+            {
+                case Emotions.Positive:
+                    return Mood.HAPPY;
+                case Emotions.Negative:
+                    return Mood.SAD;
+                case Emotions.Neutral:
+                    return Mood.NEUTRAL;
+            }
+            return Mood.NEUTRAL;
+        }
+
         private void ChangeSituation(string soundName, Emotions chosenEmotion, NodeLinkData choice)
+        {
+            Vector2 playerPos = new Vector2(0, 0);
+            GameManager.Instance.ChangeMood(TranslateMood(chosenEmotion), playerPos);
+            StopChoiceTimeout();
+            AudioManager.Instance.Play(soundName);
+            AddEmotion(chosenEmotion);
+            ProceedToNarrative(choice.TargetNodeGUID);
+        }
+
+        private void ChangeSituationMonologue(string soundName, Emotions chosenEmotion, NodeLinkData choice)
         {
             StopChoiceTimeout();
             AudioManager.Instance.Play(soundName);

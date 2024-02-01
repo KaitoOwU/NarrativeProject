@@ -9,38 +9,35 @@ public class InkStain : MonoBehaviour
     
     
     
-    public static InkStain CreateStain(float scale = 1f, Vector2 position = new())
+    public static InkStain CreateStain(float scale = 450f, Vector2 position = new())
     {
-        var stain = Instantiate(Resources.Load<GameObject>("Prefabs/InkStain"), position, Quaternion.identity).GetComponent<InkStain>();
+        var stain = Instantiate(Resources.Load<GameObject>("Prefabs/InkStain"), new Vector3(position.x, position.y, 90), Quaternion.identity).GetComponent<InkStain>();
         stain.transform.localScale = Vector3.one * scale;
         
         return stain;
     }
 
-    public void StartAnimation(Mood mood, float duration = 1f) => StartCoroutine(PlayAnimation(mood, duration));
-    public void StartAnimation(float duration = 1f) => StartCoroutine(PlayAnimation(GameManager.Instance.CurrentMood, duration));
+    public void StartAnimation(Action callback, Mood mood) => StartCoroutine(PlayAnimation(callback, mood));
+    public void StartAnimation(Action callback) => StartCoroutine(PlayAnimation(callback, GameManager.Instance.CurrentMood));
 
-    private IEnumerator PlayAnimation(Mood mood, float duration)
+    private IEnumerator PlayAnimation(Action callback, Mood mood)
     {
         Material m = GetComponent<SpriteRenderer>().material;
         m.SetColor("_Color1", GameManager.MoodColor[mood].gradiantStart);
         m.SetColor("_Color2", GameManager.MoodColor[mood].gradiantEnd);
         
-        
         DOTween.To(x =>
         {
-            m.SetFloat(Shader.PropertyToID("_Alpha"), x);
-        }, .6f, .01f, 5f);
-        yield return DOTween.To(x =>
-        {
             m.SetFloat(Shader.PropertyToID("_Size"), x);
-        }, -0.6f, .6f, 7f).SetEase(Ease.OutExpo).WaitForCompletion();
-
-        yield return new WaitForSecondsRealtime(duration);
+        }, -0.6f, .6f, 6f).SetEase(Ease.OutExpo);
+        
+        yield return new WaitForSecondsRealtime(2.5f);
+        callback.Invoke();
+        
         yield return DOTween.To(x =>
         {
             m.SetFloat(Shader.PropertyToID("_Alpha"), x);
-        }, .01f, 0f, 0.5f).WaitForCompletion();
+        }, .9f, 0f, 5f).WaitForCompletion();
         
         Destroy(gameObject);
     }
