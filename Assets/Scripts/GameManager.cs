@@ -47,8 +47,10 @@ public class GameManager : MonoBehaviour
     }
 
     public Day Day { get; private set; } = Day.SUNDAY;
+    public Mood CurrentMood { get; private set; }
 
     public Action<Language> OnGameLanguageChange;
+    public Action<Mood> OnMoodChange;
 
     private void Awake()
     {
@@ -62,6 +64,11 @@ public class GameManager : MonoBehaviour
         Instance = this;
         _emotions = new List<int> { 0, 0, 0, 0 };
         _dialogDatabase = CSV.Unparse("Assets/Resources/Dialog.csv");
+    }
+
+    private void Start()
+    {
+        ChangeMood(Mood.HAPPY, Vector3.zero);
     }
 
     public void StartUwu() => StartCoroutine(CR_Start());
@@ -116,5 +123,17 @@ public class GameManager : MonoBehaviour
         yield return UIManager.Instance.Fade.DOFade(1f, 1f).WaitForCompletion();
         Day++;
         yield return SceneManager.LoadSceneAsync("WeekScene");
+    }
+
+    public void ChangeMood(Mood newMood)
+    {
+        CurrentMood = newMood;
+        OnMoodChange?.Invoke(newMood);
+    }
+
+    public void ChangeMood(Mood newMood, Vector2 playerPos)
+    {
+        ChangeMood(newMood);
+        InkStain.CreateStain(10f, playerPos).StartAnimation();
     }
 }
