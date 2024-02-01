@@ -48,7 +48,10 @@ namespace Subtegral.DialogueSystem.Runtime
             }
             for (int i = 0; i < buttons.Length; i++)
             {
-                buttons[i].gameObject.SetActive(false);
+                if (buttons[i].gameObject.name == "monologuePrefab")
+                {
+                    buttons[i].gameObject.SetActive(false);
+                }
                 buttons[i].onClick.RemoveAllListeners();
             }
 
@@ -74,8 +77,12 @@ namespace Subtegral.DialogueSystem.Runtime
                 {
                     if (buttons[i].gameObject.name == "monologuePrefab")
                     {
-                        StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituationMonologue("sonBanger", Emotions.NoEmotion, choices.ToList()[0])));
-                        return;
+                        buttons[i].gameObject.SetActive(true);
+                        buttons[i].onClick.AddListener(() =>
+                        {
+                            StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituationMonologue("sonBanger", Emotions.NoEmotion, choices.ToList()[0])));
+                            return;
+                        });
                     }
                 }
             }
@@ -85,25 +92,26 @@ namespace Subtegral.DialogueSystem.Runtime
             {
                 for (int i = 0; i < buttons.Length; i++)
                 {
-                    ButtonDatas buttonData = buttons[i].gameObject.GetComponent<ButtonDatas>();
+                    ButtonDatas buttonData = buttons[i].gameObject.GetComponentInChildren<ButtonDatas>();
                     Emotions chosenEmotion = buttonData._emotion;
                     if (buttons[i].gameObject.name == choice.PortName)
                     {
-                        buttons[i].gameObject.SetActive(true);
                         if (buttons[i].gameObject.name != "monologuePrefab")
                         {
                             buttons[i].onClick.AddListener(() =>
                             {
                                 ChangeSituation(buttonData._soundName, chosenEmotion, choice);
                                 //StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation(buttonData._soundName, chosenEmotion, choice)));
-                            }); ;
+                            });
+                            Debug.Log("Listener added on " + buttons[i].gameObject.name);
                         }
                         else
                         {
+                            buttons[i].gameObject.SetActive(true);
                             buttons[i].onClick.AddListener(() =>
                             {
                                 ChangeSituationMonologue(buttonData._soundName, chosenEmotion, choice);
-                            }); ;
+                            });
                         }
                     }
                 }
