@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ namespace Subtegral.DialogueSystem.Runtime
     public class DialogueParserTest : MonoBehaviour
     {
         [SerializeField] private DialogueContainer dialogue;
+        [SerializeField] private CanvasGroup _group;
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private Transform buttonContainer;
 
@@ -35,6 +37,7 @@ namespace Subtegral.DialogueSystem.Runtime
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
             
             //APPARAITRE BOITE DIALOGUE
+            _group.DOFade(1f, 0.5f);
             
             dialogueText.text = GameManager.Instance.GetDialog(ProcessProperties(text)); //REMPLISSAGE DU TEXTE
             var buttons = buttonContainer.GetComponentsInChildren<Button>(true);
