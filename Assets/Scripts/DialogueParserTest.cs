@@ -69,6 +69,17 @@ namespace Subtegral.DialogueSystem.Runtime
                 return;
             }
 
+            if(choices.ToList().Count == 1 && choices.ToList()[0].PortName == "changeSituation")
+            {
+                for (int i = 0; i < buttons.Length; i++)
+                {
+                    if (buttons[i].gameObject.name == "monologuePrefab")
+                    {
+                        StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("sonBanger", Emotions.NoEmotion, choices.ToList()[0])));
+                        return;
+                    }
+                }
+            }
 
 
             foreach (var choice in choices)
@@ -170,16 +181,20 @@ namespace Subtegral.DialogueSystem.Runtime
             switch (randomNumber)
             {
                 case 0:
-                    StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("Purr", Emotions.Positive, choices.FirstOrDefault(x => x.PortName == "Purr"))));
+                    ChangeSituation("Purr", Emotions.Positive, choices.FirstOrDefault(x => x.PortName == "Purr"));
+                    //StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("Purr", Emotions.Positive, choices.FirstOrDefault(x => x.PortName == "Purr"))));
                     break;
                 case 1:
-                    StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("LittleMeow", Emotions.Neutral, choices.FirstOrDefault(x => x.PortName == "LittleMeow"))));
+                    ChangeSituation("LittleMeow", Emotions.Neutral, choices.FirstOrDefault(x => x.PortName == "LittleMeow"));
+                    //StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("LittleMeow", Emotions.Neutral, choices.FirstOrDefault(x => x.PortName == "LittleMeow"))));
                     break;
                 case 2:
-                    StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("Lick", Emotions.Neutral, choices.FirstOrDefault(x => x.PortName == "Lick"))));
+                    ChangeSituation("Lick", Emotions.Neutral, choices.FirstOrDefault(x => x.PortName == "Lick"));
+                    //StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("Lick", Emotions.Neutral, choices.FirstOrDefault(x => x.PortName == "Lick"))));
                     break;
                 case 3:
-                    StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("BigMeow", Emotions.Negative, choices.FirstOrDefault(x => x.PortName == "BigMeow"))));
+                    ChangeSituation("BigMeow", Emotions.Negative, choices.FirstOrDefault(x => x.PortName == "BigMeow"));
+                    //StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("BigMeow", Emotions.Negative, choices.FirstOrDefault(x => x.PortName == "BigMeow"))));
                     break;
             }
         }
