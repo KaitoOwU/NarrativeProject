@@ -31,9 +31,12 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private void ProceedToNarrative(string narrativeDataGUID)
         {
-            var text = dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).DialogueText;
+            var text = dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).DialogueText; //ID
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
-            dialogueText.text = GameManager.Instance.GetDialog(ProcessProperties(text));
+            
+            //APPARAITRE BOITE DIALOGUE
+            
+            dialogueText.text = GameManager.Instance.GetDialog(ProcessProperties(text)); //REMPLISSAGE DU TEXTE
             var buttons = buttonContainer.GetComponentsInChildren<Button>(true);
             var defaultChoice = choices.FirstOrDefault(x => x.PortName == "attendre");
             if (defaultChoice != null)
