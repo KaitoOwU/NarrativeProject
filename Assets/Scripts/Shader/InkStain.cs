@@ -17,27 +17,31 @@ public class InkStain : MonoBehaviour
         return stain;
     }
 
-    public void Start()
-    {
-        StartCoroutine(PlayAnimation(Mood.BLUSHING));
-    }
+    public void StartAnimation(Mood mood, float duration = 1f) => StartCoroutine(PlayAnimation(mood, duration));
+    public void StartAnimation(float duration = 1f) => StartCoroutine(PlayAnimation(GameManager.Instance.CurrentMood, duration));
 
-    private IEnumerator PlayAnimation(Mood mood)
+    private IEnumerator PlayAnimation(Mood mood, float duration)
     {
         Material m = GetComponent<SpriteRenderer>().material;
         m.SetColor("_Color1", GameManager.MoodColor[mood].gradiantStart);
         m.SetColor("_Color2", GameManager.MoodColor[mood].gradiantEnd);
         
-        DOTween.To(x =>
-        {
-            m.SetFloat(Shader.PropertyToID("_Size"), x);
-        }, -0.6f, .6f, 7f).SetEase(Ease.OutExpo);
         
         DOTween.To(x =>
         {
             m.SetFloat(Shader.PropertyToID("_Alpha"), x);
         }, .6f, .01f, 5f);
+        yield return DOTween.To(x =>
+        {
+            m.SetFloat(Shader.PropertyToID("_Size"), x);
+        }, -0.6f, .6f, 7f).SetEase(Ease.OutExpo).WaitForCompletion();
 
-        yield break;
+        yield return new WaitForSecondsRealtime(duration);
+        yield return DOTween.To(x =>
+        {
+            m.SetFloat(Shader.PropertyToID("_Alpha"), x);
+        }, .01f, 0f, 0.5f).WaitForCompletion();
+        
+        Destroy(gameObject);
     }
 }
