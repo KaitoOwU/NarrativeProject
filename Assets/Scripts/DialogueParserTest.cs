@@ -35,17 +35,25 @@ namespace Subtegral.DialogueSystem.Runtime
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
             dialogueText.text = GameManager.Instance.GetDialog(ProcessProperties(text));
             var buttons = buttonContainer.GetComponentsInChildren<Button>(true);
+
+            //TEST TIMER
             var defaultChoice = choices.FirstOrDefault(x => x.PortName == "attendre");
             if (defaultChoice != null)
             {
                 StartChoiceTimeout(defaultChoice);
             }
+
+            //ON ENLEVE TOUS LE BOUTTON DU CHAT
             _playerButton.onClick.RemoveAllListeners();
+
+            //TEST SI LE CHAT EST CLIQUABLE
             var catChoice = choices.FirstOrDefault(x => x.PortName == "Purr");
             if (catChoice != null)
             {
                 _playerButton.onClick.AddListener(() => RandomPlayerAnimation(narrativeDataGUID));
             }
+
+            //ON DESACTIVE TOUS LES BOUTTONS
             for (int i = 0; i < buttons.Length; i++)
             {
                 if (buttons[i].gameObject.name == "monologuePrefab")
@@ -55,6 +63,8 @@ namespace Subtegral.DialogueSystem.Runtime
                 buttons[i].onClick.RemoveAllListeners();
             }
 
+
+            //TEST SI FIN DE JOURNEE
             if(choices.ToList().Count == 0)
             {
                 for (int i = 0; i < buttons.Length; i++)
@@ -71,6 +81,8 @@ namespace Subtegral.DialogueSystem.Runtime
                 return;
             }
 
+
+            //TEST SI CHANGEMENT DE SITUATION
             if(choices.ToList().Count == 1 && choices.ToList()[0].PortName == "changeSituation")
             {
                 for (int i = 0; i < buttons.Length; i++)
@@ -92,7 +104,7 @@ namespace Subtegral.DialogueSystem.Runtime
             {
                 for (int i = 0; i < buttons.Length; i++)
                 {
-                    ButtonDatas buttonData = buttons[i].gameObject.GetComponentInChildren<ButtonDatas>();
+                    ButtonDatas buttonData = buttons[i].gameObject.GetComponent<ButtonDatas>();
                     Emotions chosenEmotion = buttonData._emotion;
                     if (buttons[i].gameObject.name == choice.PortName)
                     {
