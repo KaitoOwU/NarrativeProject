@@ -30,7 +30,8 @@ public class GameManager : MonoBehaviour
         { Mood.LOW_ANGRY, (new Color(1f, .15f, 0.25f), new Color(.63f, 0f, .1f))},
         { Mood.ANGRY, (new Color(.63f, 0f, .1f), new Color(.3f, 0f, .05f))},
         { Mood.BLUSHING, (new Color(.95f, .4f, 1f), new Color(.6f, .25f, .6f))},
-        { Mood.IN_LOVE, (new Color(1f, 0f, 0.7f), new Color(.7f, 0f, .5f))}
+        { Mood.IN_LOVE, (new Color(1f, 0f, 0.7f), new Color(.7f, 0f, .5f))},
+        { Mood.AWKWARD, (new Color(.15f, .7f, .15f), new Color(.12f, 0.4f, .12f))}
     };
 
     public List<int> _emotions;
