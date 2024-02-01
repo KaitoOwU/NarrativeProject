@@ -35,23 +35,33 @@ namespace Subtegral.DialogueSystem.Runtime
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
             dialogueText.text = GameManager.Instance.GetDialog(ProcessProperties(text));
             var buttons = buttonContainer.GetComponentsInChildren<Button>(true);
+
+            //TEST SI TIMER
             var defaultChoice = choices.FirstOrDefault(x => x.PortName == "attendre");
             if (defaultChoice != null)
             {
                 StartChoiceTimeout(defaultChoice);
             }
+
+            //BOUTTONS DU CHAT
             _playerButton.onClick.RemoveAllListeners();
             var catChoice = choices.FirstOrDefault(x => x.PortName == "Purr");
             if (catChoice != null)
             {
                 _playerButton.onClick.AddListener(() => RandomPlayerAnimation(narrativeDataGUID));
             }
+
+            //ON DESACTIVE LES BOUTTONS
             for (int i = 0; i < buttons.Length; i++)
             {
-                buttons[i].gameObject.SetActive(false);
+                if (buttons[i].gameObject.name == "monologuePrefab")
+                {
+                    buttons[i].gameObject.SetActive(false);
+                }
                 buttons[i].onClick.RemoveAllListeners();
             }
 
+            //Test si fin de journée
             if(choices.ToList().Count == 0)
             {
                 for (int i = 0; i < buttons.Length; i++)
@@ -63,18 +73,23 @@ namespace Subtegral.DialogueSystem.Runtime
                         {
                             StartCoroutine(GameManager.Instance.CR_EndDay());
                         }); ;
+                        return;
                     }
                 }
-                return;
             }
 
+            //Test si changement de situation
             if(choices.ToList().Count == 1 && choices.ToList()[0].PortName == "changeSituation")
             {
                 for (int i = 0; i < buttons.Length; i++)
                 {
                     if (buttons[i].gameObject.name == "monologuePrefab")
                     {
-                        StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituationMonologue("sonBanger", Emotions.NoEmotion, choices.ToList()[0])));
+                        buttons[i].gameObject.SetActive(true);
+                        buttons[i].onClick.AddListener(() =>
+                        {
+                            StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituationMonologue("sonBanger", Emotions.NoEmotion, choices.ToList()[0])));
+                        }); ;
                         return;
                     }
                 }
