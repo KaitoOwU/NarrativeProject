@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
+using DG.Tweening.Core;
+using DG.Tweening.Plugins.Options;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,6 +24,7 @@ namespace Subtegral.DialogueSystem.Runtime
         private bool isWaitingForChoice = false;
 
         private Coroutine choiceTimeoutCoroutine;
+        private List<Image> _tweens = new();
 
         private Button _playerButton;
 
@@ -38,6 +41,11 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private IEnumerator ProceedToNarrative(string narrativeDataGUID)
         {
+            _tweens.ForEach(img =>
+            {
+                DOTween.Kill(img);
+                img.DOFade(1f, 0f);
+            });
             var text = dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).DialogueText; //ID
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
 
@@ -58,6 +66,12 @@ namespace Subtegral.DialogueSystem.Runtime
             if (catChoice != null)
             {
                 _playerButton.onClick.AddListener(() => RandomPlayerAnimation(narrativeDataGUID));
+                Image img = _playerButton.GetComponent<Image>();
+                _tweens.Add(img);
+                img.DOFade(0.7f, 1f).OnComplete(() =>
+                {
+                    img.DOFade(1f, 0f);
+                }).SetLoops(-1);
             }
             for (int i = 0; i < buttons.Length; i++)
             {
@@ -111,14 +125,21 @@ namespace Subtegral.DialogueSystem.Runtime
                             {
                                 ChangeSituation(buttonData._soundName, chosenEmotion, choice);
                                 //StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation(buttonData._soundName, chosenEmotion, choice)));
-                            }); ;
+                            });
+                            
+                            Image img = buttons[i].transform.parent.GetComponent<Image>();
+                            _tweens.Add(img);
+                            img.DOFade(0.7f, 1f).OnComplete(() =>
+                            {
+                                img.DOFade(1f, 0f);
+                            }).SetLoops(-1);
                         }
                         else
                         {
                             buttons[i].onClick.AddListener(() =>
                             {
                                 ChangeSituationMonologue(buttonData._soundName, chosenEmotion, choice);
-                            }); ;
+                            });
                         }
                     }
                 }

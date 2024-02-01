@@ -8,13 +8,15 @@ using UnityEngine.UI;
 public class DialogBox : MonoBehaviour
 {
     [SerializeField] private Image _triangle;
+    private float _default;
 
 
     private void Start()
     {
-        _triangle.transform.DOLocalMoveY(1, 0.5f).OnComplete(() =>
+        _default = _triangle.transform.localPosition.y;
+        _triangle.transform.DOLocalMoveY(_default + 20, 0.5f).OnComplete(() =>
         {
-            _triangle.transform.DOLocalMoveY(-1f, 0f);
+            _triangle.transform.DOLocalMoveY(_default, 0f);
         }).SetLoops(-1);
     }
 
