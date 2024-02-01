@@ -55,7 +55,6 @@ namespace Subtegral.DialogueSystem.Runtime
 
             if(choices.ToList().Count == 0)
             {
-                Debug.Log("quoicoubeh");
                 for (int i = 0; i < buttons.Length; i++)
                 {
                     if (buttons[i].gameObject.name == "monologuePrefab")
@@ -69,10 +68,8 @@ namespace Subtegral.DialogueSystem.Runtime
                 }
                 return;
             }
-            else
-            {
-                Debug.Log(choices.ToString());
-            }
+
+
 
             foreach (var choice in choices)
             {
@@ -85,15 +82,14 @@ namespace Subtegral.DialogueSystem.Runtime
                         buttons[i].gameObject.SetActive(true);
                         if (buttons[i].gameObject.name != "monologuePrefab")
                         {
-                            Debug.Log("Pas de monologue");
                             buttons[i].onClick.AddListener(() =>
                             {
-                                StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation(buttonData._soundName, chosenEmotion, choice)));
+                                ChangeSituation(buttonData._soundName, chosenEmotion, choice);
+                                //StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation(buttonData._soundName, chosenEmotion, choice)));
                             }); ;
                         }
                         else
                         {
-                            Debug.Log("Monologue");
                             buttons[i].onClick.AddListener(() =>
                             {
                                 ChangeSituation(buttonData._soundName, chosenEmotion, choice);
