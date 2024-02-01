@@ -51,7 +51,8 @@ public enum Mood
     LOW_ANGRY,
     ANGRY,
     BLUSHING,
-    IN_LOVE
+    IN_LOVE,
+    AWKWARD
 }
 
 [Serializable]
