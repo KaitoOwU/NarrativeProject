@@ -66,11 +66,6 @@ public class GameManager : MonoBehaviour
         _dialogDatabase = CSV.Unparse("Assets/Resources/Dialog.csv");
     }
 
-    private void Start()
-    {
-        ChangeMood(Mood.HAPPY, Vector3.zero);
-    }
-
     public void StartUwu() => StartCoroutine(CR_Start());
 
     public IEnumerator CR_Start()
