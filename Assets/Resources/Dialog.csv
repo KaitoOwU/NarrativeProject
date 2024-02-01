@@ -11,24 +11,24 @@ Jour_1_1;<i>Foosteps coming closer</i>;a
 Jour_1_2;<i>Keys jiggling</i>;a
 Jour_1_3;<i>Keys turning in the door</i>;a
 Jour_1_4;<i>Door opening</i>;a
-Jour_1_5;<wave a=1 w=100>Sigh…</wave>;a
+Jour_1_5;<wave a=0.3 w=1>Sigh…</wave>;a
 Jour_1_6;Oh, Milo. How are you doing, my boy?;a
 Jour_1_7;Awww, purring for me? I guess you had a good day at home.;a
-Jour_1_8;<wave a=1 w=100>Sigh…</wave> Knowing you I’m going to find cat’s hair on my clothes again since I left them on my bed this morning.;a
+Jour_1_8;<wave a=0.3 w=1>Sigh…</wave> Knowing you I’m going to find cat’s hair on my clothes again since I left them on my bed this morning.;a
 Jour_1_9;Well, it doesn’t matter, we’re home now, let’s go eat.;a
-Jour_1_10;What? Why meow? Are you hungry again? But your bowl was full at noon? <wave a=1 w=100> Let me see… <wave>;a
+Jour_1_10;What? Why meow? Are you hungry again? But your bowl was full at noon? <wave a=0.3 w=1> Let me see… <wave>;a
 Jour_1_11;Oh yes, you ate it all like the little glutton you are.;a
-Jour_1_12;<wave a=1 w=100>Heeeere</wave> you go, you can eat now.;a
+Jour_1_12;<wave a=0.3 w=1>Heeeere</wave> you go, you can eat now.;a
 Jour_1_13;Licking your fur, I see. Are you making yourself all pretty for me?;a
 Jour_1_14;I surely hope so because I’m coming back from the supermarket, and I bought you <incr f=1>some treats!</incr>;a
-Jour_1_15;<shake a=0.5 f=>What are you doing?</shake> You’re eating <shake>my calathea??</shake>;a
-Jour_1_16;Milo, no! Stop it! <shake a=0.5 f=>Bad cat!</shake>;a
-Jour_1_17;I already <incr a=0.8>struggled enough today</incr> for you to do this.;a
+Jour_1_15;<shake a=0.2 f=>What are you doing?</shake> You’re eating <shake a=0.5>my calathea??</shake>;a
+Jour_1_16;Milo, no! Stop it! <shake a=0.2 f=>Bad cat!</shake>;a
+Jour_1_17;I already <incr a=0.5>struggled enough today</incr> for you to do this.;a
 Jour_1_18;I’m not even going to start talking about what Miss Penrose did during my shift.;a
 Jour_1_19;Here, eat your toy instead.;a
 Jour_1_20;Wow, why are you not happy? Did you miss me?;a
 Jour_1_21;Dad was with you this afternoon though, you like him so why are you meowing like that?;a
-Jour_1_22;<wave a=1 w=100>Mhhh</wave>, I know wait a second.;a
+Jour_1_22;<wave a=0.3 w=1>Mhhh</wave>, I know wait a second.;a
 Jour_1_23;<wiggle>Rumbling in a plastic bag</wiggle>;a
 Jour_1_24;Here you go, a treat for you.;a
 Jour_1_25;It is salmon flavored, <b>your favorite.</b>;a
