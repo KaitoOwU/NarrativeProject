@@ -25,6 +25,10 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private Button _playerButton;
 
+        [SerializeField] private GameObject _oldDecor;
+        [SerializeField] private GameObject _newDecor;
+
+
         private void Start()
         {
             _playerButton = GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<Button>(); ;
@@ -85,7 +89,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     {
                         _group.DOFade(0f, 0.5f).OnComplete(() =>
                             StartCoroutine(GameManager.Instance.CR_EndScenario(() =>
-                                ChangeSituationMonologue("sonBanger", Emotions.NoEmotion, choices.ToList()[0]))));
+                                ChangeDecor("sonBanger", Emotions.NoEmotion, choices.ToList()[0]))));
                         yield break;
                     }
                 }
@@ -135,10 +139,29 @@ namespace Subtegral.DialogueSystem.Runtime
             return Mood.NEUTRAL;
         }
 
+        private void ChangeDecor(string soundName, Emotions chosenEmotion, NodeLinkData choice)
+        {
+            StopChoiceTimeout();
+            AudioManager.Instance.Play(soundName);
+            AddEmotion(chosenEmotion);
+            //DESACTIVER ANCIEN DECOR ET ACTIVER NOUVEAU
+            _oldDecor.SetActive(false); 
+            _newDecor.SetActive(true);
+            ProceedToNarrative(choice.TargetNodeGUID);
+        }
+
+
         private void ChangeSituation(string soundName, Emotions chosenEmotion, NodeLinkData choice)
         {
             Vector2 playerPos = new Vector2(0, 0);
-            GameManager.Instance.ChangeMood(TranslateMood(chosenEmotion), playerPos);
+            if(chosenEmotion == Emotions.Neutral || chosenEmotion ==  Emotions.NoEmotion) 
+            {
+                GameManager.Instance.ChangeMood(TranslateMood(chosenEmotion));
+            }
+            else
+            {
+                GameManager.Instance.ChangeMood(TranslateMood(chosenEmotion), playerPos);
+            }
             StopChoiceTimeout();
             AudioManager.Instance.Play(soundName);
             AddEmotion(chosenEmotion);
