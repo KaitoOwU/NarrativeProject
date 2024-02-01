@@ -21,7 +21,6 @@ namespace Subtegral.DialogueSystem.Runtime
         private Coroutine choiceTimeoutCoroutine;
 
         private Button _playerButton;
-        private Coroutine randomPlayerAnimationCoroutine;
 
         private void Start()
         {
@@ -38,7 +37,7 @@ namespace Subtegral.DialogueSystem.Runtime
             var buttons = buttonContainer.GetComponentsInChildren<Button>(true);
             //FADE OUT PUIS FADE IN
             var defaultChoice = choices.FirstOrDefault(x => x.PortName == "attendre");
-            if(defaultChoice != null)
+            if (defaultChoice != null)
             {
                 StartChoiceTimeout(defaultChoice);
             }
@@ -53,6 +52,28 @@ namespace Subtegral.DialogueSystem.Runtime
                 buttons[i].gameObject.SetActive(false);
                 buttons[i].onClick.RemoveAllListeners();
             }
+
+            if(choices.ToList().Count == 0)
+            {
+                Debug.Log("quoicoubeh");
+                for (int i = 0; i < buttons.Length; i++)
+                {
+                    if (buttons[i].gameObject.name == "monologuePrefab")
+                    {
+                        buttons[i].gameObject.SetActive(true);
+                        buttons[i].onClick.AddListener(() =>
+                        {
+                            StartCoroutine(GameManager.Instance.CR_EndDay());
+                        }); ;
+                    }
+                }
+                return;
+            }
+            else
+            {
+                Debug.Log(choices.ToString());
+            }
+
             foreach (var choice in choices)
             {
                 for (int i = 0; i < buttons.Length; i++)
@@ -62,19 +83,31 @@ namespace Subtegral.DialogueSystem.Runtime
                     if (buttons[i].gameObject.name == choice.PortName)
                     {
                         buttons[i].gameObject.SetActive(true);
-                        buttons[i].onClick.AddListener(() =>
+                        if (buttons[i].gameObject.name != "monologuePrefab")
                         {
-                            StartCoroutine(GameManager.Instance.CR_EndScenario(() =>ChangeSituation(buttonData, chosenEmotion, choice)));
-                        });;
+                            Debug.Log("Pas de monologue");
+                            buttons[i].onClick.AddListener(() =>
+                            {
+                                StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation(buttonData._soundName, chosenEmotion, choice)));
+                            }); ;
+                        }
+                        else
+                        {
+                            Debug.Log("Monologue");
+                            buttons[i].onClick.AddListener(() =>
+                            {
+                                ChangeSituation(buttonData._soundName, chosenEmotion, choice);
+                            }); ;
+                        }
                     }
                 }
             }
         }
 
-        private void ChangeSituation(ButtonDatas buttonData, Emotions chosenEmotion, NodeLinkData choice)
+        private void ChangeSituation(string soundName, Emotions chosenEmotion, NodeLinkData choice)
         {
             StopChoiceTimeout();
-            AudioManager.Instance.Play(buttonData._soundName);
+            AudioManager.Instance.Play(soundName);
             AddEmotion(chosenEmotion);
             ProceedToNarrative(choice.TargetNodeGUID);
         }
@@ -84,16 +117,16 @@ namespace Subtegral.DialogueSystem.Runtime
             switch (emotion)
             {
                 case Emotions.Positive:
-                    GameManager.Instance._emotions[0] ++;
+                    GameManager.Instance._emotions[0]++;
                     break;
                 case Emotions.Neutral:
-                    GameManager.Instance._emotions[1] ++;
+                    GameManager.Instance._emotions[1]++;
                     break;
                 case Emotions.Negative:
-                    GameManager.Instance._emotions[2] ++;
+                    GameManager.Instance._emotions[2]++;
                     break;
                 case Emotions.NoEmotion:
-                    GameManager.Instance._emotions[3] ++;
+                    GameManager.Instance._emotions[3]++;
                     break;
             }
         }
@@ -136,37 +169,23 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private void RandomPlayerAnimation(string narrativeDataGUID)
         {
-            if (randomPlayerAnimationCoroutine == null)
-            {
-                int randomNumber = UnityEngine.Random.Range(0, 4);
-                randomPlayerAnimationCoroutine = StartCoroutine(RandomPlayerAnimationCoroutine(randomNumber, narrativeDataGUID));
-            }
-        }
-
-        private IEnumerator RandomPlayerAnimationCoroutine(int randomNumber, string narrativeDataGUID)
-        {
+            int randomNumber = UnityEngine.Random.Range(0, 4);
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
             switch (randomNumber)
             {
                 case 0:
-                    GameManager.Instance._emotions[0]++;
-                    ProceedToNarrative(choices.FirstOrDefault(x => x.PortName == "Purr").TargetNodeGUID);
+                    StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("Purr", Emotions.Positive, choices.FirstOrDefault(x => x.PortName == "Purr"))));
                     break;
                 case 1:
-                    GameManager.Instance._emotions[1]++;
-                    ProceedToNarrative(choices.FirstOrDefault(x => x.PortName == "LittleMeow").TargetNodeGUID);
+                    StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("LittleMeow", Emotions.Neutral, choices.FirstOrDefault(x => x.PortName == "LittleMeow"))));
                     break;
                 case 2:
-                    GameManager.Instance._emotions[1]++;
-                    ProceedToNarrative(choices.FirstOrDefault(x => x.PortName == "Lick").TargetNodeGUID);
+                    StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("Lick", Emotions.Neutral, choices.FirstOrDefault(x => x.PortName == "Lick"))));
                     break;
                 case 3:
-                    GameManager.Instance._emotions[2]++;
-                    ProceedToNarrative(choices.FirstOrDefault(x => x.PortName == "BigMeow").TargetNodeGUID);
+                    StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeSituation("BigMeow", Emotions.Negative, choices.FirstOrDefault(x => x.PortName == "BigMeow"))));
                     break;
             }
-            yield return new WaitForSeconds(3f);
-            randomPlayerAnimationCoroutine = null;
         }
     }
 }
