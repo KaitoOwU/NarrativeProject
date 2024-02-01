@@ -44,13 +44,13 @@ MonoBehaviour:
     PortName: monologuePrefab
     TargetNodeGUID: ea2073a0-c869-4726-8c00-aa2344af1dac
   - BaseNodeGUID: ea2073a0-c869-4726-8c00-aa2344af1dac
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
   - BaseNodeGUID: 740e55bc-5f7b-4e1e-b727-1f80a6ec3210
     PortName: monologuePrefab
     TargetNodeGUID: 7368bab5-2821-4518-80f4-00aaa7ecfd31
   - BaseNodeGUID: 7368bab5-2821-4518-80f4-00aaa7ecfd31
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
   - BaseNodeGUID: 1d48a39d-bd82-4f5f-887f-248dff0b2650
     PortName: monologuePrefab
@@ -59,7 +59,7 @@ MonoBehaviour:
     PortName: monologuePrefab
     TargetNodeGUID: d58b95b7-ec7a-4622-8d1d-71646af8ac5d
   - BaseNodeGUID: fc305f81-e26d-4c83-aefc-3d9e6f563e68
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
   - BaseNodeGUID: d58b95b7-ec7a-4622-8d1d-71646af8ac5d
     PortName: monologuePrefab
@@ -68,7 +68,7 @@ MonoBehaviour:
     PortName: monologuePrefab
     TargetNodeGUID: 036ada70-63a3-4d82-9a59-7b6fdd627e05
   - BaseNodeGUID: 89b781c4-2fa7-4a50-8c7b-18de07480188
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
   - BaseNodeGUID: 43b774a7-cf65-4b85-83b2-056c4f63f70a
     PortName: monologuePrefab
@@ -86,7 +86,7 @@ MonoBehaviour:
     PortName: monologuePrefab
     TargetNodeGUID: af988ba1-4798-46c9-8dad-0f125d2fe21b
   - BaseNodeGUID: af988ba1-4798-46c9-8dad-0f125d2fe21b
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
   - BaseNodeGUID: 286f13fc-b504-4609-8dcf-5c96d7b03540
     PortName: monologuePrefab
@@ -97,9 +97,6 @@ MonoBehaviour:
   - BaseNodeGUID: d668c2d0-70ca-45ff-a0aa-7355d7cbd4c9
     PortName: monologuePrefab
     TargetNodeGUID: 0725d083-df60-4b88-8dce-1963f3111e3c
-  - BaseNodeGUID: 0725d083-df60-4b88-8dce-1963f3111e3c
-    PortName: monologuePrefab
-    TargetNodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
   - BaseNodeGUID: c680c48a-661e-460f-bd25-b0a1d5fd7a4b
     PortName: monologuePrefab
     TargetNodeGUID: d668c2d0-70ca-45ff-a0aa-7355d7cbd4c9
@@ -107,13 +104,13 @@ MonoBehaviour:
     PortName: monologuePrefab
     TargetNodeGUID: 706b283a-fd3e-40d4-9d33-50cd68802e80
   - BaseNodeGUID: 706b283a-fd3e-40d4-9d33-50cd68802e80
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
   - BaseNodeGUID: 3e4307c6-c7b1-41b0-8a3b-aed228388063
     PortName: monologuePrefab
     TargetNodeGUID: 721f7f05-a574-4d3f-acf0-81f7d216c237
   - BaseNodeGUID: 721f7f05-a574-4d3f-acf0-81f7d216c237
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
   - BaseNodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
     PortName: monologuePrefab
@@ -160,58 +157,61 @@ MonoBehaviour:
   - BaseNodeGUID: 041d6ad6-959a-4328-a36c-fbf160e1a70d
     PortName: monologuePrefab
     TargetNodeGUID: ec6cb996-85af-4804-9386-7935cb6f3764
+  - BaseNodeGUID: 0725d083-df60-4b88-8dce-1963f3111e3c
+    PortName: changeSituation
+    TargetNodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
   DialogueNodeData:
   - NodeGUID: 611dbfb4-ce74-42a0-a217-03e094fcea52
     DialogueText: Jour_2_1
-    Position: {x: 315, y: 200}
+    Position: {x: 315.33334, y: 200}
   - NodeGUID: df1036ee-7065-419c-aee8-799fe8653180
     DialogueText: Jour_2_2
-    Position: {x: 700, y: -127}
+    Position: {x: 700, y: -127.333336}
   - NodeGUID: ea2073a0-c869-4726-8c00-aa2344af1dac
     DialogueText: Jour_2_3
-    Position: {x: 1040, y: -127}
+    Position: {x: 1040, y: -127.333336}
   - NodeGUID: 740e55bc-5f7b-4e1e-b727-1f80a6ec3210
     DialogueText: Jour_2_5
-    Position: {x: 1040, y: 41}
+    Position: {x: 1040, y: 40.666664}
   - NodeGUID: 7368bab5-2821-4518-80f4-00aaa7ecfd31
     DialogueText: Jour_2_6
-    Position: {x: 1345, y: 41}
+    Position: {x: 1345.3334, y: 40.666664}
   - NodeGUID: 1d48a39d-bd82-4f5f-887f-248dff0b2650
     DialogueText: Jour_2_4
-    Position: {x: 700, y: 41}
+    Position: {x: 700, y: 40.666664}
   - NodeGUID: 036ada70-63a3-4d82-9a59-7b6fdd627e05
     DialogueText: Jour_2_8
-    Position: {x: 1040, y: 209}
+    Position: {x: 1040, y: 208.66667}
   - NodeGUID: fc305f81-e26d-4c83-aefc-3d9e6f563e68
     DialogueText: Jour_2_10
-    Position: {x: 1677, y: 209}
+    Position: {x: 1677.3334, y: 208.66667}
   - NodeGUID: d58b95b7-ec7a-4622-8d1d-71646af8ac5d
     DialogueText: Jour_2_9
-    Position: {x: 1359, y: 209}
+    Position: {x: 1359.3334, y: 208.66667}
   - NodeGUID: 3cd6c10c-7fc1-4d8f-8a27-a7428665c7e6
     DialogueText: Jour_2_7
-    Position: {x: 700, y: 209}
+    Position: {x: 700, y: 208.66667}
   - NodeGUID: 89b781c4-2fa7-4a50-8c7b-18de07480188
     DialogueText: Jour_2_13
-    Position: {x: 1369, y: 392}
+    Position: {x: 1369.3334, y: 392}
   - NodeGUID: 43b774a7-cf65-4b85-83b2-056c4f63f70a
     DialogueText: Jour_2_12
     Position: {x: 1040, y: 392}
   - NodeGUID: 7a0f585b-b14a-4e2e-b0f8-7e1d7aa38668
     DialogueText: Jour_2_15
-    Position: {x: 1018, y: 573}
+    Position: {x: 1018, y: 572.6667}
   - NodeGUID: 47535309-d87d-4018-be8e-25222ea255b3
     DialogueText: Jour_2_11
     Position: {x: 700, y: 392}
   - NodeGUID: 729e8c0e-671d-4ddd-b0eb-f73aa3abf182
     DialogueText: Jour_2_14
-    Position: {x: 700, y: 573}
+    Position: {x: 700, y: 572.6667}
   - NodeGUID: e897e563-733d-4f18-94dc-5c186f3117bb
     DialogueText: Jour_2_16
-    Position: {x: 1354, y: 573}
+    Position: {x: 1354, y: 572.6667}
   - NodeGUID: af988ba1-4798-46c9-8dad-0f125d2fe21b
     DialogueText: Jour_2_17
-    Position: {x: 1650, y: 573}
+    Position: {x: 1650, y: 572.6667}
   - NodeGUID: 286f13fc-b504-4609-8dcf-5c96d7b03540
     DialogueText: Jour_2_18
     Position: {x: 700, y: 736}
@@ -221,9 +221,6 @@ MonoBehaviour:
   - NodeGUID: d668c2d0-70ca-45ff-a0aa-7355d7cbd4c9
     DialogueText: Jour_2_20
     Position: {x: 1354, y: 736}
-  - NodeGUID: 0725d083-df60-4b88-8dce-1963f3111e3c
-    DialogueText: Jour_2_21
-    Position: {x: 1650, y: 736}
   - NodeGUID: c680c48a-661e-460f-bd25-b0a1d5fd7a4b
     DialogueText: Jour_2_19
     Position: {x: 1018, y: 736}
@@ -235,10 +232,10 @@ MonoBehaviour:
     Position: {x: 1354, y: 882}
   - NodeGUID: 3e4307c6-c7b1-41b0-8a3b-aed228388063
     DialogueText: Jour_2_25
-    Position: {x: 700, y: 1029}
+    Position: {x: 700, y: 1028.6666}
   - NodeGUID: 721f7f05-a574-4d3f-acf0-81f7d216c237
     DialogueText: Jour_2_26
-    Position: {x: 1018, y: 1029}
+    Position: {x: 1018, y: 1028.6666}
   - NodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
     DialogueText: Jour_2_27
     Position: {x: 2272, y: 440}
@@ -250,31 +247,31 @@ MonoBehaviour:
     Position: {x: 2670, y: 440}
   - NodeGUID: dc578290-f960-4298-aaaa-db50680afe3a
     DialogueText: Jour_2_38
-    Position: {x: 3433, y: 640}
+    Position: {x: 3433.3333, y: 640}
   - NodeGUID: d8506b60-0a1d-496e-bbe3-94f0cc0486c3
     DialogueText: Jour_2_41
-    Position: {x: 3433, y: 786}
+    Position: {x: 3433.3333, y: 786}
   - NodeGUID: d20cabc6-7a9f-4202-b710-02d9e88c701e
     DialogueText: Jour_2_34
-    Position: {x: 3433, y: 488}
+    Position: {x: 3433.3333, y: 488}
   - NodeGUID: 72b5fc0b-8b4e-435d-b87c-b6feadf72928
     DialogueText: Jour_2_30
-    Position: {x: 3433, y: 209}
+    Position: {x: 3433.3333, y: 208.66667}
   - NodeGUID: fb7bf6e8-3a3d-4d00-b557-db4120773f89
     DialogueText: Jour_2_31
-    Position: {x: 3781, y: 209}
+    Position: {x: 3781.3333, y: 208.66667}
   - NodeGUID: d50ff54f-17f7-4bf1-b59a-3effaf93836c
     DialogueText: Jour_2_33
-    Position: {x: 3781, y: 344}
+    Position: {x: 3781.3333, y: 344}
   - NodeGUID: e5f18ba0-4edd-46c8-89b6-c58062ad55fa
     DialogueText: Jour_2_32
-    Position: {x: 3433, y: 344}
+    Position: {x: 3433.3333, y: 344}
   - NodeGUID: adaa678f-d015-4299-a029-2e82d55805fa
     DialogueText: Jour_2_36
     Position: {x: 4104, y: 488}
   - NodeGUID: ef6a614e-b101-4c70-ae3b-91cf3ea55e16
     DialogueText: Jour_2_35
-    Position: {x: 3781, y: 488}
+    Position: {x: 3781.3333, y: 488}
   - NodeGUID: cd9097ee-543b-42f5-8cc9-0d95e2e7e8d0
     DialogueText: Jour_2_37
     Position: {x: 4414, y: 488}
@@ -283,9 +280,12 @@ MonoBehaviour:
     Position: {x: 4104, y: 640}
   - NodeGUID: 041d6ad6-959a-4328-a36c-fbf160e1a70d
     DialogueText: Jour_2_39
-    Position: {x: 3781, y: 640}
+    Position: {x: 3781.3333, y: 640}
   - NodeGUID: 778f8124-a072-42f3-a6cb-6eca87a17322
     DialogueText: Jour_2_42
-    Position: {x: 3781, y: 786}
+    Position: {x: 3781.3333, y: 786}
+  - NodeGUID: 0725d083-df60-4b88-8dce-1963f3111e3c
+    DialogueText: Jour_2_21
+    Position: {x: 1650, y: 736}
   ExposedProperties: []
   CommentBlockData: []

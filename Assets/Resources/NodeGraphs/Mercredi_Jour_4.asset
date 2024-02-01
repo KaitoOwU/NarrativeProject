@@ -40,6 +40,9 @@ MonoBehaviour:
   - BaseNodeGUID: 18678436-1934-414f-9055-4a25c90605bd
     PortName: monologuePrefab
     TargetNodeGUID: f5827b4e-aca7-4708-8085-660d4e74112b
+  - BaseNodeGUID: d335f6ec-d2e1-4626-a8e9-2ea407b85d1b
+    PortName: monologuePrefab
+    TargetNodeGUID: 08fc0e5b-167a-432e-ae17-61e9df2139ef
   - BaseNodeGUID: c658ea77-6407-4727-9500-79c3124f1a9a
     PortName: Purr
     TargetNodeGUID: 18678436-1934-414f-9055-4a25c90605bd
@@ -62,7 +65,7 @@ MonoBehaviour:
     PortName: BigMeow
     TargetNodeGUID: a316d9f1-4a93-422f-b5c7-ebbc0709e3b4
   - BaseNodeGUID: c658ea77-6407-4727-9500-79c3124f1a9a
-    PortName: Eat
+    PortName: EatCardboard
     TargetNodeGUID: 0fce4080-e542-4128-84d0-6d14a02b1f34
   - BaseNodeGUID: f5827b4e-aca7-4708-8085-660d4e74112b
     PortName: monologuePrefab
@@ -85,78 +88,78 @@ MonoBehaviour:
   - BaseNodeGUID: 32231bd8-10fa-4d2f-bec7-edf516d0eccd
     PortName: monologuePrefab
     TargetNodeGUID: 3b5f6c7b-b0e4-4b78-b8a7-8453f928d52f
-  - BaseNodeGUID: 3b5f6c7b-b0e4-4b78-b8a7-8453f928d52f
-    PortName: monologuePrefab
-    TargetNodeGUID: 5f5208ad-0e76-4011-86b9-2090ec0962f6
   - BaseNodeGUID: f9a8a081-1222-4c6d-8e9a-760d0de7d6ac
     PortName: monologuePrefab
     TargetNodeGUID: 21d9aab0-1e37-4ff7-846c-6a8acc0b8395
   - BaseNodeGUID: 2b296d5e-7515-4142-915a-95e36bef9477
     PortName: monologuePrefab
     TargetNodeGUID: 5e61e24e-3cdc-4a65-8ae5-b08db976df6b
+  - BaseNodeGUID: 21d9aab0-1e37-4ff7-846c-6a8acc0b8395
+    PortName: monologuePrefab
+    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
   - BaseNodeGUID: 5f5208ad-0e76-4011-86b9-2090ec0962f6
     PortName: monologuePrefab
     TargetNodeGUID: f9a8a081-1222-4c6d-8e9a-760d0de7d6ac
-  - BaseNodeGUID: c9f98456-20b5-4144-b64d-f2053ab506b1
-    PortName: monologuePrefab
-    TargetNodeGUID: a17acefa-59da-4ab8-af98-21dfd9adcf43
-  - BaseNodeGUID: a17acefa-59da-4ab8-af98-21dfd9adcf43
-    PortName: monologuePrefab
-    TargetNodeGUID: 9e3c2458-2949-4bf8-947c-10dabe910a90
-  - BaseNodeGUID: 9e3c2458-2949-4bf8-947c-10dabe910a90
-    PortName: monologuePrefab
-    TargetNodeGUID: 99e2d24c-c47b-42a4-876b-ef6bec742a0b
-  - BaseNodeGUID: 2ade339f-2568-4603-aec3-1295cc5c5bc3
-    PortName: monologuePrefab
-    TargetNodeGUID: af3b1507-7b3b-42d7-9226-6364c06da466
-  - BaseNodeGUID: 99e2d24c-c47b-42a4-876b-ef6bec742a0b
-    PortName: monologuePrefab
-    TargetNodeGUID: 2ade339f-2568-4603-aec3-1295cc5c5bc3
   - BaseNodeGUID: 9ab376c5-88fb-4e40-8e10-50c3b1bb98d9
     PortName: monologuePrefab
     TargetNodeGUID: c9f98456-20b5-4144-b64d-f2053ab506b1
-  - BaseNodeGUID: e0f9f378-0584-4766-b32b-6d7c1851f8a2
+  - BaseNodeGUID: 9e3c2458-2949-4bf8-947c-10dabe910a90
     PortName: monologuePrefab
-    TargetNodeGUID: 5a9d1804-6aa3-481f-a578-e8a92f0804ab
-  - BaseNodeGUID: b629bf2d-c860-49af-8ab8-ce908a7b1259
+    TargetNodeGUID: 99e2d24c-c47b-42a4-876b-ef6bec742a0b
+  - BaseNodeGUID: 99e2d24c-c47b-42a4-876b-ef6bec742a0b
     PortName: monologuePrefab
-    TargetNodeGUID: 92647663-e046-4953-8b5d-4bd86d9e39b0
-  - BaseNodeGUID: d335f6ec-d2e1-4626-a8e9-2ea407b85d1b
+    TargetNodeGUID: 2ade339f-2568-4603-aec3-1295cc5c5bc3
+  - BaseNodeGUID: c9f98456-20b5-4144-b64d-f2053ab506b1
     PortName: monologuePrefab
-    TargetNodeGUID: 08fc0e5b-167a-432e-ae17-61e9df2139ef
-  - BaseNodeGUID: a953dadc-5ed3-4ae7-8132-42a209b9e3f4
-    PortName: monologuePrefab
-    TargetNodeGUID: 1fbe96ba-b682-434c-83a7-606cdea5692d
-  - BaseNodeGUID: 4694e770-ccea-4a7c-bb7b-812d9f8ef4b0
-    PortName: monologuePrefab
-    TargetNodeGUID: a953dadc-5ed3-4ae7-8132-42a209b9e3f4
-  - BaseNodeGUID: 9ffc17d7-2f31-40f5-8c3f-4e47c7a9ee93
-    PortName: monologuePrefab
-    TargetNodeGUID: 4694e770-ccea-4a7c-bb7b-812d9f8ef4b0
-  - BaseNodeGUID: 3da584fb-48ca-4728-83d2-983366b1506d
-    PortName: monologuePrefab
-    TargetNodeGUID: 9ffc17d7-2f31-40f5-8c3f-4e47c7a9ee93
+    TargetNodeGUID: a17acefa-59da-4ab8-af98-21dfd9adcf43
   - BaseNodeGUID: 5a9d1804-6aa3-481f-a578-e8a92f0804ab
     PortName: monologuePrefab
     TargetNodeGUID: 3da584fb-48ca-4728-83d2-983366b1506d
   - BaseNodeGUID: 92647663-e046-4953-8b5d-4bd86d9e39b0
     PortName: monologuePrefab
     TargetNodeGUID: 01eb4d0d-d6c2-46c5-9098-3597e9395885
+  - BaseNodeGUID: 08fc0e5b-167a-432e-ae17-61e9df2139ef
+    PortName: monologuePrefab
+    TargetNodeGUID: b686cfa9-d11b-4914-9532-c0789741e0c4
+  - BaseNodeGUID: 9ffc17d7-2f31-40f5-8c3f-4e47c7a9ee93
+    PortName: monologuePrefab
+    TargetNodeGUID: 4694e770-ccea-4a7c-bb7b-812d9f8ef4b0
+  - BaseNodeGUID: 4694e770-ccea-4a7c-bb7b-812d9f8ef4b0
+    PortName: monologuePrefab
+    TargetNodeGUID: a953dadc-5ed3-4ae7-8132-42a209b9e3f4
+  - BaseNodeGUID: a17acefa-59da-4ab8-af98-21dfd9adcf43
+    PortName: monologuePrefab
+    TargetNodeGUID: 9e3c2458-2949-4bf8-947c-10dabe910a90
+  - BaseNodeGUID: 3da584fb-48ca-4728-83d2-983366b1506d
+    PortName: monologuePrefab
+    TargetNodeGUID: 9ffc17d7-2f31-40f5-8c3f-4e47c7a9ee93
+  - BaseNodeGUID: 2ade339f-2568-4603-aec3-1295cc5c5bc3
+    PortName: monologuePrefab
+    TargetNodeGUID: af3b1507-7b3b-42d7-9226-6364c06da466
+  - BaseNodeGUID: a953dadc-5ed3-4ae7-8132-42a209b9e3f4
+    PortName: monologuePrefab
+    TargetNodeGUID: 1fbe96ba-b682-434c-83a7-606cdea5692d
   - BaseNodeGUID: 01eb4d0d-d6c2-46c5-9098-3597e9395885
     PortName: monologuePrefab
     TargetNodeGUID: a9396af5-11e2-444f-8ad6-e61e132ccb58
   - BaseNodeGUID: a9396af5-11e2-444f-8ad6-e61e132ccb58
     PortName: monologuePrefab
     TargetNodeGUID: 862dafbc-07ea-4a5a-bbe3-1b1f03440405
-  - BaseNodeGUID: 862dafbc-07ea-4a5a-bbe3-1b1f03440405
-    PortName: monologuePrefab
-    TargetNodeGUID: bcd9810a-4edb-49cd-a171-e3420f71f676
   - BaseNodeGUID: bcd9810a-4edb-49cd-a171-e3420f71f676
     PortName: monologuePrefab
     TargetNodeGUID: ae61afbe-6534-48ed-bc6b-a08e3c142db6
-  - BaseNodeGUID: 08fc0e5b-167a-432e-ae17-61e9df2139ef
+  - BaseNodeGUID: 862dafbc-07ea-4a5a-bbe3-1b1f03440405
     PortName: monologuePrefab
-    TargetNodeGUID: b686cfa9-d11b-4914-9532-c0789741e0c4
+    TargetNodeGUID: bcd9810a-4edb-49cd-a171-e3420f71f676
+  - BaseNodeGUID: e0f9f378-0584-4766-b32b-6d7c1851f8a2
+    PortName: monologuePrefab
+    TargetNodeGUID: 5a9d1804-6aa3-481f-a578-e8a92f0804ab
+  - BaseNodeGUID: b629bf2d-c860-49af-8ab8-ce908a7b1259
+    PortName: monologuePrefab
+    TargetNodeGUID: 92647663-e046-4953-8b5d-4bd86d9e39b0
+  - BaseNodeGUID: 1fbe96ba-b682-434c-83a7-606cdea5692d
+    PortName: monologuePrefab
+    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
   - BaseNodeGUID: b686cfa9-d11b-4914-9532-c0789741e0c4
     PortName: monologuePrefab
     TargetNodeGUID: b1b773bb-7cd1-46ac-911d-47325b7e0718
@@ -169,6 +172,9 @@ MonoBehaviour:
   - BaseNodeGUID: e513e0bf-5e39-429b-87eb-5d5fd1193f3c
     PortName: monologuePrefab
     TargetNodeGUID: 29982670-e8a8-46b1-85cb-b5989d3b16ed
+  - BaseNodeGUID: 29982670-e8a8-46b1-85cb-b5989d3b16ed
+    PortName: monologuePrefab
+    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
   - BaseNodeGUID: a316d9f1-4a93-422f-b5c7-ebbc0709e3b4
     PortName: monologuePrefab
     TargetNodeGUID: 16e4e207-45f5-4397-9671-3922beaa933e
@@ -187,45 +193,27 @@ MonoBehaviour:
   - BaseNodeGUID: edbb9f0f-da5d-4789-a9a6-992dce7ad7be
     PortName: monologuePrefab
     TargetNodeGUID: 22ec9013-7760-41df-ac73-4dd1979a9096
-  - BaseNodeGUID: 22ec9013-7760-41df-ac73-4dd1979a9096
+  - BaseNodeGUID: 3b5f6c7b-b0e4-4b78-b8a7-8453f928d52f
     PortName: monologuePrefab
-    TargetNodeGUID: 8a4dcd53-628d-4229-9ec8-f715f320730f
-  - BaseNodeGUID: 8a4dcd53-628d-4229-9ec8-f715f320730f
-    PortName: monologuePrefab
-    TargetNodeGUID: ed5e67a7-0787-4c47-9833-6bcd8eccbc28
-  - BaseNodeGUID: ed5e67a7-0787-4c47-9833-6bcd8eccbc28
-    PortName: monologuePrefab
-    TargetNodeGUID: 1d5f70c7-4477-48cc-9ad8-6f88008997c4
-  - BaseNodeGUID: 1d5f70c7-4477-48cc-9ad8-6f88008997c4
-    PortName: monologuePrefab
-    TargetNodeGUID: 9f7d56a4-088b-4fbe-8de1-a658cc53ed7f
-  - BaseNodeGUID: 9f7d56a4-088b-4fbe-8de1-a658cc53ed7f
-    PortName: monologuePrefab
-    TargetNodeGUID: b6bbade0-a8cb-4ade-bb67-5de75747ebc9
-  - BaseNodeGUID: b6bbade0-a8cb-4ade-bb67-5de75747ebc9
-    PortName: monologuePrefab
-    TargetNodeGUID: 8612cacc-6278-489f-935b-4c54347bca0f
+    TargetNodeGUID: 5f5208ad-0e76-4011-86b9-2090ec0962f6
   - BaseNodeGUID: 0fce4080-e542-4128-84d0-6d14a02b1f34
     PortName: monologuePrefab
     TargetNodeGUID: 79cc3627-d7eb-4695-85de-7e7465cf2164
   - BaseNodeGUID: 79cc3627-d7eb-4695-85de-7e7465cf2164
     PortName: monologuePrefab
     TargetNodeGUID: 1621a7ad-9e22-4b77-a90f-982a34fe7893
-  - BaseNodeGUID: 1621a7ad-9e22-4b77-a90f-982a34fe7893
-    PortName: monologuePrefab
-    TargetNodeGUID: b304dd0e-fcb4-4f6e-af92-5a8c7aa5c4f3
-  - BaseNodeGUID: b304dd0e-fcb4-4f6e-af92-5a8c7aa5c4f3
-    PortName: monologuePrefab
-    TargetNodeGUID: 1c8f5c77-7f2a-4fc4-9335-03aac76ddb87
   - BaseNodeGUID: 1c8f5c77-7f2a-4fc4-9335-03aac76ddb87
     PortName: monologuePrefab
     TargetNodeGUID: 97563c30-da8e-4804-a418-ac19f6c908a8
   - BaseNodeGUID: 97563c30-da8e-4804-a418-ac19f6c908a8
     PortName: monologuePrefab
     TargetNodeGUID: 5cea172d-e13b-4afc-88fe-12b617558041
-  - BaseNodeGUID: 5cea172d-e13b-4afc-88fe-12b617558041
+  - BaseNodeGUID: 1621a7ad-9e22-4b77-a90f-982a34fe7893
     PortName: monologuePrefab
-    TargetNodeGUID: 43207415-85b9-4793-8e6a-4fa8eeb2c2ae
+    TargetNodeGUID: b304dd0e-fcb4-4f6e-af92-5a8c7aa5c4f3
+  - BaseNodeGUID: b304dd0e-fcb4-4f6e-af92-5a8c7aa5c4f3
+    PortName: monologuePrefab
+    TargetNodeGUID: 1c8f5c77-7f2a-4fc4-9335-03aac76ddb87
   - BaseNodeGUID: 43207415-85b9-4793-8e6a-4fa8eeb2c2ae
     PortName: monologuePrefab
     TargetNodeGUID: cb94fcb1-8754-4b19-9d4a-f00074115f7a
@@ -241,41 +229,35 @@ MonoBehaviour:
   - BaseNodeGUID: e6949c8c-3184-4fa2-893f-e03f3f531808
     PortName: monologuePrefab
     TargetNodeGUID: 8f15e9fe-6368-499b-81a8-115f14c32c8b
+  - BaseNodeGUID: 8a4dcd53-628d-4229-9ec8-f715f320730f
+    PortName: monologuePrefab
+    TargetNodeGUID: ed5e67a7-0787-4c47-9833-6bcd8eccbc28
+  - BaseNodeGUID: ed5e67a7-0787-4c47-9833-6bcd8eccbc28
+    PortName: monologuePrefab
+    TargetNodeGUID: 1d5f70c7-4477-48cc-9ad8-6f88008997c4
+  - BaseNodeGUID: 1d5f70c7-4477-48cc-9ad8-6f88008997c4
+    PortName: monologuePrefab
+    TargetNodeGUID: 9f7d56a4-088b-4fbe-8de1-a658cc53ed7f
+  - BaseNodeGUID: 9f7d56a4-088b-4fbe-8de1-a658cc53ed7f
+    PortName: monologuePrefab
+    TargetNodeGUID: b6bbade0-a8cb-4ade-bb67-5de75747ebc9
+  - BaseNodeGUID: b6bbade0-a8cb-4ade-bb67-5de75747ebc9
+    PortName: monologuePrefab
+    TargetNodeGUID: 8612cacc-6278-489f-935b-4c54347bca0f
   - BaseNodeGUID: 8612cacc-6278-489f-935b-4c54347bca0f
-    PortName: monologuePrefab
-    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
-  - BaseNodeGUID: 8f15e9fe-6368-499b-81a8-115f14c32c8b
-    PortName: monologuePrefab
-    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
-  - BaseNodeGUID: 29982670-e8a8-46b1-85cb-b5989d3b16ed
-    PortName: monologuePrefab
-    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
-  - BaseNodeGUID: ae61afbe-6534-48ed-bc6b-a08e3c142db6
-    PortName: monologuePrefab
-    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
-  - BaseNodeGUID: 1fbe96ba-b682-434c-83a7-606cdea5692d
-    PortName: monologuePrefab
-    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
-  - BaseNodeGUID: af3b1507-7b3b-42d7-9226-6364c06da466
-    PortName: monologuePrefab
-    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
-  - BaseNodeGUID: 21d9aab0-1e37-4ff7-846c-6a8acc0b8395
-    PortName: monologuePrefab
-    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
-  - BaseNodeGUID: 238e70b6-4c1a-474f-99ed-9788baa49b37
     PortName: monologuePrefab
     TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
   - BaseNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
     PortName: Purr
     TargetNodeGUID: 4db21004-9e2d-4251-a80d-cbfc9a9f3e25
   - BaseNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
-    PortName: Shelf
+    PortName: MeowToGoOnShelf
     TargetNodeGUID: 675af5e3-1282-4fd8-adc4-bfad35ed8f34
   - BaseNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
     PortName: attendre
     TargetNodeGUID: de452e12-8662-4c67-841b-eece6b73dd4e
   - BaseNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
-    PortName: Eat
+    PortName: EatCardboard
     TargetNodeGUID: 1ef80a14-69d1-4d4f-9e9a-3f6bd2188799
   - BaseNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
     PortName: LittleMeow
@@ -286,30 +268,48 @@ MonoBehaviour:
   - BaseNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
     PortName: Lick
     TargetNodeGUID: cb1e1ea5-5898-4276-b3f2-4c958b59d889
-  - BaseNodeGUID: 4db21004-9e2d-4251-a80d-cbfc9a9f3e25
+  - BaseNodeGUID: af3b1507-7b3b-42d7-9226-6364c06da466
     PortName: monologuePrefab
-    TargetNodeGUID: 12f1f8c1-bfd4-4269-bdcd-858fcec74a1a
+    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
+  - BaseNodeGUID: 238e70b6-4c1a-474f-99ed-9788baa49b37
+    PortName: monologuePrefab
+    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
+  - BaseNodeGUID: 8f15e9fe-6368-499b-81a8-115f14c32c8b
+    PortName: monologuePrefab
+    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
+  - BaseNodeGUID: 22ec9013-7760-41df-ac73-4dd1979a9096
+    PortName: monologuePrefab
+    TargetNodeGUID: 8a4dcd53-628d-4229-9ec8-f715f320730f
+  - BaseNodeGUID: 5cea172d-e13b-4afc-88fe-12b617558041
+    PortName: monologuePrefab
+    TargetNodeGUID: 43207415-85b9-4793-8e6a-4fa8eeb2c2ae
   - BaseNodeGUID: 675af5e3-1282-4fd8-adc4-bfad35ed8f34
     PortName: monologuePrefab
     TargetNodeGUID: 1d6e6065-8465-4b3d-a467-f5ed93a5d86b
-  - BaseNodeGUID: de452e12-8662-4c67-841b-eece6b73dd4e
-    PortName: monologuePrefab
-    TargetNodeGUID: 28003b66-ecce-486b-8642-0dd303a8ed81
   - BaseNodeGUID: 1ef80a14-69d1-4d4f-9e9a-3f6bd2188799
     PortName: monologuePrefab
     TargetNodeGUID: e8457d10-a412-43f1-99be-8b5bc53ec525
   - BaseNodeGUID: 58ee8a55-dda4-4463-88f4-277430dcc66a
     PortName: monologuePrefab
     TargetNodeGUID: 6691c255-cfc3-4b04-b0e6-f7818434ec42
-  - BaseNodeGUID: b45ea748-de6a-4828-834f-ff9831d204c3
+  - BaseNodeGUID: ae61afbe-6534-48ed-bc6b-a08e3c142db6
     PortName: monologuePrefab
-    TargetNodeGUID: dc75ea7b-c8f2-47f7-8f49-659cb85171b7
+    TargetNodeGUID: 177fa1ae-2654-4adf-b5ec-4e29c2c009ba
+  - BaseNodeGUID: de452e12-8662-4c67-841b-eece6b73dd4e
+    PortName: monologuePrefab
+    TargetNodeGUID: 28003b66-ecce-486b-8642-0dd303a8ed81
   - BaseNodeGUID: dc75ea7b-c8f2-47f7-8f49-659cb85171b7
     PortName: monologuePrefab
     TargetNodeGUID: cce4e04d-c440-4a22-bafb-7f65c1cd6f2a
+  - BaseNodeGUID: b45ea748-de6a-4828-834f-ff9831d204c3
+    PortName: monologuePrefab
+    TargetNodeGUID: dc75ea7b-c8f2-47f7-8f49-659cb85171b7
   - BaseNodeGUID: cce4e04d-c440-4a22-bafb-7f65c1cd6f2a
     PortName: monologuePrefab
     TargetNodeGUID: 576b80d2-08c5-4965-9062-5995a874ebad
+  - BaseNodeGUID: 4db21004-9e2d-4251-a80d-cbfc9a9f3e25
+    PortName: monologuePrefab
+    TargetNodeGUID: 12f1f8c1-bfd4-4269-bdcd-858fcec74a1a
   - BaseNodeGUID: cb1e1ea5-5898-4276-b3f2-4c958b59d889
     PortName: monologuePrefab
     TargetNodeGUID: 4327f373-2327-457a-aa6a-3f8f9c332cf1

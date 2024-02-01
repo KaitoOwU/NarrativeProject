@@ -20,4 +20,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MondayScene.unity
     guid: cf1faf7a0a4ba9c4fb6e555bc6e798e3
+  - enabled: 1
+    path: Assets/Scenes/SaturdayScene.unity
+    guid: 75b94febdcc059a4fb49c2a1af423035
+  - enabled: 1
+    path: Assets/Scenes/FridayScene.unity
+    guid: f24b549ab4b6ce04aa0df7af04b7a563
+  - enabled: 1
+    path: Assets/Scenes/ThursdayScene.unity
+    guid: 9e16f914ab4c55a4d9c3d16e0e394a4e
+  - enabled: 1
+    path: Assets/Scenes/WednesdayScene.unity
+    guid: 45aec815fe8390a4f94c99da1f5982b9
+  - enabled: 1
+    path: Assets/Scenes/TuesdayScene.unity
+    guid: 9a0b56f7da2c4014ba618fc1a9fbfb18
   m_configObjects: {}

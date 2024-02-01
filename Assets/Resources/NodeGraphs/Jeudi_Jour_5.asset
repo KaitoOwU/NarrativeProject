@@ -340,6 +340,9 @@ MonoBehaviour:
   - BaseNodeGUID: 78ff3d98-53ed-45dd-91ab-ff0dc9c4104b
     PortName: monologuePrefab
     TargetNodeGUID: cf1f86cc-663e-48ab-996d-c9b03ea91f6c
+  - BaseNodeGUID: dcfe16b1-a071-4a72-841a-d67b9b0b2e94
+    PortName: monologuePrefab
+    TargetNodeGUID: 638b441c-92e1-4c84-83ad-743f15b3564e
   - BaseNodeGUID: f410db30-7713-48c8-b6e0-e9fc05743ff0
     PortName: monologuePrefab
     TargetNodeGUID: b0e90ccb-3516-4ee4-8850-3e36222f4e73
@@ -352,9 +355,6 @@ MonoBehaviour:
   - BaseNodeGUID: 97dec953-4bad-4d90-9725-ed4d9dc9edf2
     PortName: monologuePrefab
     TargetNodeGUID: dcfe16b1-a071-4a72-841a-d67b9b0b2e94
-  - BaseNodeGUID: 638b441c-92e1-4c84-83ad-743f15b3564e
-    PortName: monologuePrefab
-    TargetNodeGUID: f410db30-7713-48c8-b6e0-e9fc05743ff0
   - BaseNodeGUID: b8a5f03e-9b9b-4a45-8eb6-db6a9ee9cb01
     PortName: monologuePrefab
     TargetNodeGUID: 347830fb-6707-45a6-8943-e55827e5b039
@@ -370,354 +370,354 @@ MonoBehaviour:
   - BaseNodeGUID: 89aed004-6735-4dc5-b2c0-c6eb091122f0
     PortName: monologuePrefab
     TargetNodeGUID: c4e27f8c-48c9-475c-a011-684b90b91e69
-  - BaseNodeGUID: dcfe16b1-a071-4a72-841a-d67b9b0b2e94
+  - BaseNodeGUID: 638b441c-92e1-4c84-83ad-743f15b3564e
     PortName: monologuePrefab
-    TargetNodeGUID: 638b441c-92e1-4c84-83ad-743f15b3564e
+    TargetNodeGUID: f410db30-7713-48c8-b6e0-e9fc05743ff0
   DialogueNodeData:
   - NodeGUID: a9beeb3b-f79a-4cf6-800e-41ba106147c7
     DialogueText: Jour_5_4
     Position: {x: 904, y: 200}
   - NodeGUID: 9fa6b865-8fe1-46d2-ad6b-03b4c316791f
     DialogueText: Jour_5_3
-    Position: {x: 664.6667, y: 200}
+    Position: {x: 665, y: 200}
   - NodeGUID: af548759-548c-433d-82de-aa4ed578499a
     DialogueText: Jour_5_2
-    Position: {x: 425.33334, y: 200}
+    Position: {x: 425, y: 200}
   - NodeGUID: b85c174d-ce1c-4c84-bc9d-055b3616c68c
     DialogueText: Jour_5_1
-    Position: {x: 186.66667, y: 200}
+    Position: {x: 187, y: 200}
   - NodeGUID: 1c8cb2ab-1f80-4095-a61f-17496497f3c8
     DialogueText: Jour_5_8
     Position: {x: 904, y: 294}
   - NodeGUID: 2a56c17d-bc75-41b8-90a1-61cc3c4cfa73
     DialogueText: Jour_5_7
-    Position: {x: 664.6667, y: 294}
+    Position: {x: 665, y: 294}
   - NodeGUID: f5dd4717-fc4e-40c4-9a65-9ac5a3934f5c
     DialogueText: Jour_5_6
-    Position: {x: 425.33334, y: 294}
+    Position: {x: 425, y: 294}
   - NodeGUID: dda27bd5-339b-4f4f-a451-ff5aa6e29d14
     DialogueText: Jour_5_5
-    Position: {x: 186.66667, y: 294}
+    Position: {x: 187, y: 294}
   - NodeGUID: 2e1a0443-6675-477b-9698-f918e44bcac3
     DialogueText: Jour_5_10
-    Position: {x: 425.33334, y: 388.66666}
+    Position: {x: 425, y: 389}
   - NodeGUID: 573db2e2-275a-4930-bc09-e6ab8b447fd8
     DialogueText: Jour_5_9
-    Position: {x: 186.66667, y: 388.66666}
+    Position: {x: 187, y: 389}
   - NodeGUID: bb60c2ec-ae7d-497d-acb4-e114d41380d8
     DialogueText: Jour_5_12
-    Position: {x: 907.3333, y: 388.66666}
+    Position: {x: 907, y: 389}
   - NodeGUID: 5fcb2077-7a3b-4cc9-9fc3-cb67b262965f
     DialogueText: Jour_5_11
-    Position: {x: 668, y: 388.66666}
+    Position: {x: 668, y: 389}
   - NodeGUID: d9ac86b1-cf81-43f5-b1b4-ba70f35e4b72
     DialogueText: Jour_5_16
-    Position: {x: 904, y: 492.66666}
+    Position: {x: 904, y: 493}
   - NodeGUID: dbbfe634-7289-4b37-a61b-0a5049fefdc9
     DialogueText: Jour_5_15
-    Position: {x: 664.6667, y: 492.66666}
+    Position: {x: 665, y: 493}
   - NodeGUID: 39ff1e56-5119-4157-ac35-0bf87e05d973
     DialogueText: Jour_5_14
-    Position: {x: 425.33334, y: 492.66666}
+    Position: {x: 425, y: 493}
   - NodeGUID: 7f2d01b3-db55-4be1-a4fb-7783f6e43af3
     DialogueText: Jour_5_13
-    Position: {x: 189.33333, y: 492.66666}
+    Position: {x: 189, y: 493}
   - NodeGUID: 0c465477-5f11-4838-b08c-96bf31ae68b7
     DialogueText: Jour_5_17
-    Position: {x: 189.33333, y: 588.6667}
+    Position: {x: 189, y: 589}
   - NodeGUID: 76e9015b-a236-48a2-8b64-1283fb58223c
     DialogueText: Jour_5_20
-    Position: {x: 910.6667, y: 588.6667}
+    Position: {x: 911, y: 589}
   - NodeGUID: e0aa8568-38cb-447d-89a4-3e4171c5f290
     DialogueText: Jour_5_19
-    Position: {x: 668, y: 588.6667}
+    Position: {x: 668, y: 589}
   - NodeGUID: 755252c5-571c-486c-bb4c-d501b94a149d
     DialogueText: Jour_5_18
-    Position: {x: 428.66666, y: 588.6667}
+    Position: {x: 429, y: 589}
   - NodeGUID: 57d07a05-742d-485e-88c2-641862833757
     DialogueText: Jour_5_21
-    Position: {x: 910.6667, y: 682.6667}
+    Position: {x: 911, y: 683}
   - NodeGUID: d4bc067b-973d-4d85-accf-be468bfbf907
     DialogueText: Jour_5_22
-    Position: {x: 910.6667, y: 777.3334}
+    Position: {x: 911, y: 777}
   - NodeGUID: c658ea77-6407-4727-9500-79c3124f1a9a
     DialogueText: Jour_5_23
-    Position: {x: 1184.6666, y: 9.333332}
+    Position: {x: 1185, y: 9}
   - NodeGUID: 18678436-1934-414f-9055-4a25c90605bd
     DialogueText: Jour_5_24
-    Position: {x: 1504.6666, y: -246}
+    Position: {x: 1505, y: -246}
   - NodeGUID: e0f9f378-0584-4766-b32b-6d7c1851f8a2
     DialogueText: Jour_5_45
-    Position: {x: 1504.6666, y: 220}
+    Position: {x: 1505, y: 220}
   - NodeGUID: b629bf2d-c860-49af-8ab8-ce908a7b1259
     DialogueText: Jour_5_53
-    Position: {x: 1504.6666, y: 398}
+    Position: {x: 1505, y: 398}
   - NodeGUID: 2b296d5e-7515-4142-915a-95e36bef9477
     DialogueText: Jour_5_28
-    Position: {x: 1504.6666, y: -96}
+    Position: {x: 1505, y: -96}
   - NodeGUID: 9ab376c5-88fb-4e40-8e10-50c3b1bb98d9
     DialogueText: Jour_5_37
-    Position: {x: 1504.6666, y: 58}
+    Position: {x: 1505, y: 58}
   - NodeGUID: fde55751-1523-43ab-8219-c4c933437835
     DialogueText: Jour_5_46
-    Position: {x: 1740.6666, y: 220}
+    Position: {x: 1741, y: 220}
   - NodeGUID: f5827b4e-aca7-4708-8085-660d4e74112b
     DialogueText: Jour_5_25
     Position: {x: 1744, y: -246}
   - NodeGUID: 5ecf02ae-695a-4d95-b833-38c89852cc56
     DialogueText: Jour_5_26
-    Position: {x: 1983.3334, y: -246}
+    Position: {x: 1983, y: -246}
   - NodeGUID: 5e61e24e-3cdc-4a65-8ae5-b08db976df6b
     DialogueText: Jour_5_29
     Position: {x: 1744, y: -96}
   - NodeGUID: 32231bd8-10fa-4d2f-bec7-edf516d0eccd
     DialogueText: Jour_5_30
-    Position: {x: 1983.3334, y: -86.66667}
+    Position: {x: 1983, y: -87}
   - NodeGUID: 3b5f6c7b-b0e4-4b78-b8a7-8453f928d52f
     DialogueText: Jour_5_31
-    Position: {x: 2222.6667, y: -86.66667}
+    Position: {x: 2223, y: -87}
   - NodeGUID: 5f5208ad-0e76-4011-86b9-2090ec0962f6
     DialogueText: Jour_5_32
-    Position: {x: 2461.3333, y: -86.66667}
+    Position: {x: 2461, y: -87}
   - NodeGUID: f9a8a081-1222-4c6d-8e9a-760d0de7d6ac
     DialogueText: Jour_5_33
-    Position: {x: 2700.6667, y: -86.66667}
+    Position: {x: 2701, y: -87}
   - NodeGUID: 21d9aab0-1e37-4ff7-846c-6a8acc0b8395
     DialogueText: Jour_5_34
-    Position: {x: 2940, y: -86.66667}
+    Position: {x: 2940, y: -87}
   - NodeGUID: 2ba6ccee-8043-4897-8513-890b7104acc1
     DialogueText: Jour_5_35
-    Position: {x: 3179.3333, y: -86.66667}
+    Position: {x: 3179, y: -87}
   - NodeGUID: 3ba45026-5ca4-4905-96ac-fb7b607fe5a8
     DialogueText: Jour_5_36
-    Position: {x: 3418.6667, y: -86.66667}
+    Position: {x: 3419, y: -87}
   - NodeGUID: c9f98456-20b5-4144-b64d-f2053ab506b1
     DialogueText: Jour_5_38
     Position: {x: 1744, y: 58}
   - NodeGUID: a17acefa-59da-4ab8-af98-21dfd9adcf43
     DialogueText: Jour_5_39
-    Position: {x: 1983.3334, y: 58}
+    Position: {x: 1983, y: 58}
   - NodeGUID: 9e3c2458-2949-4bf8-947c-10dabe910a90
     DialogueText: Jour_5_40
-    Position: {x: 2222.6667, y: 58}
+    Position: {x: 2223, y: 58}
   - NodeGUID: 99e2d24c-c47b-42a4-876b-ef6bec742a0b
     DialogueText: Jour_5_41
-    Position: {x: 2461.3333, y: 58}
+    Position: {x: 2461, y: 58}
   - NodeGUID: 2ade339f-2568-4603-aec3-1295cc5c5bc3
     DialogueText: Jour_5_42
-    Position: {x: 2700.6667, y: 58}
+    Position: {x: 2701, y: 58}
   - NodeGUID: af3b1507-7b3b-42d7-9226-6364c06da466
     DialogueText: Jour_5_43
     Position: {x: 2940, y: 58}
   - NodeGUID: 9a2d0031-8b52-481d-b294-97d8d61d72d0
     DialogueText: Jour_5_44
-    Position: {x: 3179.3333, y: 58}
+    Position: {x: 3179, y: 58}
   - NodeGUID: 0d75beb3-3a94-4839-8a05-97b49c513588
     DialogueText: Jour_5_47
-    Position: {x: 1983.3334, y: 220}
+    Position: {x: 1983, y: 220}
   - NodeGUID: 9c7aacf8-8451-4108-a4dc-070aea06dde1
     DialogueText: Jour_5_48
-    Position: {x: 2222.6667, y: 220}
+    Position: {x: 2223, y: 220}
   - NodeGUID: 19152e37-81c3-412e-bb5a-71e1bc175f22
     DialogueText: Jour_5_49
-    Position: {x: 2455.3333, y: 220}
+    Position: {x: 2455, y: 220}
   - NodeGUID: 8d304442-3cd8-4d1d-bf13-13a08a654dda
     DialogueText: Jour_5_50
-    Position: {x: 2694.6667, y: 220}
+    Position: {x: 2695, y: 220}
   - NodeGUID: 24870694-776e-4d63-b8d0-e6c07e3a1c16
     DialogueText: Jour_5_51
-    Position: {x: 2933.3333, y: 220}
+    Position: {x: 2933, y: 220}
   - NodeGUID: 63da0fe0-01ab-46fc-bbaa-548fb91b97d9
     DialogueText: Jour_5_52
-    Position: {x: 3172.6667, y: 220}
+    Position: {x: 3173, y: 220}
   - NodeGUID: d0222530-9633-4363-9c8a-64b92dd5a752
     DialogueText: Jour_5_54
-    Position: {x: 1740.6666, y: 398}
+    Position: {x: 1741, y: 398}
   - NodeGUID: 2e595f10-c915-4f14-a0f5-b9e4d46c2480
     DialogueText: Jour_5_55
     Position: {x: 1980, y: 398}
   - NodeGUID: 3f1936fb-c8a7-4c25-9b3f-91ee1801eccc
     DialogueText: Jour_5_56
-    Position: {x: 2219.3333, y: 398}
+    Position: {x: 2219, y: 398}
   - NodeGUID: d0680181-a4fc-4cd7-abc1-3526e3b0931e
     DialogueText: Jour_5_57
-    Position: {x: 2455.3333, y: 398}
+    Position: {x: 2455, y: 398}
   - NodeGUID: 80eb425b-00ee-4abf-9ce9-23fd0eb3f9f8
     DialogueText: Jour_5_59
     Position: {x: 2936, y: 398}
   - NodeGUID: 7f1775c9-6642-43b1-81c2-b03a3f5ed9e9
     DialogueText: Jour_5_58
-    Position: {x: 2694.6667, y: 398}
+    Position: {x: 2695, y: 398}
   - NodeGUID: f1dc2fcf-b2e3-41d2-8138-408401db3881
     DialogueText: Jour_5_60
-    Position: {x: 3179.3333, y: 398}
+    Position: {x: 3179, y: 398}
   - NodeGUID: c4559d2d-bbfa-4bbf-8319-8f096b432fa7
     DialogueText: Jour_5_61
-    Position: {x: 3418.6667, y: 398}
+    Position: {x: 3419, y: 398}
   - NodeGUID: ed9cb1ad-9a25-468c-b5c4-56ffe8a7c653
     DialogueText: Jour_5_27
-    Position: {x: 3418.6667, y: -246}
+    Position: {x: 3419, y: -246}
   - NodeGUID: d335f6ec-d2e1-4626-a8e9-2ea407b85d1b
     DialogueText: Jour_5_62
     Position: {x: 3776, y: 58}
   - NodeGUID: a316d9f1-4a93-422f-b5c7-ebbc0709e3b4
     DialogueText: Jour_5_63
-    Position: {x: 1501.3334, y: 682.6667}
+    Position: {x: 1501, y: 683}
   - NodeGUID: 0fce4080-e542-4128-84d0-6d14a02b1f34
     DialogueText: Jour_5_64
-    Position: {x: 1740.6666, y: 682.6667}
+    Position: {x: 1741, y: 683}
   - NodeGUID: 6ca5d78d-dabd-430b-8d52-47dd43f0b9d7
     DialogueText: Jour_5_65
-    Position: {x: 1980, y: 682.6667}
+    Position: {x: 1980, y: 683}
   - NodeGUID: aad77f58-5877-4652-ad5e-8c5101480639
     DialogueText: Jour_5_67
-    Position: {x: 1501.3334, y: 777.3334}
+    Position: {x: 1501, y: 777}
   - NodeGUID: 4aa5b44e-33cf-49df-a34b-74d0c5a2a6cc
     DialogueText: Jour_5_68
-    Position: {x: 1740.6666, y: 777.3334}
+    Position: {x: 1741, y: 777}
   - NodeGUID: 2e59171c-94ba-4525-ac59-6c04fefe6926
     DialogueText: Jour_5_69
-    Position: {x: 1980, y: 777.3334}
+    Position: {x: 1980, y: 777}
   - NodeGUID: c4e27f8c-48c9-475c-a011-684b90b91e69
     DialogueText: Jour_5_43
-    Position: {x: 2482.6667, y: 777.3334}
+    Position: {x: 2483, y: 777}
   - NodeGUID: fbf6d5b6-14c4-40cf-95a4-2c2494378a5a
     DialogueText: Jour_5_71
-    Position: {x: 2784, y: 588.6667}
+    Position: {x: 2784, y: 589}
   - NodeGUID: 5f2b8b64-0181-4ecd-9643-2d3b9ea50337
     DialogueText: Jour_5_73
-    Position: {x: 3280.6667, y: 588.6667}
+    Position: {x: 3281, y: 589}
   - NodeGUID: 078aaffc-5f29-4f0f-8bef-d320a4a399c5
     DialogueText: Jour_5_74
-    Position: {x: 3520, y: 588.6667}
+    Position: {x: 3520, y: 589}
   - NodeGUID: 02f94afe-4db6-4137-a582-b6925e43fbe2
     DialogueText: Jour_5_75
-    Position: {x: 3760.6667, y: 588.6667}
+    Position: {x: 3761, y: 589}
   - NodeGUID: 4df043b1-2a28-4431-9c0d-25cc2d08889a
     DialogueText: Jour_5_76
-    Position: {x: 4001.3333, y: 588.6667}
+    Position: {x: 4001, y: 589}
   - NodeGUID: dde60bcb-42bc-4e7b-a4fd-40f2c09c59a9
     DialogueText: Jour_5_78
-    Position: {x: 2784, y: 714.6667}
+    Position: {x: 2784, y: 715}
   - NodeGUID: 0fac16f4-6822-480c-afe3-0e97f575f083
     DialogueText: Jour_5_79
-    Position: {x: 3024, y: 714.6667}
+    Position: {x: 3024, y: 715}
   - NodeGUID: 3874b096-9490-465d-97d6-dd5ea6b1207f
     DialogueText: Jour_5_80
-    Position: {x: 3263.3333, y: 714.6667}
+    Position: {x: 3263, y: 715}
   - NodeGUID: 24d3270a-2658-4080-93f7-76238064d388
     DialogueText: Jour_5_81
-    Position: {x: 3502.6667, y: 714.6667}
+    Position: {x: 3503, y: 715}
   - NodeGUID: 387c60f8-6c14-4e9a-9939-0b4b8ff6e84a
     DialogueText: Jour_5_82
-    Position: {x: 3741.3333, y: 714.6667}
+    Position: {x: 3741, y: 715}
   - NodeGUID: 2e34e088-27d3-425e-ae1f-e145f18212cd
     DialogueText: Jour_5_83
-    Position: {x: 3980.6667, y: 714.6667}
+    Position: {x: 3981, y: 715}
   - NodeGUID: e7abf81c-a7a4-431d-aa4c-d10703d3128f
     DialogueText: Jour_5_72
-    Position: {x: 3040.6667, y: 588.6667}
+    Position: {x: 3041, y: 589}
   - NodeGUID: 1fb7060f-e738-42f2-9cb8-da580ca11cdb
     DialogueText: Jour_5_77
-    Position: {x: 4252, y: 588.6667}
+    Position: {x: 4252, y: 589}
   - NodeGUID: 52ee3e1d-1495-448b-9e2f-896424d96e64
     DialogueText: Jour_5_99
     Position: {x: 2784, y: 1040}
   - NodeGUID: 7159f98d-a7c8-4ad9-9dd5-daa8b31f0eb9
     DialogueText: Jour_5_100
-    Position: {x: 3022.6667, y: 1040}
+    Position: {x: 3023, y: 1040}
   - NodeGUID: 3a2e8bf1-f369-4ccc-bc08-01e1dccd6ff4
     DialogueText: Jour_5_102
     Position: {x: 3500, y: 1040}
   - NodeGUID: 0c705f89-7695-4703-83b0-f6f6f3d8da51
     DialogueText: Jour_5_103
-    Position: {x: 3741.3333, y: 1040}
+    Position: {x: 3741, y: 1040}
   - NodeGUID: f891fde4-141c-4086-b381-32d6054467ee
     DialogueText: Jour_5_104
-    Position: {x: 3980.6667, y: 1040}
+    Position: {x: 3981, y: 1040}
   - NodeGUID: 69673e2e-575c-490a-84d5-9c6dda222c25
     DialogueText: Jour_5_101
-    Position: {x: 3260.6667, y: 1040}
+    Position: {x: 3261, y: 1040}
   - NodeGUID: 8266c7b9-49a1-4e2f-8255-7caa4bab5570
     DialogueText: Jour_5_95
-    Position: {x: 3988, y: 942.6667}
+    Position: {x: 3988, y: 943}
   - NodeGUID: 27acc889-b57e-4cbe-a0d1-acb8e237b758
     DialogueText: Jour_5_97
-    Position: {x: 4463.3335, y: 942.6667}
+    Position: {x: 4463, y: 943}
   - NodeGUID: 221c2ab6-37ec-4433-b33f-5fc4e91dfd9c
     DialogueText: Jour_5_98
-    Position: {x: 4702.6665, y: 942.6667}
+    Position: {x: 4703, y: 943}
   - NodeGUID: eb401590-52e6-4dfd-83b9-9c36b8dbeb3a
     DialogueText: Jour_5_96
-    Position: {x: 4224, y: 942.6667}
+    Position: {x: 4224, y: 943}
   - NodeGUID: 34a1dbf1-a1c5-4ae8-9cb3-83c09a8a6b59
     DialogueText: Jour_5_90
-    Position: {x: 2783.3333, y: 942.6667}
+    Position: {x: 2783, y: 943}
   - NodeGUID: 1b026ef9-31c9-4ca7-be68-4dd814fcac72
     DialogueText: Jour_5_91
-    Position: {x: 3023.3333, y: 942.6667}
+    Position: {x: 3023, y: 943}
   - NodeGUID: 9c0f7a22-cb97-48c2-883c-c938dc6e5c54
     DialogueText: Jour_5_92
-    Position: {x: 3270.6667, y: 942.6667}
+    Position: {x: 3271, y: 943}
   - NodeGUID: a1ee20ab-a96d-4468-b878-9b27610abb47
     DialogueText: Jour_5_94
-    Position: {x: 3748.6667, y: 942.6667}
+    Position: {x: 3749, y: 943}
   - NodeGUID: 995af60c-f4c4-4be8-aa2a-8d490f73953f
     DialogueText: Jour_5_93
-    Position: {x: 3509.3333, y: 942.6667}
+    Position: {x: 3509, y: 943}
   - NodeGUID: cf1f86cc-663e-48ab-996d-c9b03ea91f6c
     DialogueText: Jour_5_85
-    Position: {x: 3024, y: 836.6667}
+    Position: {x: 3024, y: 837}
   - NodeGUID: f272583b-6705-49e9-ab0d-e106e4785692
     DialogueText: Jour_5_86
-    Position: {x: 3263.3333, y: 836.6667}
+    Position: {x: 3263, y: 837}
   - NodeGUID: e4d0d29f-0257-497f-85e3-3846e793ac4c
     DialogueText: Jour_5_87
-    Position: {x: 3496.6667, y: 836.6667}
+    Position: {x: 3497, y: 837}
   - NodeGUID: cc1d86b8-d4a0-4d8d-bd95-33b9ca5656e9
     DialogueText: Jour_5_88
-    Position: {x: 3736, y: 836.6667}
+    Position: {x: 3736, y: 837}
   - NodeGUID: 78ff3d98-53ed-45dd-91ab-ff0dc9c4104b
     DialogueText: Jour_5_84
-    Position: {x: 2784.6667, y: 836.6667}
+    Position: {x: 2785, y: 837}
   - NodeGUID: c313a8c9-c62b-4cee-8cec-4eac69e35b14
     DialogueText: Jour_5_89
-    Position: {x: 3975.3333, y: 836.6667}
+    Position: {x: 3975, y: 837}
   - NodeGUID: dcfe16b1-a071-4a72-841a-d67b9b0b2e94
     DialogueText: Jour_5_106
-    Position: {x: 3024, y: 1169.3333}
+    Position: {x: 3024, y: 1169}
   - NodeGUID: f410db30-7713-48c8-b6e0-e9fc05743ff0
     DialogueText: Jour_5_108
-    Position: {x: 3502.6667, y: 1169.3333}
+    Position: {x: 3503, y: 1169}
   - NodeGUID: b0e90ccb-3516-4ee4-8850-3e36222f4e73
     DialogueText: Jour_5_109
-    Position: {x: 3741.3333, y: 1169.3333}
+    Position: {x: 3741, y: 1169}
   - NodeGUID: ef3a4a4d-ea39-4700-8aa6-e2e9bd766ed7
     DialogueText: Jour_5_110
-    Position: {x: 3980.6667, y: 1169.3333}
+    Position: {x: 3981, y: 1169}
   - NodeGUID: 97dec953-4bad-4d90-9725-ed4d9dc9edf2
     DialogueText: Jour_5_105
-    Position: {x: 2784.6667, y: 1169.3333}
+    Position: {x: 2785, y: 1169}
   - NodeGUID: b8a5f03e-9b9b-4a45-8eb6-db6a9ee9cb01
     DialogueText: Jour_5_111
-    Position: {x: 4220, y: 1169.3333}
+    Position: {x: 4220, y: 1169}
   - NodeGUID: b73afe30-b477-4cfa-ad5d-3a02b34f3f15
     DialogueText: Jour_5_113
-    Position: {x: 4702.6665, y: 1169.3333}
+    Position: {x: 4703, y: 1169}
   - NodeGUID: 5165b0df-a215-4981-8791-3db1ea4713a2
     DialogueText: Jour_5_114
-    Position: {x: 4941.3335, y: 1169.3333}
+    Position: {x: 4941, y: 1169}
   - NodeGUID: 347830fb-6707-45a6-8943-e55827e5b039
     DialogueText: Jour_5_112
-    Position: {x: 4463.3335, y: 1169.3333}
+    Position: {x: 4463, y: 1169}
   - NodeGUID: 7af126e4-cf93-4fdd-beae-c935908ee7ff
     DialogueText: Jour_5_66
-    Position: {x: 2219.3333, y: 682.6667}
+    Position: {x: 2219, y: 683}
   - NodeGUID: 89aed004-6735-4dc5-b2c0-c6eb091122f0
     DialogueText: Jour_5_70
-    Position: {x: 2219.3333, y: 777.3334}
+    Position: {x: 2219, y: 777}
   - NodeGUID: 638b441c-92e1-4c84-83ad-743f15b3564e
     DialogueText: Jour_5_107
-    Position: {x: 3262.6667, y: 1168.6666}
+    Position: {x: 3263, y: 1169}
   ExposedProperties: []
   CommentBlockData: []
