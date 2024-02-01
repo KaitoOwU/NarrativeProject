@@ -38,16 +38,16 @@ MonoBehaviour:
     PortName: monologuePrefab
     TargetNodeGUID: 117e424b-d602-4e9d-b16b-718f2155272b
   - BaseNodeGUID: 117e424b-d602-4e9d-b16b-718f2155272b
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: d9f7f7e9-70ab-4f8b-ab28-52bcf480711f
   - BaseNodeGUID: 81125793-6646-4730-91ba-fcacb2e77488
     PortName: monologuePrefab
     TargetNodeGUID: 022acde2-820a-4d43-b076-6fbabb33ebdc
   - BaseNodeGUID: 022acde2-820a-4d43-b076-6fbabb33ebdc
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: d9f7f7e9-70ab-4f8b-ab28-52bcf480711f
   - BaseNodeGUID: d49d76cf-daca-49e1-ac98-0c79caf05bb0
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: d9f7f7e9-70ab-4f8b-ab28-52bcf480711f
   - BaseNodeGUID: 590e1656-428b-4614-8b12-cd26405b7efe
     PortName: monologuePrefab
@@ -59,10 +59,10 @@ MonoBehaviour:
     PortName: monologuePrefab
     TargetNodeGUID: 590e1656-428b-4614-8b12-cd26405b7efe
   - BaseNodeGUID: 1d5843b4-f34a-4ba5-858e-79e602343956
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: d9f7f7e9-70ab-4f8b-ab28-52bcf480711f
   - BaseNodeGUID: c3d5b9af-5c8f-4e36-8344-5d4579fbbd2e
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: d9f7f7e9-70ab-4f8b-ab28-52bcf480711f
   - BaseNodeGUID: 0880fed1-16b2-486e-8666-78c33f638158
     PortName: monologuePrefab
@@ -74,13 +74,13 @@ MonoBehaviour:
     PortName: monologuePrefab
     TargetNodeGUID: ff0fa5d2-a3c1-4535-9946-9fcc2a374a7f
   - BaseNodeGUID: ff0fa5d2-a3c1-4535-9946-9fcc2a374a7f
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: d9f7f7e9-70ab-4f8b-ab28-52bcf480711f
   - BaseNodeGUID: 5eec5710-65c3-4bc7-a01d-0c8579a3d12e
     PortName: monologuePrefab
     TargetNodeGUID: e297a3f5-69f0-400f-8479-d6a8b8d84f63
   - BaseNodeGUID: e297a3f5-69f0-400f-8479-d6a8b8d84f63
-    PortName: monologuePrefab
+    PortName: changeSituation
     TargetNodeGUID: d9f7f7e9-70ab-4f8b-ab28-52bcf480711f
   - BaseNodeGUID: d9f7f7e9-70ab-4f8b-ab28-52bcf480711f
     PortName: monologuePrefab

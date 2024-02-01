@@ -7,68 +7,68 @@ Jour1_4;pétarg, what a cute cat, i want to caresser it UwU;pétarg, ilétromign
 ;;
 ;;
 ;;
-Jour_1_1;Foosteps coming closer;a
-Jour_1_2;Keys jiggling;a
-Jour_1_3;Keys turning in the door;a
-Jour_1_4;Door opening;a
-Jour_1_5;Sigh…;a
+Jour_1_1;<i>Foosteps coming closer</i>;a
+Jour_1_2;<i>Keys jiggling</i>;a
+Jour_1_3;<i>Keys turning in the door</i>;a
+Jour_1_4;<i>Door opening</i>;a
+Jour_1_5;<wave a=1 w=100>Sigh…</wave>;a
 Jour_1_6;Oh, Milo. How are you doing, my boy?;a
 Jour_1_7;Awww, purring for me? I guess you had a good day at home.;a
-Jour_1_8;Sigh... Knowing you I’m going to find cat’s hair on my clothes again since I left them on my bed this morning.;a
+Jour_1_8;<wave a=1 w=100>Sigh…</wave> Knowing you I’m going to find cat’s hair on my clothes again since I left them on my bed this morning.;a
 Jour_1_9;Well, it doesn’t matter, we’re home now, let’s go eat.;a
-Jour_1_10;What? Why meow? Are you hungry again? But your bowl was full at noon? Let me see…;a
+Jour_1_10;What? Why meow? Are you hungry again? But your bowl was full at noon? <wave a=1 w=100> Let me see… <wave>;a
 Jour_1_11;Oh yes, you ate it all like the little glutton you are.;a
-Jour_1_12;Heeeere you go, you can eat now.;a
+Jour_1_12;<wave a=1 w=100>Heeeere</wave> you go, you can eat now.;a
 Jour_1_13;Licking your fur, I see. Are you making yourself all pretty for me?;a
-Jour_1_14;I surely hope so because I’m coming back from the supermarket, and I bought you some treats!;a
-Jour_1_15;What are you doing? You’re eating my calathea??;a
-Jour_1_16;Milo, no! Stop it! Bad cat!;a
-Jour_1_17;I already struggled enough today for you to do this.;a
+Jour_1_14;I surely hope so because I’m coming back from the supermarket, and I bought you <incr f=1>some treats!</incr>;a
+Jour_1_15;<shake a=0.5 f=>What are you doing?</shake> You’re eating <shake>my calathea??</shake>;a
+Jour_1_16;Milo, no! Stop it! <shake a=0.5 f=>Bad cat!</shake>;a
+Jour_1_17;I already <incr a=0.8>struggled enough today</incr> for you to do this.;a
 Jour_1_18;I’m not even going to start talking about what Miss Penrose did during my shift.;a
 Jour_1_19;Here, eat your toy instead.;a
 Jour_1_20;Wow, why are you not happy? Did you miss me?;a
 Jour_1_21;Dad was with you this afternoon though, you like him so why are you meowing like that?;a
-Jour_1_22;Mhhh, I know wait a second.;a
-Jour_1_23;Rumbling in a plastic bag;a
+Jour_1_22;<wave a=1 w=100>Mhhh</wave>, I know wait a second.;a
+Jour_1_23;<wiggle>Rumbling in a plastic bag</wiggle>;a
 Jour_1_24;Here you go, a treat for you.;a
-Jour_1_25;It is salmon flavored, your favorite.;a
+Jour_1_25;It is salmon flavored, <b>your favorite.</b>;a
 ;;
 ;;
 ;;
 ;;
 ;;
 ;;
-Jour_2_1;Hello! I’d like to order sushi please! ... Yes... Can I get a huuuh;a
-Jour_2_2;Oops! *laughs* -  feeling cuddly today huh? -No no not you sir it’s just my cat hahah;a
+Jour_2_1;Hello! I’d like to order sushi please! ... Yes... Can I get a <incr f=1><wave>huuuh</wave></incr>;a
+Jour_2_2;Oops! *laughs* - feeling cuddly today huh? -No no not you sir it’s just my cat hahah;a
 Jour_2_3;Could I get aaaaaa...number 9 please?.... Ok great! 20 minutes? Awesome! Thank you;a
 Jour_2_4;You’re hungry too huh? Ok, ok, let me get you something after I order my meal!;a
 Jour_2_5;Let me see... Let’s get a a number 7 today, I’ve been craving some tuna sushi lately.;a
 Jour_2_6;Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
 Jour_2_7;*scratches the sofa with the claws*;a
-Jour_2_8;Oh god! No no no! Bad cat! I won’t give you treats anymore if you keep acting like this!!!;a
+Jour_2_8;<shake a=0.5 f=>Oh god! No no no! Bad cat!</shake> I won’t give you treats anymore if you keep acting like this!!!;a
 Jour_2_9;I’m really sorry about that, my cat started acting up.;a
 Jour_2_10;I’ll get a number 8 please. Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
 Jour_2_11;*meows back at you* I meow you too Milo;a
-Jour_2_12; I'd like to order  a number 7 today, I’ve been craving some tuna sushi lately.;a
+Jour_2_12;I'd like to order a number 7 today, I’ve been craving some tuna sushi lately.;a
 Jour_2_13;Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
 Jour_2_14;Whoah whoah Milo why are you screaming like that?;a
 Jour_2_15;You need to chill dude!;a
 Jour_2_16;Sorry about that, I’ll get a number 8, please.;a
 Jour_2_17;Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
-Jour_2_18;*Sigh* licking yourself today aswell huh?;a
+Jour_2_18;<wave a=1 w=100>Sigh…</wave> licking yourself today aswell huh?;a
 Jour_2_19;Alright well you do your own thing then…;a
 Jour_2_20;I think I’ll get a number 6 today! Haven’t that in a while…;a
 Jour_2_21;Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
 Jour_2_22;Aww purring again Milo? I’m glad youre enjoying this place.;a
 Jour_2_23;Benji and Lena helped out a lot when it came to the decorations of the house…;a
 Jour_2_24;They are so nice, i really love them;a
-Jour_2_25;I think I’ll get a number 6 today! Haven’t had that in a while... ;a
-Jour_2_26;Ok great! 20 minutes? Awesome! Thank you so much, bye. ;a
+Jour_2_25;I think I’ll get a number 6 today! Haven’t had that in a while...;a
+Jour_2_26;Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
 ;;
-Jour_2_27;Ugh *Sighs* I love studying, but I can’t seem to wrap my head around this Fallen Angels analysis…;a
+Jour_2_27;Ugh <wave a=1 w=100>Sigh…</wave> I love studying, but I can’t seem to wrap my head around this Fallen Angels analysis…;a
 Jour_2_28;I get the loneliness and loss themes, but I don't see where the love is here…;a
 Jour_2_29;What did Wong Kar-Wai possibly try to show us?;a
-Jour_2_30;You don’t get it either, do you? *Sighs* well at least we got each other;a
+Jour_2_30;You don’t get it either, do you? <wave a=1 w=100>Sigh…</wave> well at least we got each other;a
 Jour_2_31;And that's reassuring, isn't it my kitty?;a
 Jour_2_32;Well, at least you understand sleep, don’t you?;a
 Jour_2_33;Urgh, I wish I’d just be a cat, just eat and sleep all day, that’s the real dream.;a
@@ -77,7 +77,8 @@ Jour_2_35;I guess you probably have better things to do;a
 Jour_2_36;than to help me understand the complex narrative and philosophic undertones of a 25-year-old movie…;a
 Jour_2_37;Meh, I can’t blame you for that.;a
 Jour_2_38;*Laughs* *imitates radio noise*;a
-Jour_2_39;Krr krr Snake? .... Snake?! SNAAAAAKE!;a
+Jour_2_39;"<color=#209753><shake a=0.5 f=>Krr krr...</shake>
+Snake? ....<wave> Snake?!</wave> <shake>SNAAAAAKE!</shake></color>";a
 Jour_2_40;*Chuckles* I love this game.;a
 Jour_2_41;Oh god, NO! No, no, no! Milo, bad cat! I don’t understand why you insist on eating that cardboard.;a
 Jour_2_42;"It's like the third time this week, I’ve told you already; it's. Not. Food!!";a
@@ -472,3 +473,113 @@ Jour_7_68;Awesome.;a
 Jour_7_69;Awesome.;a
 Jour_7_70;Took you long enough sleepyhead.;a
 Jour_7_71;What the-;a
+;;
+Jour_7_72;So? What do you think?;a
+Jour_7_73;It’s good, it’s good.;a
+Jour_7_74;Yeah?;a
+Jour_7_75; Yeah, it’s really good.;a
+Jour_7_76;Thank you so much for having made my favorite dish ever, I appreciate it a lot.;a
+Jour_7_77; I appreciate you a lot.;a
+Jour_7_78;I’m glad you like it. ;a
+Jour_7_79;I think Milo likes it too.;a
+Jour_7_80;Of course he does, It’s delicious.;a
+Jour_7_81;Yeah, I love it, it’s so good.;a
+Jour_7_82;See? Even Milo wants some!;a
+Jour_7_83;I already gave him some salmon.;a
+Jour_7_84;He must have liked it then.;a
+Jour_7_85;What is he- Milo, no! Stop scratching the sofa!;a
+Jour_7_86;It’s okay I don’t mind a bit of chaos, not when it’s with you. ;a
+Jour_7_87;You are very chaotic too Lena, I dare say.;a
+Jour_7_88;But you love me.;a
+Jour_7_89;Yeah, you’re the best.;a
+Jour_7_90;What is that noise?;a
+Jour_7_91;Which noise?;a
+Jour_7_92;That noise.;a
+Jour_7_93;Milo!;a
+Jour_7_94;You’re so silly like that.;a
+Jour_7_95;I think he’s cute.;a
+Jour_7_96;You always think he’s cute.;a
+Jour_7_97;Yeah, because he looks like his owner.;a
+Jour_7_98;What is he- Milo, no! Stop messing with the trash can!;a
+Jour_7_99;It’s okay I don’t mind a bit of chaos, not when it’s with you. ;a
+Jour_7_100;You are very chaotic too Lena, I dare say.;a
+Jour_7_101;But you love me. ;a
+Jour_7_102;Yeah, you’re the best.;a
+Jour_7_103;Lena, I just wanted to thank you for being there for me you know.  ;a
+Jour_7_104;It’s been up and down lately, and you made it better, so thank you.;a
+Jour_7_105;Well, you deserve it? ;a
+Jour_7_106;You’ve always been there for me since I met you and I just love being around you.;a
+Jour_7_107;It’s been hard for me too but when I see you, I’m happier.;a
+Jour_7_108;Me too.;a
+Jour_7_109;Remember when we met? We just fully collided into each other.;a
+Jour_7_110;Yeah, chuckles I had to get to my English class. ;a
+Jour_7_111;And I had to get to my P.E. class.;a
+Jour_7_112;We just crashed around the corner of the cafeteria and your English books flew everywhere.;a
+Jour_7_113;It was such a good time.;a
+Jour_7_114;Yeah, it was.;a
+Jour_7_115;Let’s finish eating our supper.;a
+Jour_7_116;chuckles Yes, our  s u p p e r.;a
+;;
+Jour_7_117;So? What do you think?;a
+Jour_7_118;It’s good, it’s good. ;a
+Jour_7_119;Yeah? ;a
+Jour_7_120;Yeah, it’s really good.;a
+Jour_7_121;Thank you so much for having made my favorite dish ever;a
+Jour_7_122;I appreciate it a lot.;a
+Jour_7_123;I appreciate you a lot.;a
+Jour_7_124;Thank you, I’m happy you like it.;a
+Jour_7_125;I think Milo likes it too.;a
+Jour_7_126;Of course he does, It’s delicious.;a
+Jour_7_127;Yeah, I love it, it’s so good.;a
+Jour_7_128;See? Even Milo wants some!;a
+Jour_7_129;I already gave him some salmon.;a
+Jour_7_130;He must have liked it then.;a
+Jour_7_131;What is he- Milo, no! Stop scratching the sofa!;a
+Jour_7_132;It’s okay I don’t mind a bit of chaos, not when it’s with you.;a
+Jour_7_133;You are very chaotic too Lena, I dare say.;a
+Jour_7_134;But you love me.;a
+Jour_7_135;Yeah, you’re the best.;a
+Jour_7_136;What is that noise?;a
+Jour_7_137;Which noise?;a
+Jour_7_138;That noise.;a
+Jour_7_139;…;a
+Jour_7_140;Milo!;a
+Jour_7_141;You’re so silly like that.;a
+Jour_7_142;I think he’s cute.;a
+Jour_7_143;You always think he’s cute.;a
+Jour_7_144;Yeah, because he looks like his owner.;a
+Jour_7_145;What is he- Milo, no! Stop messing with the trash can!;a
+Jour_7_146;It’s okay I don’t mind a bit of chaos, not when it’s with you.;a
+Jour_7_147;You are very chaotic too Lena, I dare say.;a
+Jour_7_148;But you love me.;a
+Jour_7_149;Yeah, you’re the best.;a
+Jour_7_150;Lau?;a
+Jour_7_151;I have to talk to you.;a
+Jour_7_152;Yeah sure, what’s going on? ;a
+Jour_7_153;You know I told you that I applied for a job in Mäntyharju right?;a
+Jour_7_154;Oh yeah, I remember about that;a
+Jour_7_155;but you told me they had never answered you.;a
+Jour_7_156;They answered last week…;a
+Jour_7_157;No way?? For real?? That’s awesome!;a
+Jour_7_158;Yeah, I’m super excited. There’s just one small problem.;a
+Jour_7_159;What is it?;a
+Jour_7_160;They want me to start in 2 weeks.;a
+Jour_7_161;Two weeks??;a
+Jour_7_162;Yeah, I’m moving into my new apartment next week.;a
+Jour_7_163;I already packed everything with my brother.;a
+Jour_7_164;Oh... okay? But what about school?;a
+Jour_7_165;And our project for Mr.Virtanen too?;a
+Jour_7_166;Yeah, I’ll work from there.;a
+Jour_7_167;I got the Wi-Fi set up and everything.;a
+Jour_7_168;But don’t worry, I’ll still come back to see you and Milo from time to time.;a
+Jour_7_169;After all, we still got to go to the funfair together.;a
+Jour_7_170;Ah. Okay. This is... unexpected?;a
+Jour_7_171;I’m sorry I wanted to tell you sooner, but I couldn’t bring myself to tell you.;a
+Jour_7_172;…;a
+Jour_7_173;Lau?;a
+Jour_7_174;What?;a
+Jour_7_175;You heard me right?;a
+Jour_7_176;I did, I did, sorry.;a
+Jour_7_177;I’m sorry, I just- I need- I’m going to get some water, okay?;a
+Jour_7_178;I’ll be back.;a
+Jour_7_179;Sure, I’ll wait here.;a
