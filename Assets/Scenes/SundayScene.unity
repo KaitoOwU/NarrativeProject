@@ -147,7 +147,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66448969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -48}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -357,11 +357,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 6397334434f51f84c9f39fa169ab83b1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 70.8
+      value: 231.787
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 6397334434f51f84c9f39fa169ab83b1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 104.3
+      value: 341.46
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 6397334434f51f84c9f39fa169ab83b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -393,11 +393,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 6397334434f51f84c9f39fa169ab83b1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 87.400024
+      value: 227
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 6397334434f51f84c9f39fa169ab83b1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 66
+      value: 237
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 6397334434f51f84c9f39fa169ab83b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -835,10 +835,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1601325239280791751, guid: 7fba451450bcad64aba453e01114fe19, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1926686781579963456, guid: 7fba451450bcad64aba453e01114fe19, type: 3}
       propertyPath: m_Camera
       value: 
@@ -846,10 +842,6 @@ PrefabInstance:
     - target: {fileID: 6483758451741672568, guid: 7fba451450bcad64aba453e01114fe19, type: 3}
       propertyPath: m_Name
       value: -- UI --
-      objectReference: {fileID: 0}
-    - target: {fileID: 6483758451741672568, guid: 7fba451450bcad64aba453e01114fe19, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8991147763999127391, guid: 7fba451450bcad64aba453e01114fe19, type: 3}
       propertyPath: m_Pivot.x
@@ -980,27 +972,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1067
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 600
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1216,7 +1208,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818617934}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -204}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1247,7 +1239,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CACACACACAAAA
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
