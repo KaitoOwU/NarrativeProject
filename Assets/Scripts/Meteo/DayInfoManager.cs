@@ -9,9 +9,8 @@ using UnityEngine.UI;
 
 public class DayInfoManager : MonoBehaviour
 {
-    [SerializeField] private TMP_Text _description;
     [SerializeField] private Image _dayImg, _transitionImg;
-    [SerializeField] private GameObject _sunObj, _cloudyObj, _rainyObj;
+    [SerializeField] private GameObject _sunObj, _rainyObj;
 
     private void Start()
     {
@@ -20,15 +19,11 @@ public class DayInfoManager : MonoBehaviour
     
     private IEnumerator CR_Transition()
     {
-        _description.DOText(GameManager.Instance.GetDialog($"DAY{(int)GameManager.Instance.Day}_DESC"), 1f);
         switch(GameManager.Instance.GetCurrentDayData().meteo)
         {
             case Meteo.SUNNY:
                 _sunObj.SetActive(true);
                 break;
-            /*case Meteo.DEFAULT:
-                _cloudyObj.SetActive(true);
-                break;*/
             case Meteo.RAINY:
                 _rainyObj.SetActive(true);
                 break;

@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 66448970}
+  - component: {fileID: 66448971}
   m_Layer: 5
   m_Name: -- ROOMS --
   m_TagString: Untagged
@@ -147,7 +148,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66448969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -160,6 +161,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &66448971
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66448969}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 510
+  m_TargetDisplay: 0
 --- !u!1001 &343513849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -229,30 +253,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: -- LIVING ROOM --
       objectReference: {fileID: 0}
-    - target: {fileID: 1491803819497134506, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
-      propertyPath: _roomMoods.Array.data[0].plant1
-      value: 
-      objectReference: {fileID: 21300000, guid: 9afa70e2b3f1d0d439089830816a27ef, type: 3}
-    - target: {fileID: 1491803819497134506, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
-      propertyPath: _roomMoods.Array.data[0].plant2
-      value: 
-      objectReference: {fileID: 21300000, guid: addfde8d4ebcbc94699f9aeaaed71abd, type: 3}
-    - target: {fileID: 1491803819497134506, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
-      propertyPath: _roomMoods.Array.data[2].plant1
-      value: 
-      objectReference: {fileID: 21300000, guid: 592d9207181ac85449f8a95d50eeba2d, type: 3}
-    - target: {fileID: 1491803819497134506, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
-      propertyPath: _roomMoods.Array.data[2].plant2
-      value: 
-      objectReference: {fileID: 21300000, guid: 64a692f73b46b4f41972d7028750e370, type: 3}
-    - target: {fileID: 1491803819497134506, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
-      propertyPath: _roomMoods.Array.data[3].plant1
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a0479ed1937bff47ada7bc4fa7eec13, type: 3}
-    - target: {fileID: 1491803819497134506, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
-      propertyPath: _roomMoods.Array.data[3].plant2
-      value: 
-      objectReference: {fileID: 21300000, guid: e68bdbcc7ae79dd4dbe42a8e2ee047f9, type: 3}
     - target: {fileID: 2912842181114313409, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -279,7 +279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2912842181114313409, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0.63171387
+      value: 0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 2912842181114313409, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
       propertyPath: m_SizeDelta.y
@@ -332,6 +332,22 @@ PrefabInstance:
     - target: {fileID: 2912842181114313409, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815689817521514890, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 319.256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815689817521514890, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 614.409
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815689817521514890, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 159.62897
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815689817521514890, guid: fe56def805f8bbc419e8ef73c33bddf6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 524.5025
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -397,7 +413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 6397334434f51f84c9f39fa169ab83b1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -153
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 6397334434f51f84c9f39fa169ab83b1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -762,7 +778,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1980, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
@@ -791,7 +807,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 500
   m_TargetDisplay: 0
 --- !u!224 &998751770
 RectTransform:
@@ -828,6 +844,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1601325239280791751, guid: 7fba451450bcad64aba453e01114fe19, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1926686781579963456, guid: 7fba451450bcad64aba453e01114fe19, type: 3}
       propertyPath: m_Camera
       value: 
@@ -954,26 +974,6 @@ PrefabInstance:
     - target: {fileID: 3102500559854669764, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
       propertyPath: m_Name
       value: monologuePrefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 3102500559854669764, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3102500559854669816, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3102500559854669816, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3102500559854669816, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3102500559854669816, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
-      propertyPath: m_Color.r
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3102500559854669819, guid: 0f496e53feb4d9b45807154a232fee3b, type: 3}
       propertyPath: m_Pivot.x
@@ -1221,7 +1221,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818617934}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -204}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1252,7 +1252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: CACACACACAAAA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1347,10 +1347,10 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 150
+  m_SortingOrder: 510
   m_TargetDisplay: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

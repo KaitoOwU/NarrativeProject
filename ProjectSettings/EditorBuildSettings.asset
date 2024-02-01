@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/FinalScene/MainMenuScene.unity
+    guid: 764d95f2cb9da214ba6feb5cd408e5cb
   - enabled: 1
     path: Assets/Scenes/FinalScene/WeekScene.unity
     guid: a34ffa77f2718344d8888af9353668a1
-  - enabled: 1
-    path: Assets/Scenes/KevinScene.unity
-    guid: 2cd3f64416a76f64cb6e9c71126b830a
   - enabled: 1
     path: Assets/Scenes/SundayScene.unity
     guid: 43156f9e998af7043ab1e738bddcb98e
@@ -22,7 +19,7 @@ EditorBuildSettings:
     guid: cf1faf7a0a4ba9c4fb6e555bc6e798e3
   - enabled: 1
     path: Assets/Scenes/SaturdayScene.unity
-    guid: 75b94febdcc059a4fb49c2a1af423035
+    guid: 495286c25f166224c836f9f48224d097
   - enabled: 1
     path: Assets/Scenes/FridayScene.unity
     guid: f24b549ab4b6ce04aa0df7af04b7a563

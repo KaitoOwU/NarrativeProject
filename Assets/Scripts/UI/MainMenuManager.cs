@@ -10,7 +10,7 @@ public class MainMenuManager : MonoBehaviour
     
     public void Press()
     {
-        _play.transform.DOScale(.9f, .3f);
+        _play.transform.DOScale(.7f, .3f);
     }
     
     public void Unpress()

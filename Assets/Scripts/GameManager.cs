@@ -134,7 +134,12 @@ public class GameManager : MonoBehaviour
 
     public void ChangeMood(Mood newMood, Vector2 playerPos)
     {
-        InkStain.CreateStain(450f, playerPos).StartAnimation(() => ChangeMood(newMood), newMood);
+        InkStain.CreateStain(450f, playerPos).StartMoodChangeAnimation(() => ChangeMood(newMood), newMood);
+    }
+
+    public void ChangeAura(Mood mood, Vector2 playerPos)
+    {
+        InkStain.CreateStain(80f, playerPos).StartAuraAnimation(mood);
     }
 
 

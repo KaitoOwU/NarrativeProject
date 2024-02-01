@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class InkStain : MonoBehaviour
@@ -17,10 +18,10 @@ public class InkStain : MonoBehaviour
         return stain;
     }
 
-    public void StartAnimation(Action callback, Mood mood) => StartCoroutine(PlayAnimation(callback, mood));
-    public void StartAnimation(Action callback) => StartCoroutine(PlayAnimation(callback, GameManager.Instance.CurrentMood));
+    public void StartMoodChangeAnimation([CanBeNull] Action callback, Mood mood) => StartCoroutine(PlayMoodChangeAnimation(callback, mood));
+    public void StartMoodChangeAnimation([CanBeNull] Action callback) => StartCoroutine(PlayMoodChangeAnimation(callback, GameManager.Instance.CurrentMood));
 
-    private IEnumerator PlayAnimation(Action callback, Mood mood)
+    private IEnumerator PlayMoodChangeAnimation(Action callback, Mood mood)
     {
         Material m = GetComponent<SpriteRenderer>().material;
         m.SetColor("_Color1", GameManager.MoodColor[mood].gradiantStart);
@@ -32,7 +33,7 @@ public class InkStain : MonoBehaviour
         }, -0.6f, .6f, 6f).SetEase(Ease.OutExpo);
         
         yield return new WaitForSecondsRealtime(2.5f);
-        callback.Invoke();
+        callback?.Invoke();
         
         yield return DOTween.To(x =>
         {
@@ -40,5 +41,20 @@ public class InkStain : MonoBehaviour
         }, .9f, 0f, 5f).WaitForCompletion();
         
         Destroy(gameObject);
+    }
+
+    public void StartAuraAnimation(Mood mood) => StartCoroutine(PlayAuraAnimation(mood));
+
+    public IEnumerator PlayAuraAnimation(Mood mood)
+    {
+        Material m = GetComponent<SpriteRenderer>().material;
+        m.SetColor("_Color1", GameManager.MoodColor[mood].gradiantStart);
+        m.SetColor("_Color2", GameManager.MoodColor[mood].gradiantEnd);
+        
+        DOTween.To(x =>
+        {
+            m.SetFloat(Shader.PropertyToID("_Size"), x);
+        }, -0.6f, .6f, 6f).SetEase(Ease.OutExpo);
+        yield break;
     }
 }

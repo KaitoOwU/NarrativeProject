@@ -58,8 +58,8 @@ MonoBehaviour:
   - firstPlan: {fileID: 21300000, guid: 93c403e7ecd453e46b7027c6e6ce2e5a, type: 3}
     kitchen: {fileID: 21300000, guid: 14ab2eeaecdb3b249b4c5ddd92edea1c, type: 3}
     sofa: {fileID: 21300000, guid: 57ce4e8cc2a417b4c903e4a0b49ce0c6, type: 3}
-    plant1: {fileID: 21300000, guid: addfde8d4ebcbc94699f9aeaaed71abd, type: 3}
-    plant2: {fileID: 21300000, guid: 9afa70e2b3f1d0d439089830816a27ef, type: 3}
+    plant1: {fileID: 21300000, guid: 9afa70e2b3f1d0d439089830816a27ef, type: 3}
+    plant2: {fileID: 21300000, guid: addfde8d4ebcbc94699f9aeaaed71abd, type: 3}
     opened: {fileID: 21300000, guid: e0cee50884cdd39468dcf45f0905dbf1, type: 3}
     closed: {fileID: 21300000, guid: f99a07cf842bcff46b756d00d7a435cc, type: 3}
   - firstPlan: {fileID: 21300000, guid: 5e239af7cfa14c34f87f19a4d99365bb, type: 3}
@@ -72,15 +72,15 @@ MonoBehaviour:
   - firstPlan: {fileID: 21300000, guid: 7838fcf80539f864b8a5a7a7cf15e005, type: 3}
     kitchen: {fileID: 21300000, guid: 7e6fe87ab83c90e4894417e9ac26f89a, type: 3}
     sofa: {fileID: 21300000, guid: 5981199bb13da47499aeba5232665dc6, type: 3}
-    plant1: {fileID: 21300000, guid: 64a692f73b46b4f41972d7028750e370, type: 3}
-    plant2: {fileID: 21300000, guid: 592d9207181ac85449f8a95d50eeba2d, type: 3}
+    plant1: {fileID: 21300000, guid: 592d9207181ac85449f8a95d50eeba2d, type: 3}
+    plant2: {fileID: 21300000, guid: 64a692f73b46b4f41972d7028750e370, type: 3}
     opened: {fileID: 21300000, guid: a6b27522d6cbb70459e611b320bbbb23, type: 3}
     closed: {fileID: 21300000, guid: 115df049a6424bd4bbd1b65ae11c56ca, type: 3}
   - firstPlan: {fileID: 21300000, guid: 2c36bacdf64e7e3419cb1a23bc29e422, type: 3}
     kitchen: {fileID: 21300000, guid: 4b13374abd4f51c43a59a2eb9f04e5cc, type: 3}
     sofa: {fileID: 21300000, guid: ba2845ee799665f4796f76efb710616b, type: 3}
-    plant1: {fileID: 21300000, guid: e68bdbcc7ae79dd4dbe42a8e2ee047f9, type: 3}
-    plant2: {fileID: 21300000, guid: 8a0479ed1937bff47ada7bc4fa7eec13, type: 3}
+    plant1: {fileID: 21300000, guid: 8a0479ed1937bff47ada7bc4fa7eec13, type: 3}
+    plant2: {fileID: 21300000, guid: e68bdbcc7ae79dd4dbe42a8e2ee047f9, type: 3}
     opened: {fileID: 21300000, guid: bd8ace423faa5b14196f5a627e57c512, type: 3}
     closed: {fileID: 21300000, guid: c9afa13610cc0c44bafe4d2b887670bb, type: 3}
   _firstPlan: {fileID: 3528683381514138312}
