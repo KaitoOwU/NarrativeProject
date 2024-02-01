@@ -14,5 +14,4 @@ public class ButtonDatas : MonoBehaviour
 {
     public Emotions _emotion;
     public string _soundName;
-    public int loveWon;
 }
