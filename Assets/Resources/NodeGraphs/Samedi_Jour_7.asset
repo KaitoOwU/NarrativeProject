@@ -53,10 +53,10 @@ MonoBehaviour:
     PortName: BigMeow
     TargetNodeGUID: 59923b82-9af1-4ba2-ba5b-3df4d573f9a6
   - BaseNodeGUID: 98f6e074-a85b-4e12-8638-3400dce68fa3
-    PortName: Eat
+    PortName: MeowToEat
     TargetNodeGUID: e6fa9dc6-9aec-49dc-aeb7-6d3f6c1a129d
   - BaseNodeGUID: 98f6e074-a85b-4e12-8638-3400dce68fa3
-    PortName: Plant
+    PortName: EatPlant
     TargetNodeGUID: eb7dd1ca-9eb6-4ccc-93a3-a9c8edff3175
   - BaseNodeGUID: 5ff39f09-900c-4e42-a345-b579c6b46d4e
     PortName: monologuePrefab
@@ -125,13 +125,13 @@ MonoBehaviour:
     PortName: Lap
     TargetNodeGUID: 1a8d6f94-5326-4fb8-98c0-cce01193f4e3
   - BaseNodeGUID: c366eedb-bc64-4135-9c6c-f1ad4d30fb0d
-    PortName: Eat
+    PortName: MeowToEat
     TargetNodeGUID: 21689e29-0ffc-4c1b-ab32-771282dd3ce3
   - BaseNodeGUID: c366eedb-bc64-4135-9c6c-f1ad4d30fb0d
     PortName: Sofa
     TargetNodeGUID: 5e293dfb-2183-4832-a8dc-bc1e006b23f2
   - BaseNodeGUID: c366eedb-bc64-4135-9c6c-f1ad4d30fb0d
-    PortName: Gear
+    PortName: GearCardBoard
     TargetNodeGUID: 501f45f5-9024-41d2-9945-2f99022ed99c
   - BaseNodeGUID: c366eedb-bc64-4135-9c6c-f1ad4d30fb0d
     PortName: Trash
