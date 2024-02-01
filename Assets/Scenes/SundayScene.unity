@@ -693,6 +693,8 @@ MonoBehaviour:
   dialogueText: {fileID: 1283875009635392818}
   buttonContainer: {fileID: 66448970}
   choiceTimeout: 10
+  _oldDecor: {fileID: 0}
+  _newDecor: {fileID: 0}
 --- !u!1 &998751766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1170,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 998751770}
     m_Modifications:
+    - target: {fileID: 3224320254494633568, guid: c7a9ca1658cfef44b95abd73d29bfddf, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224320254494633568, guid: c7a9ca1658cfef44b95abd73d29bfddf, type: 3}
+      propertyPath: m_fontSize
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224320254494633568, guid: c7a9ca1658cfef44b95abd73d29bfddf, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999358658328025653, guid: c7a9ca1658cfef44b95abd73d29bfddf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -218.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999358658328025653, guid: c7a9ca1658cfef44b95abd73d29bfddf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 233.379
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999358658328025653, guid: c7a9ca1658cfef44b95abd73d29bfddf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999358658328025653, guid: c7a9ca1658cfef44b95abd73d29bfddf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 171
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018200982796200142, guid: c7a9ca1658cfef44b95abd73d29bfddf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 569.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018200982796200142, guid: c7a9ca1658cfef44b95abd73d29bfddf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -324.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6024648595208468125, guid: c7a9ca1658cfef44b95abd73d29bfddf, type: 3}
       propertyPath: onTextShowed.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1279,6 +1317,10 @@ PrefabInstance:
     - target: {fileID: 8039295091043291368, guid: c7a9ca1658cfef44b95abd73d29bfddf, type: 3}
       propertyPath: m_Name
       value: DialogueBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 8172986701323973994, guid: c7a9ca1658cfef44b95abd73d29bfddf, type: 3}
+      propertyPath: m_Alpha
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
