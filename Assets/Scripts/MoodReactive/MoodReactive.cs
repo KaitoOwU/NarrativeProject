@@ -5,10 +5,15 @@ using UnityEngine;
 
 public class MoodReactive : MonoBehaviour
 {
-    private void Start()
+    private void OnEnable()
     {
         GameManager.Instance.OnMoodChange += OnMoodChange;
     }
 
-    protected virtual void OnMoodChange(Mood newMood) {}
+    private void OnDisable()
+    {
+        GameManager.Instance.OnMoodChange -= OnMoodChange;
+    }
+
+    protected virtual void OnMoodChange(Mood newMood) { }
 }
