@@ -97,9 +97,6 @@ MonoBehaviour:
   - BaseNodeGUID: d668c2d0-70ca-45ff-a0aa-7355d7cbd4c9
     PortName: monologuePrefab
     TargetNodeGUID: 0725d083-df60-4b88-8dce-1963f3111e3c
-  - BaseNodeGUID: 0725d083-df60-4b88-8dce-1963f3111e3c
-    PortName: changeSituation
-    TargetNodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
   - BaseNodeGUID: c680c48a-661e-460f-bd25-b0a1d5fd7a4b
     PortName: monologuePrefab
     TargetNodeGUID: d668c2d0-70ca-45ff-a0aa-7355d7cbd4c9
@@ -160,6 +157,9 @@ MonoBehaviour:
   - BaseNodeGUID: 041d6ad6-959a-4328-a36c-fbf160e1a70d
     PortName: monologuePrefab
     TargetNodeGUID: ec6cb996-85af-4804-9386-7935cb6f3764
+  - BaseNodeGUID: 0725d083-df60-4b88-8dce-1963f3111e3c
+    PortName: changeSituation
+    TargetNodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
   DialogueNodeData:
   - NodeGUID: 611dbfb4-ce74-42a0-a217-03e094fcea52
     DialogueText: Jour_2_1
