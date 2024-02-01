@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,8 @@ namespace Subtegral.DialogueSystem.Runtime
     public class DialogueParserTest : MonoBehaviour
     {
         [SerializeField] private DialogueContainer dialogue;
+        [SerializeField] private CanvasGroup _group;
+        [SerializeField] private Image _triangle;
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private Transform buttonContainer;
 
@@ -30,15 +33,18 @@ namespace Subtegral.DialogueSystem.Runtime
         {
             _playerButton = GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<Button>(); ;
             var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
-            ProceedToNarrative(narrativeData.TargetNodeGUID);
+            StartCoroutine(ProceedToNarrative(narrativeData.TargetNodeGUID));
         }
 
-        private void ProceedToNarrative(string narrativeDataGUID)
+        private IEnumerator ProceedToNarrative(string narrativeDataGUID)
         {
             var text = dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).DialogueText; //ID
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
-            
+
+            _triangle.DOFade(0f, 0f);
             //APPARAITRE BOITE DIALOGUE
+            if(_group.alpha < 0.9f) 
+                yield return _group.DOFade(1f, 0.5f).WaitForCompletion();
             
             dialogueText.text = GameManager.Instance.GetDialog(ProcessProperties(text)); //REMPLISSAGE DU TEXTE
             var buttons = buttonContainer.GetComponentsInChildren<Button>(true);
@@ -68,11 +74,11 @@ namespace Subtegral.DialogueSystem.Runtime
                         buttons[i].gameObject.SetActive(true);
                         buttons[i].onClick.AddListener(() =>
                         {
-                            StartCoroutine(GameManager.Instance.CR_EndDay());
+                            _group.DOFade(0f, 0.5f).OnComplete(() => StartCoroutine(GameManager.Instance.CR_EndDay()));
                         }); ;
                     }
                 }
-                return;
+                yield break;
             }
 
             if(choices.ToList().Count == 1 && choices.ToList()[0].PortName == "changeSituation")
@@ -81,8 +87,10 @@ namespace Subtegral.DialogueSystem.Runtime
                 {
                     if (buttons[i].gameObject.name == "monologuePrefab")
                     {
-                        StartCoroutine(GameManager.Instance.CR_EndScenario(() => ChangeDecor("sonBanger", Emotions.NoEmotion, choices.ToList()[0])));
-                        return;
+                        _group.DOFade(0f, 0.5f).OnComplete(() =>
+                            StartCoroutine(GameManager.Instance.CR_EndScenario(() =>
+                                ChangeDecor("sonBanger", Emotions.NoEmotion, choices.ToList()[0]))));
+                        yield break;
                     }
                 }
             }
@@ -157,7 +165,7 @@ namespace Subtegral.DialogueSystem.Runtime
             StopChoiceTimeout();
             AudioManager.Instance.Play(soundName);
             AddEmotion(chosenEmotion);
-            ProceedToNarrative(choice.TargetNodeGUID);
+            StartCoroutine(ProceedToNarrative(choice.TargetNodeGUID));
         }
 
         private void ChangeSituationMonologue(string soundName, Emotions chosenEmotion, NodeLinkData choice)
@@ -165,7 +173,7 @@ namespace Subtegral.DialogueSystem.Runtime
             StopChoiceTimeout();
             AudioManager.Instance.Play(soundName);
             AddEmotion(chosenEmotion);
-            ProceedToNarrative(choice.TargetNodeGUID);
+            StartCoroutine(ProceedToNarrative(choice.TargetNodeGUID));
         }
 
         private void AddEmotion(Emotions emotion)
@@ -218,7 +226,7 @@ namespace Subtegral.DialogueSystem.Runtime
             {
                 if (defaultChoice != null)
                 {
-                    ProceedToNarrative(defaultChoice.TargetNodeGUID);
+                    StartCoroutine(ProceedToNarrative(defaultChoice.TargetNodeGUID));
                 }
             }
         }

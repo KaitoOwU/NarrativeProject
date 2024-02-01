@@ -15,5 +15,5 @@ public class MoodReactive : MonoBehaviour
         GameManager.Instance.OnMoodChange -= OnMoodChange;
     }
 
-    protected virtual void OnMoodChange(Mood newMood) { }
+    protected virtual void OnMoodChange(Mood newMood) {}
 }
