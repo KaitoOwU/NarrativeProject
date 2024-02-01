@@ -17,7 +17,7 @@ MonoBehaviour:
     PortName: Next
     TargetNodeGUID: 611dbfb4-ce74-42a0-a217-03e094fcea52
   - BaseNodeGUID: 611dbfb4-ce74-42a0-a217-03e094fcea52
-    PortName: Turn
+    PortName: Leg
     TargetNodeGUID: df1036ee-7065-419c-aee8-799fe8653180
   - BaseNodeGUID: 611dbfb4-ce74-42a0-a217-03e094fcea52
     PortName: Food
@@ -26,10 +26,10 @@ MonoBehaviour:
     PortName: Sofa
     TargetNodeGUID: 3cd6c10c-7fc1-4d8f-8a27-a7428665c7e6
   - BaseNodeGUID: 611dbfb4-ce74-42a0-a217-03e094fcea52
-    PortName: Meow
+    PortName: LittleMeow
     TargetNodeGUID: 47535309-d87d-4018-be8e-25222ea255b3
   - BaseNodeGUID: 611dbfb4-ce74-42a0-a217-03e094fcea52
-    PortName: MEOW
+    PortName: BigMeow
     TargetNodeGUID: 729e8c0e-671d-4ddd-b0eb-f73aa3abf182
   - BaseNodeGUID: 611dbfb4-ce74-42a0-a217-03e094fcea52
     PortName: Lick
@@ -38,7 +38,7 @@ MonoBehaviour:
     PortName: Purr
     TargetNodeGUID: 7fcffb7c-9cc5-44e5-af27-cbd36c00b893
   - BaseNodeGUID: 611dbfb4-ce74-42a0-a217-03e094fcea52
-    PortName: Nothing
+    PortName: attendre
     TargetNodeGUID: 3e4307c6-c7b1-41b0-8a3b-aed228388063
   - BaseNodeGUID: df1036ee-7065-419c-aee8-799fe8653180
     PortName: monologuePrefab
@@ -118,48 +118,48 @@ MonoBehaviour:
   - BaseNodeGUID: 6bb88731-b225-42b9-b751-7fa4177662ae
     PortName: monologuePrefab
     TargetNodeGUID: 08a2afe5-411b-4ef6-a29b-aa13bd80fe0d
-  - BaseNodeGUID: 08a2afe5-411b-4ef6-a29b-aa13bd80fe0d
-    PortName: monologuePrefab
-    TargetNodeGUID: 822ad036-8686-4e9d-855f-0b83521608c5
   - BaseNodeGUID: 822ad036-8686-4e9d-855f-0b83521608c5
     PortName: Lap
     TargetNodeGUID: 72b5fc0b-8b4e-435d-b87c-b6feadf72928
   - BaseNodeGUID: 822ad036-8686-4e9d-855f-0b83521608c5
-    PortName: Balcony
+    PortName: SleepBalcony
     TargetNodeGUID: e5f18ba0-4edd-46c8-89b6-c58062ad55fa
   - BaseNodeGUID: 822ad036-8686-4e9d-855f-0b83521608c5
-    PortName: Nothing
+    PortName: attendre
     TargetNodeGUID: d20cabc6-7a9f-4202-b710-02d9e88c701e
   - BaseNodeGUID: 822ad036-8686-4e9d-855f-0b83521608c5
-    PortName: Gear
+    PortName: GearCardboard
     TargetNodeGUID: dc578290-f960-4298-aaaa-db50680afe3a
   - BaseNodeGUID: 822ad036-8686-4e9d-855f-0b83521608c5
-    PortName: Carboard
+    PortName: EatCardboard
     TargetNodeGUID: d8506b60-0a1d-496e-bbe3-94f0cc0486c3
+  - BaseNodeGUID: 08a2afe5-411b-4ef6-a29b-aa13bd80fe0d
+    PortName: monologuePrefab
+    TargetNodeGUID: 822ad036-8686-4e9d-855f-0b83521608c5
+  - BaseNodeGUID: dc578290-f960-4298-aaaa-db50680afe3a
+    PortName: monologuePrefab
+    TargetNodeGUID: 041d6ad6-959a-4328-a36c-fbf160e1a70d
+  - BaseNodeGUID: d8506b60-0a1d-496e-bbe3-94f0cc0486c3
+    PortName: monologuePrefab
+    TargetNodeGUID: 778f8124-a072-42f3-a6cb-6eca87a17322
+  - BaseNodeGUID: d20cabc6-7a9f-4202-b710-02d9e88c701e
+    PortName: monologuePrefab
+    TargetNodeGUID: ef6a614e-b101-4c70-ae3b-91cf3ea55e16
   - BaseNodeGUID: 72b5fc0b-8b4e-435d-b87c-b6feadf72928
     PortName: monologuePrefab
     TargetNodeGUID: fb7bf6e8-3a3d-4d00-b557-db4120773f89
   - BaseNodeGUID: e5f18ba0-4edd-46c8-89b6-c58062ad55fa
     PortName: monologuePrefab
     TargetNodeGUID: d50ff54f-17f7-4bf1-b59a-3effaf93836c
-  - BaseNodeGUID: d20cabc6-7a9f-4202-b710-02d9e88c701e
-    PortName: monologuePrefab
-    TargetNodeGUID: ef6a614e-b101-4c70-ae3b-91cf3ea55e16
-  - BaseNodeGUID: ef6a614e-b101-4c70-ae3b-91cf3ea55e16
-    PortName: monologuePrefab
-    TargetNodeGUID: adaa678f-d015-4299-a029-2e82d55805fa
   - BaseNodeGUID: adaa678f-d015-4299-a029-2e82d55805fa
     PortName: monologuePrefab
     TargetNodeGUID: cd9097ee-543b-42f5-8cc9-0d95e2e7e8d0
-  - BaseNodeGUID: dc578290-f960-4298-aaaa-db50680afe3a
+  - BaseNodeGUID: ef6a614e-b101-4c70-ae3b-91cf3ea55e16
     PortName: monologuePrefab
-    TargetNodeGUID: 041d6ad6-959a-4328-a36c-fbf160e1a70d
+    TargetNodeGUID: adaa678f-d015-4299-a029-2e82d55805fa
   - BaseNodeGUID: 041d6ad6-959a-4328-a36c-fbf160e1a70d
     PortName: monologuePrefab
     TargetNodeGUID: ec6cb996-85af-4804-9386-7935cb6f3764
-  - BaseNodeGUID: d8506b60-0a1d-496e-bbe3-94f0cc0486c3
-    PortName: monologuePrefab
-    TargetNodeGUID: 778f8124-a072-42f3-a6cb-6eca87a17322
   DialogueNodeData:
   - NodeGUID: 611dbfb4-ce74-42a0-a217-03e094fcea52
     DialogueText: Jour_2_1
