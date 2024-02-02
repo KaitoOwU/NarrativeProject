@@ -7,12 +7,12 @@ Jour1_4;pétarg, what a cute cat, i want to caresser it UwU;pétarg, ilétromign
 ;;
 ;;
 ;;
-Jour_1_1;<i>Foosteps coming closer</i>;a
-Jour_1_2;<i>Keys jiggling</i>;a
-Jour_1_3;<i>Keys turning in the door</i>;a
-Jour_1_4;<i>Door opening</i>;a
-Jour_1_5;<wave a=1 w=100>Sigh…</wave>;a
-Jour_1_6;Oh, Milo. How are you doing, my boy?;a
+Jour_1_1;<i>Foosteps coming closer</i>;<i>Pas qui se rapprochent <i>
+Jour_1_2;<i>Keys jiggling</i>;<i>Cliquetis métallique<i>
+Jour_1_3;<i>Keys turning in the door</i>;<i>Clés qui tournent dans la porte<i>
+Jour_1_4;<i>Door opening</i>;<i>Porte qui s'ouvre<i>
+Jour_1_5;<wave a=1 w=100>Sigh…</wave>;<wave a=1 w=100>Soupire…</wave>
+Jour_1_6;Oh, Milo. How are you doing, my boy?;Oh, <color=black>Milo</color>. Comment ça va mon chaton?
 Jour_1_7;Awww, purring for me? I guess you had a good day at home.;a
 Jour_1_8;<wave a=1 w=100>Sigh…</wave> Knowing you I’m going to find cat’s hair on my clothes again since I left them on my bed this morning.;a
 Jour_1_9;Well, it doesn’t matter, we’re home now, let’s go eat.;a
