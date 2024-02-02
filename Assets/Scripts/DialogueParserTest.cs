@@ -47,6 +47,7 @@ namespace Subtegral.DialogueSystem.Runtime
                 img.DOFade(1f, 0f);
             });
             var text = dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID).DialogueText; //ID
+            Debug.Log(text);
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == narrativeDataGUID);
 
             _triangle.DOFade(0f, 0f);
@@ -101,9 +102,13 @@ namespace Subtegral.DialogueSystem.Runtime
                 {
                     if (buttons[i].gameObject.name == "monologuePrefab")
                     {
-                        _group.DOFade(0f, 0.5f).OnComplete(() =>
+                        buttons[i].gameObject.SetActive(true);
+                        buttons[i].onClick.AddListener(() =>
+                        {
+                            _group.DOFade(0f, 0.5f).OnComplete(() =>
                             StartCoroutine(GameManager.Instance.CR_EndScenario(() =>
                                 ChangeDecor("transitionGoofy", Emotions.NoEmotion, choices.ToList()[0]))));
+                        });
                         yield break;
                     }
                 }
@@ -167,9 +172,9 @@ namespace Subtegral.DialogueSystem.Runtime
             AudioManager.Instance.Play(soundName);
             AddEmotion(chosenEmotion);
             //DESACTIVER ANCIEN DECOR ET ACTIVER NOUVEAU
-            _oldDecor.SetActive(false); 
-            _newDecor.SetActive(true);
             ProceedToNarrative(choice.TargetNodeGUID);
+            _oldDecor.SetActive(false);
+            _newDecor.SetActive(true);
         }
 
 
