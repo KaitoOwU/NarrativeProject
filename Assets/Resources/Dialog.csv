@@ -29,7 +29,7 @@ Jour_1_19;Here, eat your toy instead.;a
 Jour_1_20;Wow, why are you not happy? Did you miss me?;a
 Jour_1_21;Dad was with you this afternoon though, you like him so why are you meowing like that?;a
 Jour_1_22;<wave a=0.3 w=1>Mhhh</wave>, I know wait a second.;a
-Jour_1_23;<wiggle>Rumbling in a plastic bag</wiggle>;a
+Jour_1_23;*<wiggle a=0.1>rumbling in a plastic bag</wiggle>*;a
 Jour_1_24;Here you go, a treat for you.;a
 Jour_1_25;It is salmon flavored, <b>your favorite.</b>;a
 ;;
