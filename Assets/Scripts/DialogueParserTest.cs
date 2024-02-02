@@ -130,7 +130,7 @@ namespace Subtegral.DialogueSystem.Runtime
                             
                             Image img = buttons[i].transform.parent.GetComponent<Image>();
                             _tweens.Add(img);
-                            img.DOFade(0.7f, 1f).OnComplete(() =>
+                            img.DOFade(0.85f, 1f).OnComplete(() =>
                             {
                                 img.DOFade(1f, 0f);
                             }).SetLoops(-1);

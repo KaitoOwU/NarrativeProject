@@ -14,7 +14,7 @@ public class DialogBox : MonoBehaviour
     private void Start()
     {
         _default = _triangle.transform.localPosition.y;
-        _triangle.transform.DOLocalMoveY(_default + 20, 0.5f).OnComplete(() =>
+        _triangle.transform.DOLocalMoveY(_default + 20, 1f).OnComplete(() =>
         {
             _triangle.transform.DOLocalMoveY(_default, 0f);
         }).SetLoops(-1);
