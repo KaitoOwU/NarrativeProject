@@ -36,12 +36,28 @@ public class GameManager : MonoBehaviour
 
     public List<int> _emotions;
 
+
     [SerializeField] private Image _fade;
     private List<(string, string[])> _dialogDatabase = new();
     
     public static GameManager Instance { get; private set; }
     
     public Language GameLanguage { get; private set; } = Language.ENGLISH;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            if (GameLanguage == Language.ENGLISH)
+            {
+                GameLanguage = Language.FRANCAIS;
+            }
+            else
+            {
+                GameLanguage = Language.ENGLISH;
+            }
+        }
+    }
     public List<(string, string[])> DialogDatabase
     {
         get => _dialogDatabase;
