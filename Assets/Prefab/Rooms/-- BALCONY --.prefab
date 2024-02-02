@@ -65,7 +65,7 @@ MonoBehaviour:
     plant: {fileID: 21300000, guid: b60407ef91742ba4f90430684dc0ff1d, type: 3}
     grid: {fileID: 21300000, guid: 13f91425bbc16bc48afe1c79365310f4, type: 3}
   _back: {fileID: 6863125581521029165}
-  _plant: {fileID: 0}
+  _plant: {fileID: 7037070651233218860}
   _grid: {fileID: 4871284212735999744}
 --- !u!1 &4083426017701487788
 GameObject:

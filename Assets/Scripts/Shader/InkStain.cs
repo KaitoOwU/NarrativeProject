@@ -27,6 +27,8 @@ public class InkStain : MonoBehaviour
         m.SetColor("_Color1", GameManager.MoodColor[mood].gradiantStart);
         m.SetColor("_Color2", GameManager.MoodColor[mood].gradiantEnd);
         
+        Destroy(gameObject, 7.5f);
+        
         DOTween.To(x =>
         {
             m.SetFloat(Shader.PropertyToID("_Size"), x);
@@ -39,8 +41,6 @@ public class InkStain : MonoBehaviour
         {
             m.SetFloat(Shader.PropertyToID("_Alpha"), x);
         }, .9f, 0f, 5f).WaitForCompletion();
-        
-        Destroy(gameObject);
     }
 
     public void StartAuraAnimation(Mood mood) => StartCoroutine(PlayAuraAnimation(mood));

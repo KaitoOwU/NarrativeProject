@@ -55,7 +55,7 @@ Jour_2_14;Whoah whoah Milo why are you screaming like that?;a
 Jour_2_15;You need to chill dude!;a
 Jour_2_16;Sorry about that, I’ll get a number 8, please.;a
 Jour_2_17;Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
-Jour_2_18;<wave a=1 w=100>Sigh…</wave> licking yourself today aswell huh?;a
+Jour_2_18;<wave a=0.3 w=1>Sigh…</wave> licking yourself today aswell huh?;a
 Jour_2_19;Alright well you do your own thing then…;a
 Jour_2_20;I think I’ll get a number 6 today! Haven’t that in a while…;a
 Jour_2_21;Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
@@ -65,10 +65,10 @@ Jour_2_24;They are so nice, i really love them;a
 Jour_2_25;I think I’ll get a number 6 today! Haven’t had that in a while...;a
 Jour_2_26;Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
 ;;
-Jour_2_27;Ugh <wave a=1 w=100>Sigh…</wave> I love studying, but I can’t seem to wrap my head around this Fallen Angels analysis…;a
+Jour_2_27;Ugh <wave a=0.3 w=1>Sigh…</wave> I love studying, but I can’t seem to wrap my head around this Fallen Angels analysis…;a
 Jour_2_28;I get the loneliness and loss themes, but I don't see where the love is here…;a
 Jour_2_29;What did Wong Kar-Wai possibly try to show us?;a
-Jour_2_30;You don’t get it either, do you? <wave a=1 w=100>Sigh…</wave> well at least we got each other;a
+Jour_2_30;You don’t get it either, do you? <wave a=0.3 w=1>Sigh…</wave> well at least we got each other;a
 Jour_2_31;And that's reassuring, isn't it my kitty?;a
 Jour_2_32;Well, at least you understand sleep, don’t you?;a
 Jour_2_33;Urgh, I wish I’d just be a cat, just eat and sleep all day, that’s the real dream.;a
@@ -98,14 +98,14 @@ Jour_3_7;I don’t know, maybe I’m just tired from watching videos too late on
 Jour_3_8;Ah yes, you’re right I’ve got to feed you.;a
 Jour_3_9;Mhh, how about chicken today? ;a
 Jour_3_10;Looks good to me, here you go kitty. I’m going to the sofa, are you coming?;a
-Jour_3_11;Sigh You know what nevermind.;a
+Jour_3_11;<wave a=0.3 w=1>Sigh…</wave> You know what nevermind.;a
 Jour_3_12; I’m going on the sofa to drink this coffee. You’re coming?;a
 Jour_3_13;What th- MILO. As if worrying about my future wasn’t enough;a
 Jour_3_14;I must worry about you destroying my trash can too??;a
 Jour_3_15;Get out of here, go wait for me on the sofa instead of doing stuff like this.;a
 Jour_3_16;I love you too kitty, you’re right I am worrying too much.;a
 Jour_3_17;I should just drink this coffee. Well, let’s go on the sofa.;a
-Jour_3_18;Sigh Yeah, I have to go shower too but for now,;a
+Jour_3_18;<wave a=0.3 w=1>Sigh…</wave> Yeah, I have to go shower too but for now,;a
 Jour_3_19;I’m going on the sofa to drink this coffee. You’re coming?;a
 Jour_3_20;I can meow too you know.;a
 Jour_3_21;Instead of meowing come with me on the sofa so I can drink my coffee peacefully. ;a
@@ -142,12 +142,12 @@ Jour_3_51;You know what?;a
 Jour_3_52;If she ever comes here, you’ll be able to meow like that okay?;a
 Jour_3_53;For now, just go into the living room if you’re so mad.;a
 Jour_3_54;Milo, where are you going?;a
-Jour_3_55;Footsteps What is- I told you not to do this! You got your scratching post over there you know this. Sigh;a
-Jour_3_56;Sometimes I wonder if you do this just to annoy me or if you’re just a clueless cat. Sigh;a
+Jour_3_55;*footsteps* What is- I told you not to do this! You got your scratching post over there you know this. <wave a=0.3 w=1>Sigh…</wave>;a
+Jour_3_56;Sometimes I wonder if you do this just to annoy me or if you’re just a clueless cat. <wave a=0.3 w=1>Sigh...</wave>;a
 Jour_3_57;I hope for you that Lena won’t notice when she comes because that would be embarrassing for you and me.;a
 Jour_3_58;Milo, where are you going? Footsteps What is- You're eating my plant again?? ;a
 Jour_3_59;Milo, you know it’s not good for your health, you always end up vomiting everywhere why do you do this?;a
-Jour_3_60;Sigh You will not sleep in my bed or my room tonight I promise you,;a
+Jour_3_60;<wave a=0.3 w=1>Sigh…</wave> You will not sleep in my bed or my room tonight I promise you,;a
 Jour_3_61; I’m seeing Lena tomorrow and I want to ask her to go get lunch with me during the week,;a
 Jour_3_62;So I don’t need you to stain my outfit because of your nonsense;a
 Jour_3_63;Text message from Lena;a
@@ -177,7 +177,7 @@ Jour_4_18;I met this friend in class, and it’s been going well.;a
 Jour_4_19;We’re going to eat in an Italian restaurant, the one where you and Dad met.;a
 Jour_4_20;Oh, okay. That’s nice *tyttöseni*.;a
 Jour_4_21;I am happy for you.;a
-Jour_4_22;Sigh I have to work now, I’m sorry, I love you, bye Lauren.;a
+Jour_4_22;<wave a=0.3 w=1>Sigh…</wave> I have to work now, I’m sorry, I love you, bye Lauren.;a
 Jour_4_23;Bye mom, love you.;a
 Jour_4_24;Stop it Milo.;a
 Jour_4_25;I’m meeting a friend tomorrow.;a
@@ -187,7 +187,7 @@ Jour_4_28;Yeah, that’s her. We’re going to eat at an Italian restaurant.;a
 Jour_4_29;Oh, that’s awesome.;a
 Jour_4_30;You know there’s a good one near the train station, I used to go there all the time.;a
 Jour_4_31;I know, thanks, mom.;a
-Jour_4_32;Sigh You know what?;a
+Jour_4_32;<wave a=0.3 w=1>Sigh…</wave> You know what?;a
 Jour_4_33;I just realized that I have some homework to do, I’ll talk to you later right?;a
 Jour_4_34;Yeah, sure *tyttöseni*.;a
 Jour_4_35;See you tomorrow, Lauren, love you.;a
@@ -196,7 +196,7 @@ Jour_4_37;…;a
 Jour_4_38;Are you purring because you’re happy to be with me?;a
 Jour_4_39;Awww, I am glad I found you in this alley 2 years ago, I love you Milo.;a
 Jour_4_40;What is it? You want me to put you on the shelf again, don’t you?;a
-Jour_4_41;Sigh Here you go, you should be glad I love you so much.;a
+Jour_4_41;<wave a=0.3 w=1>Sigh…</wave> Here you go, you should be glad I love you so much.;a
 Jour_4_42;You’re strangely calm today. You did something, didn’t you?;a
 Jour_4_43;I hope for you, you didn’t mess with the trash or there will be consequences.;a
 Jour_4_44;What’s that noise- Milo, NO. I need this cardboard for my project with Benji stop biting it!;a
@@ -342,13 +342,13 @@ Jour_6_2;I’m sorry for yesterday. Sometimes late-night thoughts are stronger t
 Jour_6_3;You make it better, even when you eat stuff you’re not supposed to. At least, it gets me out of my head.;a
 Jour_6_4;I love you too kitty, thank you for sticking with me all this time.;a
 Jour_6_5;I’m going to drink this coffee on the sofa. Are you coming?;a
-Jour_6_6;Sigh Yeah, I have to go shower too but for now, I’m going on the sofa to drink this coffee. You’re coming?;a
+Jour_6_6;<wave a=0.3 w=1>Sigh…</wave> Yeah, I have to go shower too but for now, I’m going on the sofa to drink this coffee. You’re coming?;a
 Jour_6_7;I can meow too you know. Instead of meowing come with me on the sofa so I can drink my coffee peacefully.;a
 Jour_6_8;That was an aggressive meow.;a
 Jour_6_9;I don’t know why you aren’t happy again but I’m going to the sofa to drink this coffee. You’re coming?;a
 Jour_6_10;Ah yes, you’re right I’ve got to feed you.;a
 Jour_6_11;Mhh, how about beef today? Looks good to me, here you go kitty. I’m going to the sofa, are you coming?;a
-Jour_6_12;Sigh You know what nevermind. I’m going on the sofa to drink this coffee. You’re coming?;a
+Jour_6_12;<wave a=0.3 w=1>Sigh…</wave> You know what nevermind. I’m going on the sofa to drink this coffee. You’re coming?;a
 Jour_6_13;What th- MILO.;a
 Jour_6_14;You must stop doing this, I am going to have to buy a heavier trash can if you continue and I don’t have the money for that.;a
 Jour_6_15;Get out of here, go wait for me on the sofa instead.;a
@@ -361,7 +361,7 @@ Jour_6_21;I must say you look handsome on this canvas.;a
 Jour_6_22;"I’ll give it to her tomorrow; she’s coming to work on our project.";a
 Jour_6_23;Maybe we could sleepover?;a
 Jour_6_24;I don’t know but I’m so excited to see her.;a
-Jour_6_25;I’d love to know what you mean when you’re meowing like that. Sigh;a
+Jour_6_25;I’d love to know what you mean when you’re meowing like that. <wave a=0.3 w=1>Sigh…</wave>;a
 Jour_6_26;Anyway, I painted you since she loves you so much.;a
 Jour_6_27;I must say you look handsome on this canvas.;a
 Jour_6_28;"I’ll give it to her tomorrow; she’s coming to work on our project.";a
@@ -390,7 +390,7 @@ Jour_6_50;"I’ll give it to her tomorrow; she’s coming to work on our project
 Jour_6_51;Maybe we could sleepover?;a
 Jour_6_52;I don’t know but I’m so excited to see her.;a
 Jour_6_53;Milo, for the hundredth time, NO. You. Cannot. Eat. Plants.;a
-Jour_6_54;You’re impossible. Sigh;a
+Jour_6_54;You’re impossible. <wave a=0.3 w=1>Sigh…</wave>;a
 Jour_6_55;Maybe I shouldn’t have painted you after all. You don’t deserve it when you do things like that.;a
 Jour_6_56;"I’ll still give it to her tomorrow though; she’s coming to work on our project.";a
 Jour_6_57;Maybe we could sleepover?;a

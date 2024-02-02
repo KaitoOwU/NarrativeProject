@@ -114,8 +114,8 @@ public class GameManager : MonoBehaviour
     public IEnumerator CR_EndScenario(Action callback)
     {
         yield return UIManager.Instance.Fade.DOFade(1f, 1f).WaitForCompletion();
+        yield return new WaitForSecondsRealtime(1f);
         callback.Invoke();
-        yield return new WaitForSecondsRealtime(3f);
         yield return UIManager.Instance.Fade.DOFade(0f, 1f).WaitForCompletion();
     }
     

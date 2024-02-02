@@ -107,7 +107,10 @@ namespace Subtegral.DialogueSystem.Runtime
                         {
                             _group.DOFade(0f, 0.5f).OnComplete(() =>
                             StartCoroutine(GameManager.Instance.CR_EndScenario(() =>
-                                ChangeDecor("transitionGoofy", Emotions.NoEmotion, choices.ToList()[0]))));
+                            {
+                                dialogueText.text = "";
+                                ChangeDecor("transitionGoofy", Emotions.NoEmotion, choices.ToList()[0]);
+                            })));
                         });
                         yield break;
                     }
@@ -172,7 +175,7 @@ namespace Subtegral.DialogueSystem.Runtime
             AudioManager.Instance.Play(soundName);
             AddEmotion(chosenEmotion);
             //DESACTIVER ANCIEN DECOR ET ACTIVER NOUVEAU
-            ProceedToNarrative(choice.TargetNodeGUID);
+            StartCoroutine(ProceedToNarrative(choice.TargetNodeGUID));
             _oldDecor.SetActive(false);
             _newDecor.SetActive(true);
         }
