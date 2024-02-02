@@ -5103,11 +5103,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef433a79a6339374180f55d139542dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _description: {fileID: 0}
   _dayImg: {fileID: 76936007}
   _transitionImg: {fileID: 1764076907}
   _sunObj: {fileID: 1774737865}
-  _cloudyObj: {fileID: 0}
   _rainyObj: {fileID: 2078574965}
 --- !u!4 &93601384
 Transform:
@@ -5163,6 +5161,83 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &563999235
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1285577897837729439, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285577897837729439, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285577897837729439, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285577897837729439, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285577897837729439, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285577897837729439, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285577897837729439, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285577897837729439, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285577897837729439, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285577897837729439, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933110067046874755, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: sounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ba0df9b5353234945bcc5d34b9535c87, type: 3}
+    - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: musiqueTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: sounds.Array.data[1].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
 --- !u!1 &583069049
 GameObject:
   m_ObjectHideFlags: 0
@@ -10670,3 +10745,4 @@ SceneRoots:
   - {fileID: 994600166}
   - {fileID: 636462444}
   - {fileID: 93601384}
+  - {fileID: 563999235}

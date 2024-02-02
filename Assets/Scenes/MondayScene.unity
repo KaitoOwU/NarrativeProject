@@ -369,7 +369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
       propertyPath: sounds.Array.size
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
       propertyPath: sounds.Array.data[1].clip
@@ -452,6 +452,14 @@ PrefabInstance:
       value: BigMeow
       objectReference: {fileID: 0}
     - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: sounds.Array.data[11].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ba0df9b5353234945bcc5d34b9535c87, type: 3}
+    - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: sounds.Array.data[11].name
+      value: transitionGoofy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
       propertyPath: sounds.Array.data[1].pitch
       value: 1
       objectReference: {fileID: 0}
@@ -492,6 +500,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: sounds.Array.data[11].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
       propertyPath: sounds.Array.data[1].volume
       value: 1
       objectReference: {fileID: 0}
@@ -529,6 +541,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
       propertyPath: sounds.Array.data[10].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8361546490042807647, guid: b9ad0a9370aeec2449bad1a50c5c3155, type: 3}
+      propertyPath: sounds.Array.data[11].volume
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -873,7 +889,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.9204594e+31, y: 3.7484626e+9, z: 4.23197e+21, w: 1.00382234e+9}
+  m_BoundingSphereOverride: {x: 5.73e-43, y: 1.61e-43, z: 0, w: -4.7218736e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0

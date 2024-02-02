@@ -19,6 +19,7 @@ public class DayInfoManager : MonoBehaviour
     
     private IEnumerator CR_Transition()
     {
+        AudioManager.Instance.Play("musiqueTransition");
         switch(GameManager.Instance.GetCurrentDayData().meteo)
         {
             case Meteo.SUNNY:

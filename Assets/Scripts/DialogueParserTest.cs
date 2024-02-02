@@ -103,7 +103,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     {
                         _group.DOFade(0f, 0.5f).OnComplete(() =>
                             StartCoroutine(GameManager.Instance.CR_EndScenario(() =>
-                                ChangeDecor("sonBanger", Emotions.NoEmotion, choices.ToList()[0]))));
+                                ChangeDecor("transitionGoofy", Emotions.NoEmotion, choices.ToList()[0]))));
                         yield break;
                     }
                 }
@@ -112,6 +112,7 @@ namespace Subtegral.DialogueSystem.Runtime
 
             foreach (var choice in choices)
             {
+                Debug.Log(choice.PortName);
                 for (int i = 0; i < buttons.Length; i++)
                 {
                     ButtonDatas buttonData = buttons[i].gameObject.GetComponent<ButtonDatas>();
