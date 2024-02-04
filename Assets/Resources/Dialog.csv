@@ -11,24 +11,24 @@ Jour_1_1;<i>Foosteps coming closer</i>;<i>Pas qui se rapprochent <i>
 Jour_1_2;<i>Keys jiggling</i>;<i>Cliquetis métallique<i>
 Jour_1_3;<i>Keys turning in the door</i>;<i>Clés qui tournent dans la porte<i>
 Jour_1_4;<i>Door opening</i>;<i>Porte qui s'ouvre<i>
-Jour_1_5;<wave a=1 w=100>Sigh…</wave>;<wave a=1 w=100>Soupire…</wave>
-Jour_1_6;Oh, Milo. How are you doing, my boy?;Oh, <color=black>Milo</color>. Comment ça va mon chaton?
+Jour_1_5;<wave a=0.1 w=1>Sigh…</wave>;<wave a=0.1 w=1>Soupire…</wave>
+Jour_1_6;Oh, <color=black>Milo</color>. How are you doing, my boy?;Oh, <color=black>Milo</color></color>. Comment ça va mon chaton?
 Jour_1_7;Awww, purring for me? I guess you had a good day at home.;a
-Jour_1_8;<wave a=1 w=100>Sigh…</wave> Knowing you I’m going to find cat’s hair on my clothes again since I left them on my bed this morning.;a
+Jour_1_8;<wave a=0.1 w=1>Sigh…</wave> Knowing you I’m going to find cat’s hair on my clothes again since I left them on my bed this morning.;a
 Jour_1_9;Well, it doesn’t matter, we’re home now, let’s go eat.;a
-Jour_1_10;What? Why meow? Are you hungry again? But your bowl was full at noon? <wave a=1 w=100> Let me see… <wave>;a
+Jour_1_10;What? Why meow? Are you hungry again? But your bowl was full at noon? <wave a=0.1 w=1> Let me see… <wave>;a
 Jour_1_11;Oh yes, you ate it all like the little glutton you are.;a
-Jour_1_12;<wave a=1 w=100>Heeeere</wave> you go, you can eat now.;a
+Jour_1_12;<wave a=0.1 w=1>Heeeere</wave> you go, you can eat now.;a
 Jour_1_13;Licking your fur, I see. Are you making yourself all pretty for me?;a
 Jour_1_14;I surely hope so because I’m coming back from the supermarket, and I bought you <incr f=1>some treats!</incr>;a
 Jour_1_15;<shake a=0.5 f=>What are you doing?</shake> You’re eating <shake>my calathea??</shake>;a
-Jour_1_16;Milo, no! Stop it! <shake a=0.5 f=>Bad cat!</shake>;a
+Jour_1_16;<color=black>Milo</color>, no! Stop it! <shake a=0.5 f=>Bad cat!</shake>;a
 Jour_1_17;I already <incr a=0.8>struggled enough today</incr> for you to do this.;a
 Jour_1_18;I’m not even going to start talking about what Miss Penrose did during my shift.;a
 Jour_1_19;Here, eat your toy instead.;a
 Jour_1_20;Wow, why are you not happy? Did you miss me?;a
 Jour_1_21;Dad was with you this afternoon though, you like him so why are you meowing like that?;a
-Jour_1_22;<wave a=1 w=100>Mhhh</wave>, I know wait a second.;a
+Jour_1_22;<wave a=0.1 w=1>Mhhh</wave>, I know wait a second.;a
 Jour_1_23;<wiggle>Rumbling in a plastic bag</wiggle>;a
 Jour_1_24;Here you go, a treat for you.;a
 Jour_1_25;It is salmon flavored, <b>your favorite.</b>;a
@@ -48,27 +48,27 @@ Jour_2_7;*scratches the sofa with the claws*;a
 Jour_2_8;<shake a=0.5 f=>Oh god! No no no! Bad cat!</shake> I won’t give you treats anymore if you keep acting like this!!!;a
 Jour_2_9;I’m really sorry about that, my cat started acting up.;a
 Jour_2_10;I’ll get a number 8 please. Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
-Jour_2_11;*meows back at you* I meow you too Milo;a
+Jour_2_11;*meows back at you* I meow you too <color=black>Milo</color>;a
 Jour_2_12;I'd like to order a number 7 today, I’ve been craving some tuna sushi lately.;a
 Jour_2_13;Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
-Jour_2_14;Whoah whoah Milo why are you screaming like that?;a
+Jour_2_14;Whoah whoah <color=black>Milo</color> why are you screaming like that?;a
 Jour_2_15;You need to chill dude!;a
 Jour_2_16;Sorry about that, I’ll get a number 8, please.;a
 Jour_2_17;Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
-Jour_2_18;<wave a=1 w=100>Sigh…</wave> licking yourself today aswell huh?;a
+Jour_2_18;<wave a=0.1 w=1>Sigh…</wave> licking yourself today aswell huh?;a
 Jour_2_19;Alright well you do your own thing then…;a
 Jour_2_20;I think I’ll get a number 6 today! Haven’t that in a while…;a
 Jour_2_21;Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
-Jour_2_22;Aww purring again Milo? I’m glad youre enjoying this place.;a
+Jour_2_22;Aww purring again <color=black>Milo</color>? I’m glad youre enjoying this place.;a
 Jour_2_23;Benji and Lena helped out a lot when it came to the decorations of the house…;a
 Jour_2_24;They are so nice, i really love them;a
 Jour_2_25;I think I’ll get a number 6 today! Haven’t had that in a while...;a
 Jour_2_26;Ok great! 20 minutes? Awesome! Thank you so much, bye.;a
 ;;
-Jour_2_27;Ugh <wave a=1 w=100>Sigh…</wave> I love studying, but I can’t seem to wrap my head around this Fallen Angels analysis…;a
+Jour_2_27;Ugh <wave a=0.1 w=1>Sigh…</wave> I love studying, but I can’t seem to wrap my head around this Fallen Angels analysis…;a
 Jour_2_28;I get the loneliness and loss themes, but I don't see where the love is here…;a
 Jour_2_29;What did Wong Kar-Wai possibly try to show us?;a
-Jour_2_30;You don’t get it either, do you? <wave a=1 w=100>Sigh…</wave> well at least we got each other;a
+Jour_2_30;You don’t get it either, do you? <wave a=0.1 w=1>Sigh…</wave> well at least we got each other;a
 Jour_2_31;And that's reassuring, isn't it my kitty?;a
 Jour_2_32;Well, at least you understand sleep, don’t you?;a
 Jour_2_33;Urgh, I wish I’d just be a cat, just eat and sleep all day, that’s the real dream.;a
@@ -80,7 +80,7 @@ Jour_2_38;*Laughs* *imitates radio noise*;a
 Jour_2_39;"<color=#209753><shake a=0.5 f=>Krr krr...</shake>
 Snake? ....<wave> Snake?!</wave> <shake>SNAAAAAKE!</shake></color>";a
 Jour_2_40;*Chuckles* I love this game.;a
-Jour_2_41;Oh god, NO! No, no, no! Milo, bad cat! I don’t understand why you insist on eating that cardboard.;a
+Jour_2_41;Oh god, NO! No, no, no! <color=black>Milo</color>, bad cat! I don’t understand why you insist on eating that cardboard.;a
 Jour_2_42;"It's like the third time this week, I’ve told you already; it's. Not. Food!!";a
 ;;
 ;;
@@ -100,7 +100,7 @@ Jour_3_9;Mhh, how about chicken today? ;a
 Jour_3_10;Looks good to me, here you go kitty. I’m going to the sofa, are you coming?;a
 Jour_3_11;Sigh You know what nevermind.;a
 Jour_3_12; I’m going on the sofa to drink this coffee. You’re coming?;a
-Jour_3_13;What th- MILO. As if worrying about my future wasn’t enough;a
+Jour_3_13;What th- <color=black>Milo</color>. As if worrying about my future wasn’t enough;a
 Jour_3_14;I must worry about you destroying my trash can too??;a
 Jour_3_15;Get out of here, go wait for me on the sofa instead of doing stuff like this.;a
 Jour_3_16;I love you too kitty, you’re right I am worrying too much.;a
@@ -137,16 +137,16 @@ Jour_3_46;I’m excited about it, she’s sooooo pretty and I love the way her l
 Jour_3_47;I can see you care more about your kibbles buuut you’re going to have to support me a bit longer.;a
 Jour_3_48;Really? You don’t like her?;a
 Jour_3_49;You never even met her, she’s basically in love with you and she’s always asking me for photos of you.;a
-Jour_3_50;How can you meow like that at her, it’s unfair Milo.;a
+Jour_3_50;How can you meow like that at her, it’s unfair <color=black>Milo</color>.;a
 Jour_3_51;You know what?;a
 Jour_3_52;If she ever comes here, you’ll be able to meow like that okay?;a
 Jour_3_53;For now, just go into the living room if you’re so mad.;a
-Jour_3_54;Milo, where are you going?;a
+Jour_3_54;<color=black>Milo</color>, where are you going?;a
 Jour_3_55;Footsteps What is- I told you not to do this! You got your scratching post over there you know this. Sigh;a
 Jour_3_56;Sometimes I wonder if you do this just to annoy me or if you’re just a clueless cat. Sigh;a
 Jour_3_57;I hope for you that Lena won’t notice when she comes because that would be embarrassing for you and me.;a
-Jour_3_58;Milo, where are you going? Footsteps What is- You're eating my plant again?? ;a
-Jour_3_59;Milo, you know it’s not good for your health, you always end up vomiting everywhere why do you do this?;a
+Jour_3_58;<color=black>Milo</color>, where are you going? Footsteps What is- You're eating my plant again?? ;a
+Jour_3_59;<color=black>Milo</color>, you know it’s not good for your health, you always end up vomiting everywhere why do you do this?;a
 Jour_3_60;Sigh You will not sleep in my bed or my room tonight I promise you,;a
 Jour_3_61; I’m seeing Lena tomorrow and I want to ask her to go get lunch with me during the week,;a
 Jour_3_62;So I don’t need you to stain my outfit because of your nonsense;a
@@ -179,7 +179,7 @@ Jour_4_20;Oh, okay. That’s nice *tyttöseni*.;a
 Jour_4_21;I am happy for you.;a
 Jour_4_22;Sigh I have to work now, I’m sorry, I love you, bye Lauren.;a
 Jour_4_23;Bye mom, love you.;a
-Jour_4_24;Stop it Milo.;a
+Jour_4_24;Stop it <color=black>Milo</color>.;a
 Jour_4_25;I’m meeting a friend tomorrow.;a
 Jour_4_26;I talked about her already, it’s Lena, remember her?;a
 Jour_4_27;Ah yes Lena, the loud energetic one, right?;a
@@ -194,16 +194,16 @@ Jour_4_35;See you tomorrow, Lauren, love you.;a
 Jour_4_36;Bye mom.;a
 Jour_4_37;…;a
 Jour_4_38;Are you purring because you’re happy to be with me?;a
-Jour_4_39;Awww, I am glad I found you in this alley 2 years ago, I love you Milo.;a
+Jour_4_39;Awww, I am glad I found you in this alley 2 years ago, I love you <color=black>Milo</color>.;a
 Jour_4_40;What is it? You want me to put you on the shelf again, don’t you?;a
 Jour_4_41;Sigh Here you go, you should be glad I love you so much.;a
 Jour_4_42;You’re strangely calm today. You did something, didn’t you?;a
 Jour_4_43;I hope for you, you didn’t mess with the trash or there will be consequences.;a
-Jour_4_44;What’s that noise- Milo, NO. I need this cardboard for my project with Benji stop biting it!;a
-Jour_4_45;Milo, no, stop. Mil- Okay you’re going into the living room.;a
-Jour_4_46;Milo? What is it? Come here. Come!;a
+Jour_4_44;What’s that noise- <color=black>Milo</color>, NO. I need this cardboard for my project with Benji stop biting it!;a
+Jour_4_45;<color=black>Milo</color>, no, stop. Mil- Okay you’re going into the living room.;a
+Jour_4_46;<color=black>Milo</color>? What is it? Come here. Come!;a
 Jour_4_47;You don’t want to get on the bed? Okay, stay there then.;a
-Jour_4_48;MILO?? Are you okay? Why are you meowing so loudly?? Are you hungry?;a
+Jour_4_48;<color=black>Milo</color>?? Are you okay? Why are you meowing so loudly?? Are you hungry?;a
 Jour_4_49;I fed you just an hour ago though…;a
 Jour_4_50;Wait- Is this your usual “I want something, but you’ll never know what” hour?;a
 Jour_4_51;Ugh, you’re really my cat.;a
@@ -239,11 +239,11 @@ Jour_5_20;Always standing by your side, bringing you snacks and offering you her
 Jour_5_21;What? But we’ve been doing this for each other since high school, that’s just what best friends do.;a
 Jour_5_22;Is it?;a
 Jour_5_23;...;a
-Jour_5_24;Milo is purring. I think he’s trying to tell me you’re right.;a
+Jour_5_24;<color=black>Milo</color> is purring. I think he’s trying to tell me you’re right.;a
 Jour_5_25;Benji, how could I be so oblivious all this time? I’m so damn blind that’s insane.;a
 Jour_5_26;Yeah, you kinda are.;a
 Jour_5_27;Not. Helping. Benjamin.;a
-Jour_5_28;Wait a sec Benji, Milo is meowing, and I don’t know why. What’s going on Milo?;a
+Jour_5_28;Wait a sec Benji, <color=black>Milo</color> is meowing, and I don’t know why. What’s going on <color=black>Milo</color>?;a
 Jour_5_29;Maybe he’s trying to tell you that I was right.;a
 Jour_5_30;He’s my cat, he always agrees with me.;a
 Jour_5_31;That’s what you think.;a
@@ -260,15 +260,15 @@ Jour_5_41;I’m not.;a
 Jour_5_42;You kinda are though.;a
 Jour_5_43;....;a
 Jour_5_44;Dammit.;a
-Jour_5_45;What’s that noise? Where’s Milo??;a
+Jour_5_45;What’s that noise? Where’s <color=black>Milo</color>??;a
 Jour_5_46;I think he left because you were too delusional.;a
-Jour_5_47;Not funny Benji. Dammit Milo, no!;a
+Jour_5_47;Not funny Benji. Dammit <color=black>Milo</color>, no!;a
 Jour_5_48;What is he doing?;a
 Jour_5_49;He’s messing with the trash can again, that’s the 3rd time this week!;a
 Jour_5_50;BAHAHA, I wish I could see that.;a
 Jour_5_51;No, you don’t.;a
 Jour_5_52;I do.;a
-Jour_5_53;Wait a sec Benji, Milo is meowing like crazy. What’s going on Milo?;a
+Jour_5_53;Wait a sec Benji, <color=black>Milo</color> is meowing like crazy. What’s going on <color=black>Milo</color>?;a
 Jour_5_54;"He must be really loud; I hear him through the phone.";a
 Jour_5_55;He is. I don’t know what he wants. What is it kitty? Are you hungry? Do you want some cuddles?;a
 Jour_5_56;I know someone who would looove some cuddles.;a
@@ -299,13 +299,13 @@ Jour_5_79;It’s been so hard lately to keep up with class, grades, working on m
 Jour_5_80;I miss Dad so much. I miss home.;a
 Jour_5_81;I miss being young and having to care only about whether my afternoon snack had chocolate in it or not.;a
 Jour_5_82;I’m sorry kitty-cat. I wish I could be stronger but I’m really not. I feel like I’m wasting my time here like nothing’s worth it.;a
-Jour_5_83;At least I got you buddy huh, thank you for being here I love you, Milo.;a
+Jour_5_83;At least I got you buddy huh, thank you for being here I love you, <color=black>Milo</color>.;a
 Jour_5_84;Sometimes I wish I could be like you. Only caring about food, sleep, having cuddles, and licking my fur.;a
 Jour_5_85;It’s been so hard lately to keep up with class, grades, working on my thesis, working at the café and just living in general.;a
 Jour_5_86;I miss Dad so much. I miss home.;a
 Jour_5_87;I miss being young and having to care only about whether my afternoon snack had chocolate in it or not.;a
 Jour_5_88;I’m sorry kitty-cat. I wish I could be stronger but I’m really not. I feel like I’m wasting my time here like nothing’s worth it.;a
-Jour_5_89;At least I got you buddy huh, thank you for being here I love you, Milo.;a
+Jour_5_89;At least I got you buddy huh, thank you for being here I love you, <color=black>Milo</color>.;a
 Jour_5_90;Ah yes hi, kitty. I’m sorry I’m crying, I know you don’t like it. It’s just-;a
 Jour_5_91;It’s been so damn hard lately to keep up with class, grades, working on my thesis, working at the café and just living in general.;a
 Jour_5_92;I feel so overwhelmed and like a complete loser to be honest.;a
@@ -314,14 +314,14 @@ Jour_5_94;I miss being young and having to care only about whether my afternoon 
 Jour_5_95;I’m sorry kitty-cat. I wish I could be stronger but I’m really not.;a
 Jour_5_96;I feel like I’m wasting my time here like nothing’s worth it.;a
 Jour_5_97;Maybe Mom was right, maybe I should have gone to law school instead, I wouldn’t worry so much about my future then.;a
-Jour_5_98;At least I got you buddy huh, thank you for being here I love you, Milo.;a
+Jour_5_98;At least I got you buddy huh, thank you for being here I love you, <color=black>Milo</color>.;a
 Jour_5_99;Hi, kitty. I’m sorry I know you want to go on the shelf but not right now buddy.;a
 Jour_5_100;It’s been so damn hard lately to keep up with class, grades, working on my thesis, working at the café and just living in general.;a
 Jour_5_101;I miss Dad so much. I miss home.;a
 Jour_5_102;I miss being young and having to care only about whether my afternoon snack had chocolate in it or not.;a
 Jour_5_103;I’m sorry kitty-cat. I wish I could be stronger but I’m really not. I feel like I’m wasting my time here like nothing’s worth it.;a
-Jour_5_104;At least I got you buddy huh, thank you for being here I love you, Milo.;a
-Jour_5_105;Milo, please, don’t. No, stop it. I don’t have the strength to deal with you right now.;a
+Jour_5_104;At least I got you buddy huh, thank you for being here I love you, <color=black>Milo</color>.;a
+Jour_5_105;<color=black>Milo</color>, please, don’t. No, stop it. I don’t have the strength to deal with you right now.;a
 Jour_5_106;I know you don’t like when I cry but-;a
 Jour_5_107;It’s been so damn hard lately to keep up with class, grades, working on my thesis, working at the café and just living in general.;a
 Jour_5_108;I feel so overwhelmed and like a complete loser to be honest.;a
@@ -330,7 +330,7 @@ Jour_5_110;I miss being young and having to care only about whether my afternoon
 Jour_5_111;I’m sorry kitty-cat. I wish I could be stronger but I’m really not.;a
 Jour_5_112;I feel like I’m wasting my time here like nothing’s worth it.;a
 Jour_5_113;Maybe Mom was right, maybe I should have gone to law school instead, I wouldn’t worry so much about my future then.;a
-Jour_5_114;At least I got you buddy huh, you’ll stay with me, right? I love you so much Milo.;a
+Jour_5_114;At least I got you buddy huh, you’ll stay with me, right? I love you so much <color=black>Milo</color>.;a
 ;;
 ;;
 ;;
@@ -349,7 +349,7 @@ Jour_6_9;I don’t know why you aren’t happy again but I’m going to the sofa
 Jour_6_10;Ah yes, you’re right I’ve got to feed you.;a
 Jour_6_11;Mhh, how about beef today? Looks good to me, here you go kitty. I’m going to the sofa, are you coming?;a
 Jour_6_12;Sigh You know what nevermind. I’m going on the sofa to drink this coffee. You’re coming?;a
-Jour_6_13;What th- MILO.;a
+Jour_6_13;What th- <color=black>Milo</color>.;a
 Jour_6_14;You must stop doing this, I am going to have to buy a heavier trash can if you continue and I don’t have the money for that.;a
 Jour_6_15;Get out of here, go wait for me on the sofa instead.;a
 Jour_6_16;This couch has a gift to make you feel better, come here kitty. Here you go.;a
@@ -389,7 +389,7 @@ Jour_6_49;I must say you look handsome on this canvas.;a
 Jour_6_50;"I’ll give it to her tomorrow; she’s coming to work on our project.";a
 Jour_6_51;Maybe we could sleepover?;a
 Jour_6_52;I don’t know but I’m so excited to see her.;a
-Jour_6_53;Milo, for the hundredth time, NO. You. Cannot. Eat. Plants.;a
+Jour_6_53;<color=black>Milo</color>, for the hundredth time, NO. You. Cannot. Eat. Plants.;a
 Jour_6_54;You’re impossible. Sigh;a
 Jour_6_55;Maybe I shouldn’t have painted you after all. You don’t deserve it when you do things like that.;a
 Jour_6_56;"I’ll still give it to her tomorrow though; she’s coming to work on our project.";a
@@ -413,14 +413,14 @@ Jour_7_9;I guess you decided that being a good cat was the way to get some salmo
 Jour_7_10;In that case, good job kitty, here’s some fish.;a
 Jour_7_11;This is not how you’re going to get some salmon, believe me.;a
 Jour_7_12;Maybe if you behave, I can consider giving some to you.;a
-Jour_7_13;I know you’re hungry Milo but be a tiny bit more patient please.;a
+Jour_7_13;I know you’re hungry <color=black>Milo</color> but be a tiny bit more patient please.;a
 Jour_7_14;I’ll give you some salmon when I'm done I promise.;a
-Jour_7_15;Milo NO, not my plant again.;a
+Jour_7_15;<color=black>Milo</color> NO, not my plant again.;a
 Jour_7_16;This is not how you’re going to get some salmon, believe me.;a
 Jour_7_17;Maybe if you behave, I can consider giving some to you.;a
 Jour_7_18;Aaaand it’s done! Now taste test!;a
 Jour_7_19;Ahhh, that’s de-li-cious. She’s going to love it.;a
-Jour_7_20;Here you go Milo, have some salmon.;a
+Jour_7_20;Here you go <color=black>Milo</color>, have some salmon.;a
 ;;
 Jour_7_21;So? What do you think? ;a
 Jour_7_22;It’s good, it’s good.;a
@@ -429,13 +429,13 @@ Jour_7_24;Yeah, it’s really good!;a
 Jour_7_25;Thank you so much for having made my favorite dish ever;a
 Jour_7_26;I appreciate it a lot. I appreciate you a lot.;a
 Jour_7_27;Yeah, I- I do too.;a
-Jour_7_28;I think Milo does too.;a
+Jour_7_28;I think <color=black>Milo</color> does too.;a
 Jour_7_29;Of course he does, I’m awesome. ;a
 Jour_7_30;You really are.;a
-Jour_7_31;Even if he complains a lot, I think Milo likes you too.;a
+Jour_7_31;Even if he complains a lot, I think <color=black>Milo</color> likes you too.;a
 Jour_7_32;Too? So, you do like me.;a
 Jour_7_33;I- I do.;a
-Jour_7_34;What is he- Milo, no! Stop scratching the sofa!;a
+Jour_7_34;What is he- <color=black>Milo</color>, no! Stop scratching the sofa!;a
 Jour_7_35;It’s okay I don’t mind a bit of chaos, not when it’s with you.;a
 Jour_7_36;You are very chaotic too Lena, I dare say.;a
 Jour_7_37;But you love me.;a
@@ -444,12 +444,12 @@ Jour_7_39;What is that noise?;a
 Jour_7_40;Which noise?;a
 Jour_7_41;That noise.;a
 Jour_7_42;... ;a
-Jour_7_43;Milo!;a
+Jour_7_43;<color=black>Milo</color>!;a
 Jour_7_44;You’re so silly like that.;a
 Jour_7_45;I think he’s cute.;a
 Jour_7_46;You always think he’s cute.;a
 Jour_7_47;Yeah, because he looks like his owner.;a
-Jour_7_48;What is he- Milo, no! Stop messing with the trash can!;a
+Jour_7_48;What is he- <color=black>Milo</color>, no! Stop messing with the trash can!;a
 Jour_7_49;It’s okay I don’t mind a bit of chaos, not when it’s with you.;a
 Jour_7_50;You are very chaotic too Lena, I dare say.;a
 Jour_7_51;But you love me.;a
@@ -481,13 +481,13 @@ Jour_7_75; Yeah, it’s really good.;a
 Jour_7_76;Thank you so much for having made my favorite dish ever, I appreciate it a lot.;a
 Jour_7_77; I appreciate you a lot.;a
 Jour_7_78;I’m glad you like it. ;a
-Jour_7_79;I think Milo likes it too.;a
+Jour_7_79;I think <color=black>Milo</color> likes it too.;a
 Jour_7_80;Of course he does, It’s delicious.;a
 Jour_7_81;Yeah, I love it, it’s so good.;a
-Jour_7_82;See? Even Milo wants some!;a
+Jour_7_82;See? Even <color=black>Milo</color> wants some!;a
 Jour_7_83;I already gave him some salmon.;a
 Jour_7_84;He must have liked it then.;a
-Jour_7_85;What is he- Milo, no! Stop scratching the sofa!;a
+Jour_7_85;What is he- <color=black>Milo</color>, no! Stop scratching the sofa!;a
 Jour_7_86;It’s okay I don’t mind a bit of chaos, not when it’s with you. ;a
 Jour_7_87;You are very chaotic too Lena, I dare say.;a
 Jour_7_88;But you love me.;a
@@ -495,12 +495,12 @@ Jour_7_89;Yeah, you’re the best.;a
 Jour_7_90;What is that noise?;a
 Jour_7_91;Which noise?;a
 Jour_7_92;That noise.;a
-Jour_7_93;Milo!;a
+Jour_7_93;<color=black>Milo</color>!;a
 Jour_7_94;You’re so silly like that.;a
 Jour_7_95;I think he’s cute.;a
 Jour_7_96;You always think he’s cute.;a
 Jour_7_97;Yeah, because he looks like his owner.;a
-Jour_7_98;What is he- Milo, no! Stop messing with the trash can!;a
+Jour_7_98;What is he- <color=black>Milo</color>, no! Stop messing with the trash can!;a
 Jour_7_99;It’s okay I don’t mind a bit of chaos, not when it’s with you. ;a
 Jour_7_100;You are very chaotic too Lena, I dare say.;a
 Jour_7_101;But you love me. ;a
@@ -528,13 +528,13 @@ Jour_7_121;Thank you so much for having made my favorite dish ever;a
 Jour_7_122;I appreciate it a lot.;a
 Jour_7_123;I appreciate you a lot.;a
 Jour_7_124;Thank you, I’m happy you like it.;a
-Jour_7_125;I think Milo likes it too.;a
+Jour_7_125;I think <color=black>Milo</color> likes it too.;a
 Jour_7_126;Of course he does, It’s delicious.;a
 Jour_7_127;Yeah, I love it, it’s so good.;a
-Jour_7_128;See? Even Milo wants some!;a
+Jour_7_128;See? Even <color=black>Milo</color> wants some!;a
 Jour_7_129;I already gave him some salmon.;a
 Jour_7_130;He must have liked it then.;a
-Jour_7_131;What is he- Milo, no! Stop scratching the sofa!;a
+Jour_7_131;What is he- <color=black>Milo</color>, no! Stop scratching the sofa!;a
 Jour_7_132;It’s okay I don’t mind a bit of chaos, not when it’s with you.;a
 Jour_7_133;You are very chaotic too Lena, I dare say.;a
 Jour_7_134;But you love me.;a
@@ -543,12 +543,12 @@ Jour_7_136;What is that noise?;a
 Jour_7_137;Which noise?;a
 Jour_7_138;That noise.;a
 Jour_7_139;…;a
-Jour_7_140;Milo!;a
+Jour_7_140;<color=black>Milo</color>!;a
 Jour_7_141;You’re so silly like that.;a
 Jour_7_142;I think he’s cute.;a
 Jour_7_143;You always think he’s cute.;a
 Jour_7_144;Yeah, because he looks like his owner.;a
-Jour_7_145;What is he- Milo, no! Stop messing with the trash can!;a
+Jour_7_145;What is he- <color=black>Milo</color>, no! Stop messing with the trash can!;a
 Jour_7_146;It’s okay I don’t mind a bit of chaos, not when it’s with you.;a
 Jour_7_147;You are very chaotic too Lena, I dare say.;a
 Jour_7_148;But you love me.;a
@@ -571,7 +571,7 @@ Jour_7_164;Oh... okay? But what about school?;a
 Jour_7_165;And our project for Mr.Virtanen too?;a
 Jour_7_166;Yeah, I’ll work from there.;a
 Jour_7_167;I got the Wi-Fi set up and everything.;a
-Jour_7_168;But don’t worry, I’ll still come back to see you and Milo from time to time.;a
+Jour_7_168;But don’t worry, I’ll still come back to see you and <color=black>Milo</color> from time to time.;a
 Jour_7_169;After all, we still got to go to the funfair together.;a
 Jour_7_170;Ah. Okay. This is... unexpected?;a
 Jour_7_171;I’m sorry I wanted to tell you sooner, but I couldn’t bring myself to tell you.;a

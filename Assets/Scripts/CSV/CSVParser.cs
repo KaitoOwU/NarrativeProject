@@ -18,23 +18,19 @@ namespace Kaito.CSVParser
         /// <returns>
         ///   <para>The CSV file unparsed.</para>
         /// </returns>
-        public static List<(string, string[])> Unparse(string path, char spliter = ';')
+        public static List<(string, string[])> UnparseDialogs(char spliter = ';')
         {
             List<(string ID, string[] Values)> data = new();
             try
             {
-                
-                StreamReader reader = new(path);
-                while (!reader.EndOfStream)
-                {
-                    string line = reader.ReadLine();
-                    string[] values = line.Split(spliter);
-                    data.Add((values[0], values[1..]));
-                    //Debug.Log(values[0] + " : " + data[values[0]].ToStringArray());
-                }
-                
+                TextAsset txt = (TextAsset)Resources.Load("Dialog", typeof(TextAsset));
+                string fileContent = txt.text;
+                string[] splitedContent = fileContent.Split("\n");
+
+                data.AddRange(splitedContent.Select(str => str.Split(spliter)).Select(values => (values[0], values[1..])));
                 return data;
             }
+
             catch (IOException)
             {
                 Debug.LogWarning("File could not be read. Please check file isn't open");

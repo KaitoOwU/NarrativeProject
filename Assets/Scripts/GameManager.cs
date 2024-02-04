@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this);
         Instance = this;
         _emotions = new List<int> { 0, 0, 0, 0 };
-        _dialogDatabase = CSV.Unparse("Assets/Resources/Dialog.csv");
+        _dialogDatabase = CSV.UnparseDialogs();
     }
 
     private void Start()

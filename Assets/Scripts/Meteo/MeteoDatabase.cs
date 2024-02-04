@@ -14,7 +14,7 @@ public class MeteoDatabase : ScriptableObject
 
     private void Awake()
     {
-        var dictionary = CSV.Unparse("Assets/Resources/Dialog.csv");
+        var dictionary = CSV.UnparseDialogs();
         for (int i = 0; i < 7; i++)
         {
             string desc = string.Empty;
